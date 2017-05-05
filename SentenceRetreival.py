@@ -2,8 +2,10 @@
 # Date: 5-May-2017
 
 
-########### THIS is just a test script for me (i.e. Umer), i will use it to play around ideas
-########### may not contain any logical stuff
+# This script copies most of the code from WSTA_N15_information_retrieval' IPython Notebook uploaded by the tutor
+# In this script I implement the sentence reterival part of the project
+# For each question, we identify the correct sentence from the article
+# This is just the basic technique and yields about 59% accuracy on train set
 
 from __future__ import print_function
 import json

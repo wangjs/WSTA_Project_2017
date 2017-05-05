@@ -12,8 +12,17 @@ from math import log
 
 from math import log
 from collections import defaultdict, Counter
+import os
 
-with open('QA_train.json') as data_file:
+os.environ["STANFORD_MODELS"] = "/Users/umeraltaf/Desktop/QA_Project/StanfordNER"
+
+
+from nltk.tag.stanford import StanfordNERTagger
+
+st = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english.all.3class.distsim.crf.ser.gz','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-ner.jar')
+
+
+with open('QA_dev.json') as data_file:
     data = json.load(data_file)
 
 
@@ -48,10 +57,12 @@ def query_vsm(query, index, k=10):
 
 correctSentence = 0
 totalQuestions = 0
-i = 0
+bestSentence = {}
+allBestSentences = []
+articleNo = -1
 for article in data:
-    print("Computing Article: ",i,'/',len(data))
-    i+= 1
+    articleNo += 1
+    print("Computing Article: ",articleNo+1,'/',len(data))
     corpus = article['sentences']
 
     stopwords = set(nltk.corpus.stopwords.words('english')) # wrap in a set() (see below)
@@ -89,8 +100,9 @@ for article in data:
         docids.sort()
 
 
-
+    questionNo = -1
     for qa in article['qa']:
+        questionNo += 1
         query = ""
         for token in nltk.word_tokenize(qa['question']):
             if token not in stopwords:  # 'in' and 'not in' operations are much faster over sets that lists
@@ -98,10 +110,22 @@ for article in data:
         result = query_vsm([stemmer.stem(term.lower()) for term in query.split()], vsm_inverted_index)
         totalQuestions += 1
         if len(result) > 0:
-            bestSentence = result[0][0]
-            if qa['answer_sentence'] == bestSentence:
+            allBestSentences.append(article['sentences'][result[0][0]].split())
+            best = result[0][0]
+            bestSentence[articleNo,questionNo] = best
+            if qa['answer_sentence'] == best:
                 correctSentence += 1
+        else:
+            allBestSentences.append([]) #to preserve question sequence
 
+
+print(st.tag('Rami Eid is studying at Stony Brook University in NY'.split()))
 
 print("The accuracy on train set is", (correctSentence/float(totalQuestions)))
+
+NER_tagged = st.tag_sents(allBestSentences)
+print(NER_tagged[777])
+
+
+# generate a list of all best found sentences:
 

@@ -17,7 +17,7 @@ import os
 
 import pickle  #For caching of results
 
-fname = 'bestSentencesTagged.bin'
+fname = 'bestSentencesTaggedTEST.bin'
 
 NER_tagged = None
 
@@ -51,13 +51,11 @@ from nltk.tag.stanford import StanfordNERTagger
 
 st = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english.all.3class.distsim.crf.ser.gz','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-ner.jar')
 
-with open('QA_dev.json') as data_file:
+with open('QA_test.json') as data_file:
     data = json.load(data_file)
 
 if not os.path.exists(fname):  #Check if we already computed the best candidate sentences and thier entity tags
 
-    correctSentence = 0
-    totalQuestions = 0
     bestSentence = {}
     allBestSentences = []
     articleNo = -1
@@ -109,31 +107,27 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                 if token not in stopwords:  # 'in' and 'not in' operations are much faster over sets that lists
                     query = query + ' ' + token
             result = query_vsm([stemmer.stem(term.lower()) for term in query.split()], vsm_inverted_index)
-            totalQuestions += 1
             if len(result) > 0:
                 allBestSentences.append(article['sentences'][result[0][0]].split())
                 best = result[0][0]
                 bestSentence[articleNo,questionNo] = best
-                if qa['answer_sentence'] == best:
-                    correctSentence += 1
+
             else:
                 allBestSentences.append([]) #to preserve question sequence
 
 
-    print(st.tag('Rami Eid 99 is studying Vxasd at Stony Brook University in NY'.split()))
 
-    print("The accuracy on dev set is", (correctSentence/float(totalQuestions)))
 
     NER_tagged = st.tag_sents(allBestSentences)
 
-    f = open('bestSentencesTagged.bin', 'wb')  # 'wb' instead 'w' for binary file
+    f = open(fname, 'wb')  # 'wb' instead 'w' for binary file
     pickle.dump(NER_tagged, f, -1)  # -1 specifies highest binary protocol
     f.close()
     print("NER Saved")
 
 
 else: #NER tagged found
-    f = open('bestSentencesTagged.bin', 'rb')  # 'rb' for reading binary file
+    f = open(fname, 'rb')  # 'rb' for reading binary file
     NER_tagged = pickle.load(f)
     f.close()
     print("NER Loaded")
@@ -213,8 +207,8 @@ def classifyQuestion(question):
     else:
         return "O"
 
-
-
+outFile = open('outPutTestSet', 'w')
+print(("id" + ',' + "answer"), file=outFile)
 
 correct = 0
 i = -1 #index of our NER_TAGGED list (i.e. questions)
@@ -256,11 +250,8 @@ for article in data:
         if guessedAnswerText != "":
             guessedAnswerText = guessedAnswerText[1:] #remove the first space
             print(guessedAnswerText)
+        guessedAnswerText = guessedAnswerText.replace('"', "")
+        guessedAnswerText = guessedAnswerText.replace(',',"-COMMA-")
+        print((str(question['id'])+ ',' + guessedAnswerText.encode('ascii', 'ignore')), file=outFile)
 
-
-
-        if guessedAnswerText == question['answer']:
-            correct +=1
-
-print(i)
-print(correct)
+outFile.close()

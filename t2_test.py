@@ -135,6 +135,7 @@ else: #NER tagged found
 
 wordNumbers =[
 'zero',
+'one',
 'two',
 'three',
 'four',
@@ -160,28 +161,62 @@ wordNumbers =[
 
 ]
 
+dateNumbers = [
+
+    'monday',
+    'tuesday',
+    'wednesday',
+    'thursday',
+    'friday',
+    'saturday',
+    'sunday',
+    'january',
+    'february',
+    'march',
+    'april',
+    'may',
+    'june',
+    'july',
+    'august',
+    'september',
+    'october',
+    'november',
+    'december'
+]
+
+
 def is_number(s): #A basic function to check if a word/token is a number or not
     try:
         float(s)
         return True
     except ValueError:
-
-        if s.lower() in wordNumbers:
+        if s.lower() in wordNumbers or s.lower() in dateNumbers:
             return True
         else:
             return False
 
+
+
+
 #Trying to add NUMBER entity and removing ORGANIZATION
-print(st.tag('Rami Eid 99 Paris is studying Vxasd at Stony Brook University in NY'.split()))
-print(NER_tagged[0])
+# print(st.tag('Rami Eid 99 Paris is studying Vxasd at Stony Brook University in NY'.split()))
+# print(NER_tagged[0])
 for answerSent in NER_tagged:
-    for token in answerSent:
+    for i in range (0,len(answerSent)-1):
+        # tagging all other entities i.e. starts with capital and not tagged by NER
+        if (answerSent[i][1] == 'O' and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()):
+            answerSent[i] = (answerSent[i][0], u'OTHER')
         # print(token)
         # Dis-regarding ORGINIZATION tag
-        if token[1] == "ORGANIZATION":
-            token = (token[0],u'O')
-        elif is_number(token[0]):
-            token = (token[0], u'NUMBER')
+        if answerSent[i][1] == "ORGANIZATION":
+            answerSent[i] = (answerSent[i][0], u'OTHER')
+            print("****", answerSent[i][1])
+        if is_number(answerSent[i][0]):
+            answerSent[i] = (answerSent[i][0], u'NUMBER')
+
+
+
+
 
 
 # #Concatinating adjacent same tag entities
@@ -194,20 +229,20 @@ for answerSent in NER_tagged:
 
 # Build a simple question classifier based on type of wh word in question:
 def classifyQuestion(question):
-    if "where" in question.lower():
+    if "where" in question.lower() or "which" in question.lower():
         return "LOCATION"
     elif "who" in question.lower():
         return "PERSON"
-    elif "how many" in question.lower():
+    elif "how many" in question.lower() or "number" in question.lower() or "count" in question.lower():
         return "NUMBER"
-    elif "count" in question.lower():
-        return "NUMBER"
-    elif "number" in question.lower():
+    elif "when" in question.lower() or "date" in question.lower():
         return "NUMBER"
     else:
-        return "O"
+        return "OTHER"
 
-outFile = open('outPutTestSet', 'w')
+
+
+outFile = open('outPutTestSet.csv', 'w')
 print(("id" + ',' + "answer"), file=outFile)
 
 correct = 0
@@ -231,7 +266,8 @@ for article in data:
                         guessedAnswerText = guessedAnswerText + " " + taggedBestAnswerSent[l][0]
                     else:
                         break
-            t = l+1
+            if ('l' in vars() or 'l' in globals()):
+                t = l+1
             answerList.append(guessedAnswerText)
 
         guessedAnswerText = ""

@@ -14,7 +14,7 @@ from math import log
 from collections import defaultdict, Counter
 import os
 
-
+import string
 import pickle  #For caching of results
 
 fname = 'bestSentencesTagged.bin'
@@ -54,6 +54,15 @@ st = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english.
 with open('QA_dev.json') as data_file:
     data = json.load(data_file)
 
+stopwords = set(nltk.corpus.stopwords.words('english'))  # wrap in a set() (see below) ############## Remove from below
+stemmer = nltk.stem.PorterStemmer()  ########
+
+PunctuationExclude = set(string.punctuation)############
+set(string.punctuation).remove(',')
+set(string.punctuation).remove('-')
+print(PunctuationExclude)
+
+
 if not os.path.exists(fname):  #Check if we already computed the best candidate sentences and thier entity tags
 
     correctSentence = 0
@@ -66,12 +75,12 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
         print("Computing Article: ",articleNo+1,'/',len(data))
         corpus = article['sentences']
 
-        stopwords = set(nltk.corpus.stopwords.words('english')) # wrap in a set() (see below)
-        stemmer = nltk.stem.PorterStemmer()
 
         doc_term_freqs = {}
         for sent in corpus:
-            term_freqs = extract_term_freqs(sent)
+            sent2 = ''.join(ch for ch in sent if ch not in PunctuationExclude) #######
+
+            term_freqs = extract_term_freqs(sent2)
             doc_term_freqs[corpus.index(sent)] = term_freqs
         M = len(doc_term_freqs)
 
@@ -105,26 +114,50 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
         for qa in article['qa']:
             questionNo += 1
             query = ""
-            for token in nltk.word_tokenize(qa['question']):
+            questionText = qa['question'] #########
+            questionText = ''.join(ch for ch in questionText if ch not in PunctuationExclude) ######
+
+            for token in nltk.word_tokenize(questionText):
                 if token not in stopwords:  # 'in' and 'not in' operations are much faster over sets that lists
                     query = query + ' ' + token
             result = query_vsm([stemmer.stem(term.lower()) for term in query.split()], vsm_inverted_index)
             totalQuestions += 1
             if len(result) > 0:
-                allBestSentences.append(article['sentences'][result[0][0]].split())
+                bestSentenceText = article['sentences'][result[0][0]]  ############
+
+                if len(result) > 1:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[1][0]] #######
+                if len(result) > 2:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[2][0]] #######
+                if len(result) > 3:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
+                if len(result) > 4:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[4][0]] #######
+                bestSentenceText = ''.join(ch for ch in bestSentenceText if ch not in PunctuationExclude).split()
+
+                bestSentenceTokensNoStopWords = []
+                for i in range(0,len(bestSentenceText)-1):
+                    if i >0:
+                        if bestSentenceText[i] not in stopwords or bestSentenceText[i][0].isupper():
+                            bestSentenceTokensNoStopWords.append(bestSentenceText[i])
+
+                allBestSentences.append(bestSentenceTokensNoStopWords) #####################
                 best = result[0][0]
                 bestSentence[articleNo,questionNo] = best
-                if qa['answer_sentence'] == best:
+                if qa['answer'] in bestSentenceText:
                     correctSentence += 1
             else:
                 allBestSentences.append([]) #to preserve question sequence
 
 
-    print(st.tag('Rami Eid 99 is studying Vxasd at Stony Brook University in NY'.split()))
-
     print("The accuracy on dev set is", (correctSentence/float(totalQuestions)))
 
+
     NER_tagged = st.tag_sents(allBestSentences)
+
+
+
+
 
     f = open('bestSentencesTagged.bin', 'wb')  # 'wb' instead 'w' for binary file
     pickle.dump(NER_tagged, f, -1)  # -1 specifies highest binary protocol
@@ -151,6 +184,14 @@ wordNumbers =[
 'eight',
 'nine',
 'ten',
+'eleven',
+'twelve',
+'thirteen'
+'fourteen',
+'fifteen'
+'sixteen',
+'eighteen'
+'nineteen',
 'twenty',
 'thirty',
 'forty',
@@ -164,6 +205,7 @@ wordNumbers =[
 'million',
 'billion',
 'trillion',
+'byte'
  ]
 
 dateNumbers = [
@@ -188,13 +230,42 @@ dateNumbers = [
     'november',
     'december'
 ]
+
+
+locationList = [
+
+'city',
+    'country',
+    'location',
+    'continent',
+    'state',
+    'area',
+    'river',
+    'pond',
+    'fall',
+    'desert'
+
+]
+
+
+import re
+
+
+def checkIfRomanNumeral(token):
+    thousand = 'M{0,3}'
+    hundred = '(C[MD]|D?C{0,3})'
+    ten = '(X[CL]|L?X{0,3})'
+    digit = '(I[VX]|V?I{0,3})'
+    return bool(re.match(thousand + hundred + ten + digit + '$', token))
+
+
 def is_number(s): #A basic function to check if a word/token is a number or not
     try:
         float(s)
         return True
     except ValueError:
 
-        if s.lower() in wordNumbers or s.lower() in dateNumbers:
+        if s.lower() in wordNumbers or s.lower() in dateNumbers or checkIfRomanNumeral(s):
             return True
         else:
             return False
@@ -205,13 +276,13 @@ def is_number(s): #A basic function to check if a word/token is a number or not
 for answerSent in NER_tagged:
     for i in range (0,len(answerSent)-1):
         # tagging all other entities i.e. starts with capital and not tagged by NER
-        if (answerSent[i][1] == 'O' and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()):
+        if (answerSent[i][1] == 'O' and i > 0 and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()):
             answerSent[i] = (answerSent[i][0], u'OTHER')
         # print(token)
         # Dis-regarding ORGINIZATION tag
         if answerSent[i][1] == "ORGANIZATION":
             answerSent[i] = (answerSent[i][0], u'OTHER')
-            print("****", answerSent[i][1])
+            # print("****", answerSent[i][1])
         if is_number(answerSent[i][0]):
             answerSent[i] = (answerSent[i][0], u'NUMBER')
 
@@ -230,7 +301,7 @@ for answerSent in NER_tagged:
 
 # Build a simple question classifier based on type of wh word in question:
 def classifyQuestion(question):
-    if "where" in question.lower() or "which" in question.lower():
+    if "where" in question.lower() or "which" in question.lower() or question.lower() in locationList :
         return "LOCATION"
     elif "who" in question.lower():
         return "PERSON"
@@ -245,6 +316,10 @@ def classifyQuestion(question):
 
 
 correct = 0
+possCorrect = 0
+wrongNumber = 0
+totalans = 0
+multiAnswer = 0
 i = -1 #index of our NER_TAGGED list (i.e. questions)
 for article in data:
     for question in article['qa']:
@@ -272,24 +347,42 @@ for article in data:
             if ans not in question['question']:
                 filteredAnswers.append(ans)
 
-        if(len(filteredAnswers) > 0):
+        if (len(filteredAnswers) > 0):
+            totalans += len(filteredAnswers)
+            multiAnswer += 1
             guessedAnswerText = filteredAnswers[0]
+
+            for ansC in filteredAnswers:
+                if ansC[1:] == question['answer'] and filteredAnswers[0]!= ansC:
+                    # print(question["question"],"::",NER_tagged[i])
+                    # print(questionType, "::", filteredAnswers, question["answer"])
+                    possCorrect+=1
+                    break
         else:
             if (len(answerList) > 0):
                 guessedAnswerText = answerList[0]
-
-
+        PunctuationExclude = set(string.punctuation)
+        set(string.punctuation).remove('-')
+        guessedAnswerText = ''.join(ch for ch in guessedAnswerText if ch not in PunctuationExclude)  ######
         if guessedAnswerText != "":
-            guessedAnswerText = guessedAnswerText[1:] #remove the first space
+            guessedAnswerText = guessedAnswerText[1:]  # remove the first space
             # print(guessedAnswerText)
 
 
         if guessedAnswerText == question['answer']:
             correct +=1
-            print(question['question'])
-            print(taggedBestAnswerSent)
-            print(questionType)
-            print("-----"+question['answer'])
 
-print(i)
-print(correct)
+        elif questionType == 'NUMBER':
+            wrongNumber += 1
+            # print(question['question'])
+            # print(taggedBestAnswerSent)
+            # print(questionType)
+            # print(guessedAnswerText)
+            # print("-----" + question['answer'])
+
+print("wrong in selected cat",wrongNumber)
+print("total",i)
+print("correct",correct)
+print("correct in multi ans",possCorrect)
+print("avg multi ans len", totalans/float(multiAnswer))
+print(multiAnswer)

@@ -1,9 +1,9 @@
 # Author: Umer
-# Date: 5-May-2017
+# Date: 9-May-2017
 
 
-########### THIS is just a test script for me (i.e. Umer), i will use it to play around ideas
-########### may not contain any logical stuff
+##### This script will generate a .csv file for the test set
+##### I will occasionaly update this with improved code that i test with t1.py and t2_test.py
 
 from __future__ import print_function
 import json
@@ -14,10 +14,10 @@ from math import log
 from collections import defaultdict, Counter
 import os
 
-
+import string
 import pickle  #For caching of results
 
-fname = 'bestSentencesTaggedTEST.bin'
+fname = 'bestSentencesTaggedTest.bin'
 
 NER_tagged = None
 
@@ -54,6 +54,12 @@ st = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english.
 with open('QA_test.json') as data_file:
     data = json.load(data_file)
 
+stopwords = set(nltk.corpus.stopwords.words('english'))  # wrap in a set() (see below) ############## Remove from below
+stemmer = nltk.stem.PorterStemmer()  ########
+PunctuationExclude = set(string.punctuation)############
+
+
+
 if not os.path.exists(fname):  #Check if we already computed the best candidate sentences and thier entity tags
 
     bestSentence = {}
@@ -64,12 +70,12 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
         print("Computing Article: ",articleNo+1,'/',len(data))
         corpus = article['sentences']
 
-        stopwords = set(nltk.corpus.stopwords.words('english')) # wrap in a set() (see below)
-        stemmer = nltk.stem.PorterStemmer()
 
         doc_term_freqs = {}
         for sent in corpus:
-            term_freqs = extract_term_freqs(sent)
+            sent2 = ''.join(ch for ch in sent if ch not in PunctuationExclude) #######
+
+            term_freqs = extract_term_freqs(sent2)
             doc_term_freqs[corpus.index(sent)] = term_freqs
         M = len(doc_term_freqs)
 
@@ -103,12 +109,31 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
         for qa in article['qa']:
             questionNo += 1
             query = ""
-            for token in nltk.word_tokenize(qa['question']):
+            questionText = qa['question'] #########
+            questionText = ''.join(ch for ch in questionText if ch not in PunctuationExclude) ######
+
+            for token in nltk.word_tokenize(questionText):
                 if token not in stopwords:  # 'in' and 'not in' operations are much faster over sets that lists
                     query = query + ' ' + token
             result = query_vsm([stemmer.stem(term.lower()) for term in query.split()], vsm_inverted_index)
+
             if len(result) > 0:
-                allBestSentences.append(article['sentences'][result[0][0]].split())
+                bestSentenceText = article['sentences'][result[0][0]]  ############
+                if len(result) > 2:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[2][0]] #######
+                if len(result) > 3:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
+
+
+                bestSentenceText = ''.join(ch for ch in bestSentenceText if ch not in PunctuationExclude).split()
+
+                bestSentenceTokensNoStopWords = []
+                for i in range(0,len(bestSentenceText)-1):
+                    if i >0:
+                        if bestSentenceText[i] not in stopwords or bestSentenceText[i][0].isupper():
+                            bestSentenceTokensNoStopWords.append(bestSentenceText[i])
+
+                allBestSentences.append(bestSentenceTokensNoStopWords) #####################
                 best = result[0][0]
                 bestSentence[articleNo,questionNo] = best
 
@@ -118,7 +143,12 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
 
 
 
+
     NER_tagged = st.tag_sents(allBestSentences)
+
+
+
+
 
     f = open(fname, 'wb')  # 'wb' instead 'w' for binary file
     pickle.dump(NER_tagged, f, -1)  # -1 specifies highest binary protocol
@@ -145,6 +175,14 @@ wordNumbers =[
 'eight',
 'nine',
 'ten',
+'eleven',
+'twelve',
+'thirteen'
+'fourteen',
+'fifteen'
+'sixteen',
+'eighteen'
+'nineteen',
 'twenty',
 'thirty',
 'forty',
@@ -157,9 +195,9 @@ wordNumbers =[
 'thousand',
 'million',
 'billion',
-'trillion'
-
-]
+'trillion',
+'byte'
+ ]
 
 dateNumbers = [
 
@@ -185,18 +223,43 @@ dateNumbers = [
 ]
 
 
+locationList = [
+
+'city',
+    'country',
+    'location',
+    'continent',
+    'state',
+    'area',
+    'river',
+    'pond',
+    'fall',
+    'desert'
+
+]
+
+
+import re
+
+
+def checkIfRomanNumeral(token):
+    thousand = 'M{0,3}'
+    hundred = '(C[MD]|D?C{0,3})'
+    ten = '(X[CL]|L?X{0,3})'
+    digit = '(I[VX]|V?I{0,3})'
+    return bool(re.match(thousand + hundred + ten + digit + '$', token))
+
+
 def is_number(s): #A basic function to check if a word/token is a number or not
     try:
         float(s)
         return True
     except ValueError:
-        if s.lower() in wordNumbers or s.lower() in dateNumbers:
+
+        if s.lower() in wordNumbers or s.lower() in dateNumbers or checkIfRomanNumeral(s):
             return True
         else:
             return False
-
-
-
 
 #Trying to add NUMBER entity and removing ORGANIZATION
 # print(st.tag('Rami Eid 99 Paris is studying Vxasd at Stony Brook University in NY'.split()))
@@ -210,7 +273,7 @@ for answerSent in NER_tagged:
         # Dis-regarding ORGINIZATION tag
         if answerSent[i][1] == "ORGANIZATION":
             answerSent[i] = (answerSent[i][0], u'OTHER')
-            print("****", answerSent[i][1])
+            # print("****", answerSent[i][1])
         if is_number(answerSent[i][0]):
             answerSent[i] = (answerSent[i][0], u'NUMBER')
 
@@ -229,7 +292,7 @@ for answerSent in NER_tagged:
 
 # Build a simple question classifier based on type of wh word in question:
 def classifyQuestion(question):
-    if "where" in question.lower() or "which" in question.lower():
+    if "where" in question.lower() or "which" in question.lower() or question.lower() in locationList :
         return "LOCATION"
     elif "who" in question.lower():
         return "PERSON"
@@ -242,31 +305,31 @@ def classifyQuestion(question):
 
 
 
+
+
 outFile = open('outPutTestSet.csv', 'w')
 print(("id" + ',' + "answer"), file=outFile)
 
-correct = 0
+multiAnswer = 0
+totalans = 0
 i = -1 #index of our NER_TAGGED list (i.e. questions)
 for article in data:
     for question in article['qa']:
         i+=1
         taggedBestAnswerSent = NER_tagged[i]
-        print(question['question'])
-        print(taggedBestAnswerSent)
-        questionType  = classifyQuestion(question['question'])
-        print(questionType)
+        questionType = classifyQuestion(question['question'])
         answerList = []
 
         #trying to find questionType entity in answer
         for t in range(0,len(taggedBestAnswerSent)-1):
             guessedAnswerText = ""
-            if taggedBestAnswerSent[t][1] == questionType:
+            if taggedBestAnswerSent[t][1] == questionType :
                 for l in range(t,len(taggedBestAnswerSent)-1):
-                    if taggedBestAnswerSent[l][1] == questionType:
+                    if taggedBestAnswerSent[l][1] == questionType :
                         guessedAnswerText = guessedAnswerText + " " + taggedBestAnswerSent[l][0]
                     else:
                         break
-            if ('l' in vars() or 'l' in globals()):
+            if('l' in vars() or 'l' in globals()):
                 t = l+1
             answerList.append(guessedAnswerText)
 
@@ -277,6 +340,8 @@ for article in data:
                 filteredAnswers.append(ans)
 
         if(len(filteredAnswers) > 0):
+            multiAnswer += len(filteredAnswers)
+            totalans +=1
             guessedAnswerText = filteredAnswers[0]
         else:
             if (len(answerList) > 0):
@@ -285,9 +350,14 @@ for article in data:
 
         if guessedAnswerText != "":
             guessedAnswerText = guessedAnswerText[1:] #remove the first space
-            print(guessedAnswerText)
-        guessedAnswerText = guessedAnswerText.replace('"', "")
-        guessedAnswerText = guessedAnswerText.replace(',',"-COMMA-")
-        print((str(question['id'])+ ',' + guessedAnswerText.encode('ascii', 'ignore')), file=outFile)
+            # print(guessedAnswerText)
 
+        guessedAnswerText = guessedAnswerText.replace('"', "")
+        guessedAnswerText = guessedAnswerText.replace(',', "-COMMA-")
+        print((str(question['id']) + ',' + guessedAnswerText.encode('ascii', 'ignore')), file=outFile)
+
+
+
+print(multiAnswer/float(totalans))
 outFile.close()
+print("Done")

@@ -4,7 +4,7 @@ id,answer
 3,Menshikov
 4,Marquis Charles de La Valette
 5,Menshikov
-6,Christians
+6,Orthodox
 7,Menshikov
 8,Malakoff
 9,of Russia Napoleon
@@ -24,9 +24,9 @@ id,answer
 23,Treaty
 24,30 March 1856
 25,Menshikov
-26,The Crimean War
+26,The Times
 27,
-28,The
+28,Battle
 29,1857
 30,Camillo di Cavour
 31,1826
@@ -53,10 +53,10 @@ id,answer
 52,Nicholas
 53,Ottoman Empire
 54,Russians
-55,The
+55,Russians
 56,
 57,1853
-58,Having
+58,Ottomans
 59,Marquis Charles de La Valette
 60,Catholic
 61,Porte
@@ -91,7 +91,7 @@ id,answer
 90,Russian
 91,Ottoman
 92,Battle
-93,The
+93,Russian
 94,28 March 1854
 95,Mahmud
 96,Orbeliani
@@ -102,7 +102,7 @@ id,answer
 101,Nicholas
 102,Nicholas
 103,
-104,The
+104,Ottoman Empire
 105,1853
 106,Ottoman
 107,Danube Vidin
@@ -112,7 +112,7 @@ id,answer
 111,Danube River
 112,14 April 60
 113,May 1854
-114,On
+114,French Army
 115,Omar Pasha
 116,280
 117,Danube River
@@ -122,14 +122,14 @@ id,answer
 121,Omar Pasha
 122,1854
 123,Giurgiu
-124,A
+124,Austrians
 125,Anglo-French
 126,British
 127,
 128,Anglo-French
 129,Sevastopol
-130,This
-131,The Cossacks
+130,British-French
+131,Cossacks
 132,four
 133,four
 134,1854
@@ -138,7 +138,7 @@ id,answer
 137,1854
 138,The
 139,13 September
-140,He
+140,Russian
 141,Sevastopol
 142,6000
 143,Cholok River
@@ -156,7 +156,7 @@ id,answer
 155,
 156,
 157,Russian
-158,Rather
+158,Russian
 159,Omar Pasha
 160,Minie
 161,
@@ -168,10 +168,10 @@ id,answer
 167,278
 168,Alfred Lord Tennyson
 169,The Charge
-170,Led
-171,The Russians
+170,Ottomans
+171,Russians
 172,14 November
-173,Many
+173,Russians
 174,Electrical
 175,French Army
 176,Kars
@@ -190,13 +190,13 @@ id,answer
 189,Anglo-French
 190,British-French
 191,Kerch Strait
-192,The Cossacks
+192,Cossacks
 193,Rostov Don
-194,Russia's
+194,Christian
 195,David
 196,August 1855
 197,September 1855
-198,The
+198,Russians
 199,
 200,River Pruth Moldavia
 201,
@@ -210,14 +210,14 @@ id,answer
 209,September
 210,Turkish
 211,Orbeliani
-212,The
+212,Armenian
 213,Kars
 214,Nicholas
 215,September 8000
 216,September 8000
 217,Ingur River
 218,Turkish
-219,The Russians
+219,Russians
 220,Russian
 221,Anglo-French
 222,April 1854
@@ -245,7 +245,7 @@ id,answer
 244,1854
 245,Omar Pasha
 246,Trafalgar Square
-247,Led
+247,Ottomans
 248,Alger
 249,Benjamin Disraeli
 250,Foreign Secretary
@@ -262,14 +262,14 @@ id,answer
 261,William Howard
 262,Russians
 263,Habsburg
-264,Russia's
+264,Crimean War
 265,Continent
 266,War
 267,Kinglake
-268,W
+268,French Ottoman
 269,Andrew Lambert Winfried Baumgart
 270,British
-271,The
+271,Balkans Russian
 272,Alexander
 273,Alexander
 274,
@@ -284,13 +284,13 @@ id,answer
 283,War
 284,William Howard Russell
 285,British
-286,In
-287,Preface The
+286,Russo-Turkish War
+287,The
 288,Peloponnese
 289,nine
-290,Greeks
+290,Asty Films Company
 291,nine
-292,The
+292,Peloponnese
 293,Philip
 294,Phillip
 295,Byzantine Empire
@@ -361,7 +361,7 @@ id,answer
 360,Morea
 361,1460
 362,Iannis Xenakis
-363,The
+363,Greek-speaking
 364,1797
 365,
 366,Venetian
@@ -385,7 +385,7 @@ id,answer
 384,1571
 385,1821
 386,Theodoros Kolokotronis
-387,The
+387,Greek Men's Water Polo League Greek Women's Water Polo League
 388,1824
 389,3200
 390,Mehmet Ali
@@ -417,7 +417,7 @@ id,answer
 416,Greek Isles
 417,Turkey
 418,Georgios Kondylis
-419,These
+419,Ottoman Empire
 420,Georgios Kondylis
 421,2017
 422,1924
@@ -432,34 +432,34 @@ id,answer
 431,2001
 432,Macedonia
 433,Europe
-434,Greeks
+434,Asty Films Company
 435,Greek
-436,The Pindus
-437,In
+436,Peloponnese
+437,Western
 438,Greece
-439,The Greek
+439,Greek
 440,Pindus
 441,Athens
 442,Athens
 443,Saronic gulf
 444,Athens
 445,Saronic gulf
-446,This
-447,Western
-448,Western
-449,This
+446,Cyclades
+447,Pindus
+448,Peloponnese
+449,Cyclades
 450,Peloponnese
-451,The
+451,Peloponnese
 452,Athens
 453,Prime Minister
 454,
-455,At
+455,Balkan Wars
 456,Greek Dark Ages
-457,This
-458,While
+457,Greek Dark Ages
+458,West
 459,Prime Minister
 460,
-461,According
+461,Constitution
 462,1952
 463,1986
 464,
@@ -469,35 +469,35 @@ id,answer
 468,President
 469,
 470,
-471,The
+471,SYRIZA
 472,
-473,No
+473,New Democracy
 474,New Democracy
 475,Constantine
 476,Nikos Kotzias
 477,Ministry Foreign Affairs
-478,Macedon's
-479,In
-480,However
-481,However
-482,However
+478,Battle
+479,Greek
+480,West
+481,Greeks
+482,Greek
 483,Greek
 484,1 January 2011
 485,1 January 2011
 486,Kallikratis
 487,Holy Mountain
 488,Holy Mountain
-489,The Greek
+489,Greek
 490,85.0%
 491,85.0%
 492,2010
 493,14.9million
-494,The Greek
-495,Some
-496,As
+494,Greek
+495,Greek
+496,Constantinople
 497,Albania
 498,OTE
-499,The Greek
+499,Constantinople
 500,Organisation Economic Co-operation Development OECD
 501,19 June 2000
 502,19 June 2000
@@ -514,9 +514,9 @@ id,answer
 513,European
 514,Peloponnese
 515,2007
-516,International
-517,A
-518,Railway
+516,BC
+517,Greek
+518,European
 519,2
 520,340%
 521,Europe
@@ -530,7 +530,7 @@ id,answer
 529,Pap
 530,Pap
 531,Pap
-532,In
+532,First World War
 533,Thrace
 534,Muslim
 535,Greece
@@ -546,7 +546,7 @@ id,answer
 545,Greek
 546,Doric Greek
 547,Greece Asia
-548,Indigenous Greek
+548,Armenian
 549,Greek
 550,Muslims
 551,Greek
@@ -554,7 +554,7 @@ id,answer
 553,Greek
 554,
 555,1923
-556,During
+556,Greek
 557,Armenian
 558,762
 559,48
@@ -565,7 +565,7 @@ id,answer
 564,Syrian
 565,856
 566,8%
-567,Near
+567,Greek
 568,Constantinople
 569,1453
 570,two
@@ -577,7 +577,7 @@ id,answer
 576,Institutes
 577,Hellenic Open University
 578,Capodistrian University of Athens
-579,In
+579,World Health Organization
 580,Athens
 581,Save
 582,138
@@ -589,13 +589,13 @@ id,answer
 588,Prime Minister
 589,Western
 590,
-591,The
+591,Heptanesean
 592,Olympics
 593,Xyndas' The Parliamentary Candidate
 594,Spyridon
 595,Greek National School of Music
-596,Roman
-597,But
+596,Scipio Africanus
+597,Scipio Africanus
 598,Greek
 599,Greek
 600,Greek
@@ -604,9 +604,9 @@ id,answer
 603,1896
 604,1896
 605,Asty Films Company
-606,In
+606,Asty Films Company
 607,Daphnis Chloe 
-608,Led Athens Sparta
+608,Athens Sparta
 609,sixty
 610,Giorgos Tzavellas
 611,Giorgos Tzavellas
@@ -615,27 +615,27 @@ id,answer
 614,Theo Angelopoulos
 615,Eternity Day
 616,Giorgos Tzavellas
-617,Phytogeographically
+617,Illyrian
 618,Crete
 619,Western
-620,There
+620,Syrians
 621,Greek
-622,The Greek
-623,The Greek
-624,Regarding
+622,European Champions Euro
+623,European Champions Euro
+624,Ionian
 625,Byzantine
-626,During
+626,Olympics
 627,West
 628,Byzantine
 629,Byzantine Empire
 630,Byzantine Church
 631,Greeks
-632,Along
-633,The
+632,Byzantine Church
+633,Greeks
 634,Athenian
-635,The
-636,Regarding
-637,Because
+635,Greeks
+636,Ionian
+637,Greeks
 638,Apostolos Kaldaras
 639,Ionian
 640,1815
@@ -659,8 +659,8 @@ id,answer
 658,2014
 659,one
 660,Phillip
-661,As
-662,The Greek
+661,European Champions Euro
+662,European Championship
 663,2005
 664,
 665,A1 Ethniki
@@ -682,72 +682,72 @@ id,answer
 681,Sunday
 682,eleven
 683,Sunday
-684,The
+684,Muslim
 685,Greek
 686,2013
-687,In
+687,Greek
 688,six
 689,Phillip
 690,Alexander's
 691,492
 692,330
 693,334
-694,Lossy
-695,Lossy
-696,Lossy
-697,This
-698,In
-699,The
-700,For
-701,Lossless
-702,Other
-703,Lossless
-704,Lossless
-705,In
+694,
+695,
+696,
+697,
+698,
+699,
+700,
+701,DWT
+702,LPC
+703,
+704,
+705,
 706,LZ
 707,Gzip PNG
 708,LZR Lempel-ZivRenau
 709,Brotli LZX
-710,Some
-711,An
-712,HAPZIPPER
+710,LPC
+711,JPEG
+712,HapMap
 713,
 714,one
-715,Compression
-716,Lossless
-717,An
-718,Audibility
-719,Lossless
-720,Time
-721,Audio
-722,Arithmetic
+715,LempelZiv LZ
+716,
+717,JPEG
+718,
+719,MPEG-4
+720,LPC
+721,
+722,
 723,LPC
-724,For LZ
+724,LZ
 725,Data
 726,Data
-727,Lossy
-728,The
-729,Different
-730,The
+727,Data
+728,
+729,
+730,
 731,Vorbis MP3
-732,Compression
-733,The
-734,Lossy
-735,In
-736,Lossy
-737,In
-738,In
+732,LZ
+733,HapMap
+734,JPEG
+735,
+736,
+737,JPEG
+738,MP3
 739,may
-740,An
-741,Arithmetic
+740,JPEG
+741,
 742,LPC
-743,Often
+743,
 744,
-745,In
+745,MPEG-2
 746,one
-747,In
+747,MP3
 748,LPC
-749,Arithmetic
+749,LPC
 750,MPEG-4
 751,AD
 752,IEEE Journal Selected Areas Communications JSAC
@@ -756,27 +756,27 @@ id,answer
 755,Oscar Bonello
 756,Oscar Bonello
 757,IBM PC
-758,Lossy
-759,Lossy
-760,Video
-761,These
-762,For
-763,Dropping
-764,In
+758,
+759,
+760,
+761,
+762,
+763,HapMap
+764,MPEG-2
 765,
-766,In
-767,Another
+766,
+767,HapMap
 768,
-769,Most
-770,In
-771,A
-772,Uncompressed
-773,The
+769,JSAC
+770,MPEG-2
+771,LPC
+772,
+773,ITU-T ISO
 774,N
 775,DWT
-776,Lossy
+776,LempelZiv LZ
 777,Bader
-778,The
+778,LZ
 779,Old Avestan
 780,Old Iranian
 781,Iranic
@@ -784,7 +784,7 @@ id,answer
 783,Middle Persian
 784,
 785,Old Persian Avestan
-786,Iranian
+786,Persian Sanskrit
 787,1836
 788,Christian Lassen
 789,George Abraham Grierson Max Mller
@@ -804,19 +804,19 @@ id,answer
 803,Old Iranian
 804,
 805,Old
-806,What
+806,Iranian
 807,Scythian
 808,Middle Iranian
-809,The Iranian
-810,The Iranian
+809,Iranic
+810,Iranic
 811,Iranian
 812,Proto-Indo-Iranian
 813,Eastern
 814,Western Eastern
 815,What
 816,Parthian Sogdian
-817,Also
-818,What
+817,Middle Iranian
+818,Iranian
 819,two
 820,Western Eastern
 821,Parthian Arsacid Pahlavi Middle Persian
@@ -825,10 +825,10 @@ id,answer
 824,Middle Persian
 825,Parthian
 826,
-827,Middle Persian
-828,On
+827,Persian
+828,Eastern
 829,Persian
-830,Middle Persian Pahlavi
+830,Persian Pahlavi
 831,CE
 832,875
 833,Khorasan
@@ -837,16 +837,16 @@ id,answer
 836,Latinised
 837,
 838,
-839,These
+839,Old Avestan
 840,Turkic
 841,Parsa
 842,Zarafshan valley
-843,Sogdian's
+843,Old Iranian
 844,Republic of Mali
-845,Present-day
+845,West African
 846,Sahara Desert
 847,Mali's
-848,U
+848,Muslims
 849,Scramble Africa
 850,1959
 851,Azawad
@@ -856,52 +856,52 @@ id,answer
 855,Tuareg
 856,Mali
 857,Mali
-858,Following
+858,Alliance Democracy Progress
 859,West African
 860,Mali
-861,In
+861,Arabic
 862,Judar Pasha
-863,The
+863,French
 864,Liberation Day
 865,Keta
 866,General
 867,Sub-Saharan Africa
 868,three
 869,1991
-870,Anti-government
+870,Tuareg
 871,General
 872,International Monetary Fund
-873,During
+873,International Monetary Fund
 874,Revolution
 875,Revolution
 876,Mali
 877,300
-878,After
+878,
 879,Moussa Traor
 880,three
 881,19 November 1968
-882,Most
-883,The
+882,
+883,Malian
 884,Amadou Toumani Tour
-885,His
-886,Anti-government
-887,Due
-888,After
+885,President
+886,President
+887,Inner Niger Delta
+888,Constitution
 889,Tuareg
 890,
 891,Tuareg
 892,Mali
-893,The MNLA
+893,MNLA
 894,French
 895,June
 896,Niger River
 897,Inner Niger Delta
 898,Mali
 899,2012
-900,Until
+900,Constitution
 901,two
 902,two
-903,Executive
+903,European
 904,Mali
 905,National Assembly Mali's
 906,113
@@ -918,66 +918,66 @@ id,answer
 917,12
 918,2008
 919,48
-920,In
-921,The
-922,Mali's
+920,US4
+921,US4
+922,
 923,53.06
 924,800
 925,Malians
 926,French
 927,Berber-descendent Tuareg
 928,Mali
-929,Although
+929,Tuaregs
 930,Ansar Dine
 931,Tuaregs
 932,200
-933,This
-934,Mali's
-935,Dance
+933,Malian
+934,
+935,Malian French
 936,53.06
 937,69
-938,The
+938,Berber-descendent Tuareg
 939,
-940,Mali's
-941,Efforts
-942,Efforts
+940,US4
+941,International Crops Research Institute the Semi-Arid Tropics ICRISAT
+942,International Crops Research Institute the Semi-Arid Tropics ICRISAT
 943,International Crops Research Institute the Semi-Arid Tropics ICRISAT
-944,The
-945,As
+944,Societ de Telecommunications du Mali SOTELMA
+945,Tuareg
 946,2006 2001
 947,1.9
-948,Medical
+948,Malian French
 949,Keepers
 950,Malian
-951,Presidential
+951,Keepers
 952,Toumani Diabat
 953,Toumani Diabat
 954,Census Bureau
 955,Juneau
-956,The
+956,Alaskan
 957,Alaska Highway
 958,Alaska Highway
 959,Alaska
 960,Juneau
 961,North America
-962,The
+962,
 963,Tongass National Forest
 964,Juneau
 965,Alaska
 966,Alaska Purchase
 967,North America
 968,United States
-969,The
-970,In
-971,On
-972,Some
+969,Inupiat
+970,U
+971,
+972,Russian
 973,Japan's
-974,The
+974,Chukchi Beaufort Seas
 975,October 1998
 976,Alaska
 977,87 million
 978,Alaska
-979,The Arctic National Wildlife Refuge
+979,Arctic National Wildlife Refuge
 980,Alaska Highway
 981,Alaska Highway
 982,Talkeetna
@@ -988,29 +988,29 @@ id,answer
 987,2006
 988,Kppen
 989,50 130
-990,The
-991,The
+990,Kppen
+991,Yup'ik
 992,Bering Sea the Gulf of Alaska
 993,Seward Peninsula
 994,U
-995,Numerous
+995,European
 996,1887
-997,Numerous
+997,European
 998,Interior
 999,United States
 1000,Aleut
-1001,In
+1001,
 1002,
 1003,Alaska
 1004,
 1005,Yukon Territory
 1006,1912
 1007,1906
-1008,Numerous
+1008,Yukon Territory
 1009,one
 1010,Prudhoe Bay Alaska's North Slope
 1011,Alaska Purchase
-1012,Starting
+1012,Yukon Territory
 1013,
 1014,Dillingham Bethel
 1015,Good
@@ -1029,15 +1029,15 @@ id,answer
 1028,First Russian Orthodox Church
 1029,Natives
 1030,Alaska
-1031,Alaskan Hindus
-1032,In
+1031,Hindus
+1032,U
 1033,US
 1034,
-1035,It
+1035,Quaker
 1036,Anchorage Kodiak Island
-1037,This
-1038,The
-1039,Alaska's
+1037,Department of Revenue Tax Division
+1038,Alaskan
+1039,Intermarriage Alaskan Natives
 1040,United States
 1041,United States
 1042,Prudhoe Bay Oil Field
@@ -1047,25 +1047,25 @@ id,answer
 1046,Alaskan North Slope
 1047,Alaskan
 1048,Alaska
-1049,The Department of Revenue Tax Division
-1050,According
-1051,Alaska's
-1052,In
-1053,The Alaska Constitution
-1054,The Alaska Permanent Fund
+1049,Department of Revenue Tax Division
+1050,United States Bureau of Land Management
+1051,Jews
+1052,State Troopers Alaska's
+1053,Alaska Constitution
+1054,Trans-Alaska Pipeline System
 1055,1795
 1056,Alaska Permanent Fund
 1057,Keith Miller
-1058,The
+1058,National Petroleum ReserveAlaska
 1059,North America
-1060,The Alaska Permanent Fund
+1060,Alaska Permanent Fund
 1061,Alaska
-1062,The Permanent Fund
-1063,The Permanent Fund
+1062,U
+1063,U
 1064,
 1065,738
 1066,1976
-1067,In
+1067,Alaska Permanent Fund
 1068,Prudhoe Bay
 1069,
 1070,Alaska
@@ -1075,37 +1075,37 @@ id,answer
 1074,US
 1075,Alaska's
 1076,Alaska Highway
-1077,The
+1077,North American
 1078,1915
-1079,The
-1080,This
+1079,ARR
+1080,Alaska's
 1081,Railroad
 1082,one
 1083,
-1084,The
+1084,U
 1085,Inter-Island Ferry Authority
 1086,Gulf Coast
 1087,Fairbanks
-1088,In
+1088,
 1089,2 million
 1090,Essential Air Service
 1091,Bethel
 1092,Boeing
 1093,Boeing
-1094,The
+1094,Cessna Caravan
 1095,
-1096,The
+1096,Inupiat
 1097,Lake Hood
 1098,Alaska
 1099,Ted Stevens
-1100,In
+1100,
 1101,Run
-1102,The Serum Run
-1103,The Serum Run
+1102,Serum Run
+1103,Serum Run
 1104,Run
 1105,GCI Alaska Communications
 1106,2011
-1107,To
+1107,Essential Air Service
 1108,Alaska Communications
 1109,United States
 1110,United States
@@ -1119,7 +1119,7 @@ id,answer
 1118,Alaska Highway
 1119,
 1120,34
-1121,The
+1121,State Recorder
 1122,Alaska
 1123,Census Bureau
 1124,355
@@ -1128,10 +1128,10 @@ id,answer
 1127,United States
 1128,United States
 1129,Census Bureau
-1130,In
+1130,State Troopers Alaska's
 1131,Public Safety Officers
 1132,Troopers
-1133,Due
+1133,Troopers'
 1134,Anchorage Symphony Orchestra
 1135,GCI Alaska Communications
 1136,Alaska Folk Festival
@@ -1140,168 +1140,168 @@ id,answer
 1139,Camp Hollywood Northwest Alaska
 1140,MGM's EskimoMala The Magnificent
 1141,
-1142,In
-1143,Regardless
+1142,The Law
+1143,The Law
 1144,The Law
-1145,A
+1145,The Law
 1146,The Law
-1147,If
-1148,If
-1149,International
-1150,A
+1147,
+1148,
+1149,
+1150,
 1151,
 1152,United States
-1153,The
+1153,Vienna Convention
 1154,
-1155,This
-1156,The
-1157,According
-1158,Each
-1159,When
-1160,When
-1161,The
-1162,According
-1163,The
+1155,UN
+1156,
+1157,The Law
+1158,The Law
+1159,The Law
+1160,Brazilian
+1161,Treaty of Waitangi
+1162,The Law
+1163,Brazilian
 1164,
 1165,The Law
 1166,
-1167,A
-1168,The
+1167,
+1168,Swiss
 1169,
-1170,International
+1170,The Law
 1171,
-1172,No
+1172,Vienna Convention
 1173,United States
-1174,The
+1174,United Nations
 1175,DONE
-1176,After
+1176,United Nations
 1177,
-1178,The
+1178,DONE
 1179,
 1180,
 1181,
 1182,
-1183,When
+1183,
 1184,
 1185,Switzerland
-1186,It
+1186,European Union EU
 1187,European Union EU
 1188,
 1189,European Union EU
 1190,two
-1191,The
+1191,Swiss
 1192,Treaties
 1193,Treaties
 1194,two
 1195,
 1196,
 1197,
-1198,A
+1198,
 1199,
 1200,
-1201,Originally
+1201,
 1202,
-1203,If
-1204,In
+1203,The Law
+1204,
 1205,
 1206,
-1207,If
+1207,
 1208,
 1209,
 1210,three
 1211,
-1212,First
-1213,The
-1214,In
-1215,According
-1216,In
-1217,Minor
+1212,State
+1213,State
+1214,State
+1215,The Law
+1216,
+1217,
 1218,
-1219,A
-1220,Parties
+1219,President
+1220,United Nations Framework Convention Climate Change UNFCCC
 1221,United Nations Framework Convention Climate Change UNFCCC
 1222,United Nations Framework Convention Climate Change UNFCCC
 1223,United Nations Framework Convention Climate Change UNFCCC
 1224,United Nations Framework Convention Climate Change UNFCCC
-1225,The
-1226,If
-1227,If
-1228,No
-1229,Treaties
-1230,A
+1225,
+1226,State
+1227,
+1228,
+1229,
+1230,The Law
 1231,
-1232,If
-1233,The
-1234,A
+1232,
+1233,
+1234,
 1235,
-1236,When
+1236,
 1237,
 1238,two
-1239,If
-1240,When
-1241,No
+1239,
+1240,
+1241,
 1242,
-1243,No
+1243,
 1244,one
-1245,It
-1246,Modern
-1247,The Vienna Convention
-1248,In
+1245,
+1246,
+1247,Vienna Convention
+1248,Vienna Convention
 1249,may
 1250,Iran
 1251,
 1252,
-1253,The
-1254,No
-1255,If
+1253,
+1254,United Nations Charter
+1255,
 1256,
 1257,
 1258,North Korea
-1259,Regardless
-1260,Hence
-1261,Regardless
+1259,The Law
+1260,
+1261,
 1262,Treaty of Waitangi
-1263,A
+1263,Single Convention Narcotic Drugs
 1264,
-1265,If
-1266,No
+1265,
+1266,
 1267,
 1268,Articles
-1269,It
+1269,International Covenant Civil Political Rights
 1270,North Korea
 1271,
-1272,The
+1272,Muslims
 1273,United States
 1274,
-1275,If
+1275,
 1276,
 1277,one
 1278,
 1279,
-1280,When
+1280,
 1281,
 1282,
 1283,
-1284,If
-1285,If
-1286,An
+1284,
+1285,
+1286,
 1287,
-1288,The
-1289,International
-1290,If
-1291,If
-1292,If
-1293,If
-1294,Other
-1295,Treaties
+1288,
+1289,
+1290,
+1291,
+1292,
+1293,
+1294,United Nations Framework Convention Climate Change UNFCCC
+1295,
 1296,may
 1297,may
 1298,one
-1299,If
-1300,A
+1299,Single Convention Narcotic Drugs
+1300,
 1301,may
-1302,Such
-1303,In
+1302,
+1303,
 1304,Invasion
 1305,Invasion
 1306,Muslim
@@ -1316,8 +1316,8 @@ id,answer
 1315,For
 1316,For
 1317,Japan
-1318,When
-1319,A
+1318,
+1319,
 1320,United States
 1321,
 1322,
@@ -1327,15 +1327,15 @@ id,answer
 1326,
 1327,
 1328,
-1329,A
-1330,A
-1331,According
-1332,According
+1329,The Law
+1330,Vienna Convention
+1331,The Law
+1332,The Law
 1333,56
 1334,
 1335,
 1336,Vienna Convention
-1337,A
+1337,
 1338,
 1339,may
 1340,
@@ -1346,15 +1346,15 @@ id,answer
 1345,
 1346,
 1347,
-1348,These
-1349,A
+1348,State
+1349,Charter
 1350,The Law
-1351,A
+1351,The Law
 1352,
 1353,United Nations Charter
 1354,Brazil
 1355,San Francisco
-1356,The United Nations Charter
+1356,UN
 1357,EU
 1358,United Nations
 1359,Office of Legal Affairs
@@ -1374,25 +1374,25 @@ id,answer
 1373,Portuguese
 1374,2008
 1375,
-1376,The Federal Supreme Court
+1376,Federal Supreme Court
 1377,Federal Supreme Court
 1378,
 1379,U
 1380,
 1381,United States
-1382,Currently
-1383,Currently
+1382,Senators
+1383,Senators
 1384,
 1385,Senators
 1386,
 1387,
-1388,Currently
+1388,President
 1389,
 1390,
 1391,
 1392,Head Money Cases
 1393,Head Money Cases
-1394,Covert
+1394,Head Money Cases
 1395,Head Money Cases
 1396,Supreme Court
 1397,List
@@ -1402,21 +1402,21 @@ id,answer
 1401,Union
 1402,Europeans
 1403,Muhammad
-1404,In
-1405,In
-1406,In
-1407,Treaties
-1408,A
-1409,This
-1410,This
-1411,This
-1412,In
+1404,Australians
+1405,Australians
+1406,Australians
+1407,Europeans
+1408,European Union EU
+1409,Europeans
+1410,Europeans
+1411,European Union EU
+1412,Australians
 1413,Australians
 1414,Australians
 1415,Australians
 1416,UN
 1417,North Korea
-1418,Prior
+1418,Native Americans
 1419,Iran
 1420,Native Americans
 1421,Native Americans
@@ -1433,7 +1433,7 @@ id,answer
 1432,Slippery When Wet
 1433,1987
 1434,The Final Countdown
-1435,Others
+1435,REO Speedwagon Keep Loving You
 1436,Sammy Hagar
 1437,1998
 1438,Ballbreaker
@@ -1442,15 +1442,15 @@ id,answer
 1441,one
 1442,Metal Health
 1443,Britpop
-1444,A
-1445,A
-1446,Some
+1444,Led Zeppelin
+1445,Metallica
+1446,Queen
 1447,Van Halen
 1448,1975
 1449,Link Wray's
 1450,Memphis
 1451,Exile Main St
-1452,By
+1452,Deep Purple
 1453,Highway Star Smoke the Water
 1454,Van Halen
 1455,Keith Moon
@@ -1476,7 +1476,7 @@ id,answer
 1475,1963
 1476,I
 1477,Bad Company
-1478,After
+1478,Bad Company
 1479,Hair
 1480,These Days
 1481,New Wave
@@ -1485,20 +1485,20 @@ id,answer
 1484,1983
 1485,1981
 1486,ACDC's The Razors Edge
-1487,In
+1487,Whitesnake
 1488,Alice Chains
-1489,Hard
-1490,Hard
+1489,Alice Chains
+1490,Extreme
 1491,one
 1492,Queens
 1493,Queens
 1494,Them Crooked Vultures
 1495,Beautiful Creatures
-1496,While Heart
-1497,In
-1498,In
-1499,During
-1500,The
+1496,Heart
+1497,Cotton's Cotton Crop Blues
+1498,American British
+1499,American British
+1500,Uriah Heep
 1501,Ritchie Blackmore
 1502,Davies
 1503,Van Halen
@@ -1510,30 +1510,30 @@ id,answer
 1509,1975
 1510,Aerosmith
 1511,Deep Purple Led Zeppelin
-1512,In
+1512,Extreme
 1513,1983
 1514,REO Speedwagon Keep Loving You
 1515,Top
 1516,Balance
 1517,Bon Jovi Def Leppard
-1518,In
+1518,Rage Against the Machine Soundgarden Velvet Revolver
 1519,Scott Weiland
 1520,1987
-1521,By
+1521,Led Zeppelin
 1522,Black Sabbath's
-1523,The
+1523,Metallica
 1524,Judas Priest
 1525,Metallica
 1526,1970
 1527,Led Zeppelin
 1528,Black Sabbath's Paranoid
-1529,Also
+1529,Black Sabbath's Paranoid
 1530,Black Sabbath's
 1531,Led Zeppelin
 1532,The Ramones
-1533,Midwestern
+1533,REO Speedwagon Styx
 1534,Los Angeles
-1535,In
+1535,Extreme
 1536,17 million
 1537,Permanent Vacation
 1538,1992
@@ -1546,17 +1546,17 @@ id,answer
 1545,Guns N' Roses
 1546,Charleston County
 1547,12
-1548,It
-1549,The City
+1548,City
+1549,City
 1550,South Carolina's
 1551,12
-1552,The
+1552,Charlestonians
 1553,South Carolina's
 1554,1670
 1555,British
 1556,King
 1557,Mount Pleasant
-1558,By
+1558,
 1559,1670
 1560,
 1561,British
@@ -1564,17 +1564,17 @@ id,answer
 1563,Executive Airport
 1564,College
 1565,Mount Pleasant
-1566,According
+1566,United States Census Bureau
 1567,Charleston-North Charleston Urban Area
 1568,Charleston
-1569,The City
+1569,City
 1570,South Carolina's
-1571,The City
+1571,City
 1572,Charleston International Airport
 1573,Great American Operacitation
-1574,The City
+1574,City
 1575,South Carolina's
-1576,However
+1576,
 1577,Charleston International Airport
 1578,Hurricane Hugo
 1579,Charleston International Airport
@@ -1589,9 +1589,9 @@ id,answer
 1588,1770
 1589,two
 1590,Charleston International Airport
-1591,James' Parish
+1591,Reconstruction Era
 1592,1670
-1593,This
+1593,College
 1594,English
 1595,John Locke
 1596,1670
@@ -1604,18 +1604,18 @@ id,answer
 1603,1830
 1604,Low Country
 1605,South Carolina
-1606,He
+1606,Southern U
 1607,Spain France
 1608,Native Americans
-1609,When
+1609,Fort Sullivan's
 1610,Charleston Executive Airport
 1611,
 1612,Africans
 1613,40%
-1614,The
-1615,The
-1616,Many
-1617,By
+1614,
+1615,King
+1616,
+1617,African
 1618,Britain
 1619,Caribbean
 1620,Low Country
@@ -1625,11 +1625,11 @@ id,answer
 1624,
 1625,Great Migration
 1626,1708
-1627,The
-1628,The
+1627,General
+1628,
 1629,5
-1630,By
-1631,During
+1630,King
+1631,King
 1632,College
 1633,1770
 1634,1748
@@ -1648,7 +1648,7 @@ id,answer
 1647,Columbia
 1648,Columbia
 1649,1793
-1650,Public
+1650,College
 1651,
 1652,3
 1653,1860
@@ -1657,12 +1657,12 @@ id,answer
 1656,1790
 1657,Haitian Revolution
 1658,May 1822
-1659,When
+1659,Haitian Revolution
 1660,July five
 1661,Haitian Revolution
 1662,1783
 1663,17
-1664,The
+1664,African
 1665,17
 1666,Southern Baptist Church
 1667,American Missionary Association
@@ -1676,11 +1676,11 @@ id,answer
 1675,two
 1676,two
 1677,Confederates
-1678,In
+1678,Avery Normal Institute
 1679,one
 1680,September 6
 1681,Wade Hampton
-1682,By
+1682,City
 1683,August 31
 1684,August 31
 1685,City
@@ -1695,15 +1695,15 @@ id,answer
 1694,Charleston
 1695,College
 1696,Charleston
-1697,The Spoleto Festival
+1697,America's
 1698,one
 1699,100
 1700,Pulitzer Prize-winning Italian
-1701,The
+1701,Pulitzer Prize-winning Italian
 1702,Footlight Players
 1703,Marion Square
 1704,1931
-1705,The City
+1705,City
 1706,British French
 1707,1887
 1708,French Huguenots Sephardic Jews
@@ -1711,18 +1711,18 @@ id,answer
 1710,
 1711,College
 1712,one
-1713,Other
+1713,Historic Charleston Foundation's Festival of Houses Gardens Charleston Antiques Show
 1714,Charleston
 1715,one
 1716,Gian Carlo Menotti
 1717,
-1718,Johnson's The
+1718,The
 1719,Eubie Blake's Charleston Rag
 1720,Gullah
-1721,Johnson's The
+1721,The
 1722,1891
 1723,Rev
-1724,Orphanages
+1724,Jenkins Orphanage Band's
 1725,Daniel J
 1726,New Orleans
 1727,Orphanage Band
@@ -1744,14 +1744,14 @@ id,answer
 1743,Mount Pleasant
 1744,Mount Pleasant
 1745,West Ashley
-1746,The
+1746,Medical University of South Carolina Medical Center MUSC
 1747,Charleston International Airport
 1748,Charleston Executive Airport
-1749,It
+1749,City
 1750,John's Island
-1751,The
+1751,City
 1752,Charleston-North Charleston Urban Area
-1753,Highway
+1753,Meeting Street
 1754,King Street
 1755,Mark Clark Expressway
 1756,Jr
@@ -1774,7 +1774,7 @@ id,answer
 1773,Spoleto
 1774,Charleston
 1775,Gian Carlo Menotti
-1776,The Spoleto Festival
+1776,Spoleto Festival
 1777,Pulitzer Prize-winning Italian
 1778,1996
 1779,1996
@@ -1784,9 +1784,9 @@ id,answer
 1783,1832
 1784,Ashley Cooper Rivers
 1785,Ashley Cooper Rivers
-1786,In
+1786,Confederacy
 1787,Washington
-1788,The City
+1788,City
 1789,Cooper River Bridge Run
 1790,1808
 1791,Piedmont
@@ -1801,15 +1801,15 @@ id,answer
 1800,Georgia
 1801,one
 1802,988
-1803,The
+1803,
 1804,Institute of Russian Language of the Russian Academy of Sciences
-1805,According
-1806,Even
+1805,Institute of Russian Language of the Russian Academy of Sciences
+1806,Pushkin's
 1807,Kievan Rus'
 1808,Ukrainian
 1809,Ukraine
 1810,Ukraine
-1811,It
+1811,Kievan Rus'
 1812,Church Slavonic
 1813,South Slavic Old Church Slavonic
 1814,East Slavic
@@ -1820,7 +1820,7 @@ id,answer
 1819,Estonia's
 1820,Estonia's
 1821,
-1822,Ethnic Russians
+1822,Russians
 1823,1809 1918
 1824,1809 1918
 1825,67.8%
@@ -1858,28 +1858,28 @@ id,answer
 1857,
 1858,9%
 1859,Kazakhstan's
-1860,According
+1860,Census
 1861,
 1862,International Space Station
-1863,Currently
+1863,Russians
 1864,Great Russian
 1865,Russian
 1866,5.9%
 1867,5.9%
 1868,89.8%
 1869,1996
-1870,Others
-1871,Others
+1870,Northern
+1871,Northern
 1872,Standard Russian
 1873,
 1874,Church Slavonic
-1875,See
+1875,Standard Russian
 1876,Northern Southern
 1877,Southern Russian
-1878,Despite
-1879,Some
+1878,Standard Russian
+1879,Belarusian
 1880,Vladimir Dal
-1881,Among
+1881,Lomonosov
 1882,2012
 1883,
 1884,International Space Station
@@ -1888,46 +1888,46 @@ id,answer
 1887,Byzantine Greek
 1888,Byzantine Greek
 1889,Byzantine Greek
-1890,It
-1891,It
-1892,Palatalization
+1890,Kievan Rus'
+1891,Kievan Rus'
+1892,East Slavic
 1893,Russian
-1894,Palatalization
+1894,East Slavic
 1895,
-1896,This
-1897,This
+1896,UNIX-like
+1897,UNIX-like
 1898,UNIX-like
 1899,2017
 1900,United Nations
 1901,Institute of Russian Language of the Russian Academy of Sciences
-1902,According
-1903,According
-1904,According
+1902,Institute of Russian Language of the Russian Academy of Sciences
+1903,Institute of Russian Language of the Russian Academy of Sciences
+1904,Institute of Russian Language of the Russian Academy of Sciences
 1905,Pushkin
 1906,five
-1907,Despite
+1907,Standard Russian
 1908,Irish
-1909,Another
-1910,The
-1911,Palatalization
-1912,These
+1909,Russian
+1910, 
+1911,Standard Northern
+1912,Southern Russian
 1913,Russia
 1914,880
 1915,880
-1916,The
+1916,Old East Slavic
 1917,880
 1918,Western Europe
-1919,Among
-1920,Among
+1919,Lomonosov
+1920,Lomonosov
 1921,Leo
 1922,Tolstoy's   War Peace
 1923,Novgorod
-1924,Even
-1925,It
-1926,In
+1924,Pushkin's
+1925,Kievan Rus'
+1926,Russian
 1927,1991
 1928,1990
-1929,Following
+1929,Warsaw Pact
 1930,Demoskop Weekly
 1931,Arefyev
 1932,2012
@@ -1953,13 +1953,13 @@ id,answer
 1952,Salzburg The City Council Gemeinderat
 1953,1983
 1954,Zhringen
-1955,The
-1956,Since
-1957,As
+1955,Brenodor
+1956,Nydeggbrcke
+1957,Celtic
 1958,Bern
 1959,Switzerland's
-1960,Since
-1961,The
+1960,Nydeggbrcke
+1961,Russian
 1962,Bmpliz
 1963,Roman
 1964,Brenodor
@@ -1974,8 +1974,8 @@ id,answer
 1973,1415
 1974,Aargau
 1975,Bern Airport
-1976,The
-1977,Perhaps
+1976,River Aare
+1977,Zytglogge Bernese German Time Bell
 1978,Years' War
 1979,2017
 1980,River Aare
@@ -1990,18 +1990,18 @@ id,answer
 1989,Bern Airport
 1990,Europe
 1991,Bantiger
-1992,The University of Bern
-1993,Despite
+1992,University of Bern
+1993,River Aare
 1994,River Aare
-1995,A
+1995,Switzerland's
 1996,Aare Matte
 1997,Kirchenfeld
-1998,Swiss
+1998,
 1999,
 2000,City Council Gemeinderat
 2001,five
 2002,
-2003,Any
+2003,City Parliament
 2004,
 2005,Salzburg Bern
 2006,Bern's City Council
@@ -2010,12 +2010,12 @@ id,answer
 2009,Bern
 2010,Bern
 2011,Bern
-2012,As
+2012,Bern's City Council
 2013,46
 2014,Bern
 2015,Switzerland's
 2016,140
-2017,The
+2017,
 2018,10
 2019,Swiss
 2020,German
@@ -2030,21 +2030,21 @@ id,answer
 2029,15.1%
 2030,140
 2031,15.1%
-2032,Of
+2032,Orthodox
 2033,59
 2034,59
 2035,49
 2036,
-2037,There
+2037,CHF
 2038,34
 2039,65
 2040,65
 2041,CHF
-2042,Over
+2042,
 2043,1
 2044,Muslim
 2045,39
-2046,Of
+2046,Orthodox
 2047,Canton of Bern
 2048,Canton of Bern
 2049,UNESCO World Heritage Site
@@ -2052,7 +2052,7 @@ id,answer
 2051,Cathedral
 2052,River Aare
 2053,Lnggasse quarter
-2054,It
+2054,City Council
 2055,Dhlhlzli
 2056,Russian
 2057,Bern
@@ -2060,9 +2060,9 @@ id,answer
 2059,Bern
 2060,49
 2061,Kramgasse
-2062,It
-2063,The
-2064,The
+2062,Italian
+2063,Zhringer
+2064,River Aare
 2065,1913
 2066,Switzerland
 2067,
@@ -2071,7 +2071,7 @@ id,answer
 2070,1421
 2071,Cathedral
 2072,Hans Gieng
-2073,As
+2073,English German French
 2074,1954
 2075,
 2076,BSC Young Boys
@@ -2081,7 +2081,7 @@ id,answer
 2080,2010
 2081,2010
 2082,
-2083,Over
+2083,
 2084,259
 2085,259
 2086,259
@@ -2092,12 +2092,12 @@ id,answer
 2091,109
 2092,94
 2093,94
-2094,The
+2094,City Parliament
 2095,50.6%
 2096,Lnggasse quarter
 2097,50
 2098,50
-2099,The Canton of Bern
+2099,Canton of Bern
 2100,six
 2101,Canton of Bern
 2102,one
@@ -2107,31 +2107,31 @@ id,answer
 2106,8
 2107,9
 2108,Bern
-2109,The
-2110,A
-2111,The
-2112,The
+2109,European
+2110,Bundeshaus
+2111,City Parliament
+2112,City Parliament
 2113,Switzerland's
 2114,European
-2115,Comics
-2116,Captions
-2117,Since
-2118,The
+2115,Japanese
+2116,French
+2117,
+2118,English
 2119,1827
-2120,The
-2121,Histories
+2120,Action Comics
+2121,World
 2122,American
 2123,
-2124,The
-2125,Definitions
-2126,The World
+2124,European
+2125,Tpffer's
+2126,World
 2127,Coulton Waugh
 2128,Coulton Waugh
 2129,1827
-2130,The
+2130,Sazae-san
 2131,Egyptian
-2132,Though
-2133,Outside
+2132,American
+2133,Egyptian
 2134,Egyptian
 2135,The
 2136,1825
@@ -2144,16 +2144,16 @@ id,answer
 2143,1907
 2144,1938
 2145,Action Comics
-2146,The
+2146,World War
 2147,Comics Code Authority
 2148,1938
 2149,1938
 2150,1929
 2151,
 2152,L'Association
-2153,From
+2153,World War
 2154,Japanese
-2155,The
+2155,Japanese
 2156,1929
 2157,Osamu Tezuka
 2158,1900
@@ -2164,13 +2164,13 @@ id,answer
 2163,World War
 2164,
 2165,Europe
-2166,European Japanese
-2167,Cartoons
-2168,The World
-2169,Japanese
-2170,The World
+2166,Japanese
+2167,Sundays
+2168,World
+2169,A4-size
+2170,World
 2171,English-speaking
-2172,The
+2172,World
 2173,Europe
 2174,
 2175,British
@@ -2180,18 +2180,18 @@ id,answer
 2179,World War
 2180,Will Eisner
 2181,American
-2182,Since
+2182,English-speaking
 2183,Maus
 2184,Rodolphe Tpffer
-2185,These
+2185,French
 2186,Punch
 2187,Puce
 2188,1929
 2189,Europe
 2190,US
-2191,Will Eisner's Comics Sequential Art
+2191,Eisner's Comics Sequential Art
 2192,English
-2193,Japanese
+2193,Ninth Arte
 2194,1827
 2195,English
 2196,Pilote
@@ -2210,21 +2210,21 @@ id,answer
 2209,Japanese Comics
 2210,Japanese Comics
 2211,English
-2212,It
-2213,The
-2214,Webcomics
-2215,Webcomics
-2216,Webcomics
-2217,Some
-2218,These
-2219,These
+2212,English
+2213,World War
+2214,American
+2215,Code
+2216,
+2217,
+2218,Japanese
+2219,
 2220,Morgan
-2221,The
-2222,Scholars
+2221,A Contract God
+2222,French
 2223,R
 2224,R
-2225,Film
-2226,Common
+2225,American
+2226,Japanese
 2227,Rodolphe Tpffer
 2228,Henri Vanlier
 2229,Pierre Fresnault-Deruelle
@@ -2235,24 +2235,24 @@ id,answer
 2234,Japanese Comics
 2235,Japan
 2236,American
-2237,The
+2237,World War
 2238,Japanese
 2239,Japanese
 2240,
 2241,
 2242,
-2243,Speech
-2244,The
+2243,Action Comics
+2244,
 2245,
-2246,Size
+2246,
 2247,may
-2248,Despite
-2249,Gag
-2250,Text
-2251,While
-2252,Cartooning
-2253,The
-2254,Comics
+2248,English
+2249,Puce
+2250,World
+2251,
+2252,Japanese
+2253,Punch
+2254,Japanese
 2255,Spider-Man
 2256,Marvel's
 2257,New York City
@@ -2309,9 +2309,9 @@ id,answer
 2308,Comics Code Authority
 2309,Marvel Disney Books Group
 2310,Marvel Disney Books Group
-2311,Marvel
+2311,Comics
 2312,2011
-2313,However
+2313,Comics Code Authority
 2314,Heroes Reborn
 2315,Universal
 2316,1972
@@ -2320,7 +2320,7 @@ id,answer
 2319,Marvel Adventures
 2320,Comics
 2321,Marvel
-2322,As
+2322,Diamond Book Distributors Hachette Distribution Services
 2323,Marvelcon
 2324,Stan Lee
 2325,British
@@ -2366,8 +2366,8 @@ id,answer
 2365,Universal Studios
 2366,Disney
 2367,Disney
-2368,Various
-2369,Timely's
+2368,Bantam Books
+2369,Marvel Comics
 2370,Marvel Disney Books Group
 2371,Marvel Comics
 2372,2011
@@ -2383,7 +2383,7 @@ id,answer
 2382,Lvov Brest-Litovsk
 2383,Poland
 2384,Winter War
-2385,Of
+2385,Polish
 2386,two
 2387,First World War
 2388,28 September 1939
@@ -2392,7 +2392,7 @@ id,answer
 2391,According
 2392,one
 2393,
-2394,Some
+2394,Stalin's
 2395,British
 2396,Munich
 2397,Stalin
@@ -2413,7 +2413,7 @@ id,answer
 2412,one
 2413,one
 2414,Jewish
-2415,By
+2415,Hungarian Romanian
 2416,21 September
 2417,Lithuania
 2418,Lithuania
@@ -2421,18 +2421,18 @@ id,answer
 2420,Suvorov Stalin
 2421,Germany
 2422,German
-2423,On
+2423,GermanSoviet Commercial Agreement
 2424,Tripartite
 2425,Stalin
 2426,Soviet Comintern
 2427,
-2428,The
+2428,Pact
 2429,Hitler
 2430,British
 2431,Luftwaffe
 2432,1 September
 2433,Polish Jewish
-2434,The
+2434,
 2435,Germany
 2436,Lvov Brest-Litovsk
 2437,Kresy
@@ -2472,17 +2472,17 @@ id,answer
 2471,Hitler
 2472,Red Army
 2473,Jzef Beck
-2474,The Soviet
+2474,Soviet
 2475,
 2476,Comintern
-2477,According
-2478,All Polish
+2477,German Soviet
+2478,Polish
 2479,GermanSoviet Commercial Agreement
 2480,Soviets
 2481,Germany
 2482,USSR's
 2483,7.5million
-2484,The Soviets
+2484,Soviets
 2485,Lvov Brest-Litovsk
 2486,British
 2487,Stalin
@@ -2525,7 +2525,7 @@ id,answer
 2524,Hitler
 2525,Nazi
 2526,Edward Hallett Carr
-2527,In
+2527,GermanSoviet
 2528,Suvorov Stalin
 2529,1963
 2530,Pact's
@@ -2542,7 +2542,7 @@ id,answer
 2541,Vclav Havel
 2542,Czechoslovakia
 2543,Pact's
-2544,The
+2544,Warsaw Pact
 2545,European
 2546,Western European
 2547,Soviet Union
@@ -2580,54 +2580,54 @@ id,answer
 2579,1979
 2580,1954
 2581,S
-2582,Recent
+2582,Earth's
 2583,.2
 2584,1
-2585,Large
+2585,
 2586,Antarctica
-2587,In
+2587,South Pole
 2588,Earth's
 2589,Earth's
-2590,Vegetation
-2591,The
+2590,
+2591,West Antarctic Ice Sheet's
 2592,Jurassic
 2593,Paleozoic
 2594,Jurassic
 2595,Mars
 2596,West Antarctica
-2597,The
+2597,Paleozoic
 2598,
 2599,Jurassic
-2600,About
+2600,
 2601,Australia
 2602,Matthew Flinders
 2603,1814
-2604,Integral
-2605,Integral
+2604,Terra Australisthis
+2605,Terra Australisthis
 2606,Terra Australisthis
 2607,1814
-2608,The Argentine
+2608,Argentine
 2609,Census
 2610,500
 2611,235
 2612,Scott Expedition
-2613,Instead
+2613,Indian Oceans
 2614,South Magnetic Pole
 2615,Ernest Shackleton
 2616,Ernest Shackleton
 2617,1931
 2618,14 December 1911
 2619,1978
-2620,Organisms
+2620,
 2621,32
 2622,1980
-2623,The
+2623,Chilean Sea Bass
 2624,1957
 2625,Antarctic Treaty Environmental Protocol
 2626,1957
 2627,Antarctic Treaty Environmental Protocol
 2628,1931
-2629,Exploitation
+2629,Protocol Environmental Protection
 2630,Transantarctic Mountains
 2631,Japanese
 2632,Prince Charles Mountains
@@ -2637,40 +2637,40 @@ id,answer
 2636,Belgian-based International Polar Foundation
 2637,Antarctica
 2638,Berte
-2639,However
-2640,Melting
+2639,
+2640,S
 2641,Antarctica
-2642,However
-2643,Next
-2644,These
-2645,Towards
-2646,Offshore
+2642,Eocene
+2643,S
+2644,Earth's
+2645,Permian
+2646,
 2647,100
 2648,1959
 2649,Antarctic Treaty
 2650,Earth's
 2651,14 January 1998
-2652,Antarctica's
+2652,Antarctic Treaty
 2653,17 January 1773
-2654,According
+2654,National Science Foundation
 2655,three
 2656,Queen Maud's Land
 2657,1895
-2658,Meteorites
+2658,
 2659,
 2660,Frei Montalva Station
-2661,In
+2661,British
 2662,CFCs
-2663,Towards
-2664,During
+2663,Permian
+2664,West Antarctic Ice Sheet's
 2665,Gondwana
 2666,Ma
 2667,West Antarctica
 2668,Antarctic
 2669,South Pole
 2670,Antarctic Circle
-2671,Even
-2672,About
+2671,Earth's
+2672,
 2673,Antarctic
 2674,Earth
 2675,.2
@@ -2682,79 +2682,79 @@ id,answer
 2681,West Antarctica
 2682,Meteorology Antarctic
 2683,
-2684,Some
-2685,Since
-2686,Ozone
-2687,Some
+2684,CFCs
+2685,UV
+2686,
+2687,Antarctic Circle
 2688,Elisabeth
-2689,Most
+2689,International Polar Year
 2690,2004
 2691,Orthodox churchTrinity Church
 2692,6 September 2007
 2693,Antarctica
-2694,The
+2694,Earth's
 2695,Mars
 2696,400 1
-2697,However
+2697,
 2698,Adlie
 2699,Adlie
-2700,The
+2700,Adlie
 2701,Adlie
-2702,The
-2703,According NASA
+2702,Earth's
+2703,NASA
 2704,Ellsworth Mountains
 2705,American Canadian
-2706,Mount
+2706,Island
 2707,1983
 2708,1983
 2709,Greenpeace International
 2710,1959
-2711,Antarctica's
+2711,Antarctic Treaty
 2712,60 200
-2713,By
+2713,Devonian
 2714,Early Triassic
 2715,2002
 2716,Cambrian
-2717,Researchers
-2718,This
+2717,
+2718,Adelie Land
 2719,1912
 2720,Japanese
-2721,The
+2721,Adelie Land
 2722,South Pole
-2723,There
-2724,Precipitation
-2725,Glaciologists
-2726,Melting
+2723,Lake Vostok's
+2724,Antarctic Circle
+2725,CO2
+2726,Antarctic Treaty
 2727,Antarctica
 2728,1786
 2729,Antarctic Convergence British American
 2730,Norwegian
 2731,1910
 2732,Antarctic Peninsula
-2733,Instead
+2733,
 2734,0.1
-2735,These
-2736,The
-2737,Large
+2735,
+2736,Paleozoic
+2737,
 2738,British
 2739,James Weddell
 2740,Antarctic Circle
 2741,Southern Ocean
 2742,1998
 2743,Environmental Protection
-2744,Various
+2744,Wilkins Ice Shelf
 2745,Committee Environmental Protection
 2746,Environmental Protection
 2747,Antarctic Treaty
 2748,1998
 2749,1998
-2750,It
+2750,American
 2751,112
-2752,New
+2752,Adelie Land
 2753,Antarctica
-2754,This
-2755,New
-2756,New
+2754,Adelie Land
+2755,Adelie Land
+2756,Adelie Land
 2757,2002
 2758,Antarctic Peninsula's Larsen-B
 2759,NASA
@@ -2763,28 +2763,28 @@ id,answer
 2762,three
 2763,Earth's
 2764,Terra Australisa
-2765,Geologically
-2766,Even
-2767,About
-2768,Melting
-2769,About
-2770,The
+2765,Terra Australisthis
+2766,Early Triassic
+2767,
+2768,Sun
+2769,
+2770,Sun
 2771,20
 2772,Lake Vostok's
-2773,If
-2774,If
+2773,Europa
+2774,CFCs
 2775,7 February 2008
-2776,For
+2776,CO2
 2777,Cretaceous
 2778,66
 2779,Ma
 2780,40
 2781,Eocene
-2782,The
+2782,International Polar Year
 2783,West Antarctica
-2784,Some
-2785,The
-2786,As
+2784,Antarctic Circle
+2785,West Antarctic Ice Sheet's
+2786,
 2787,Marcos Palma
 2788,Antarctic Peninsula
 2789,one
@@ -2792,7 +2792,7 @@ id,answer
 2791,1150
 2792,McMurdo Dry Valleys
 2793,1150
-2794,Organisms
+2794,McMurdo Dry
 2795,Antarctic
 2796,British Chilean
 2797,Queen
@@ -2800,17 +2800,17 @@ id,answer
 2799,18 December 2012
 2800,Falklands War
 2801,
-2802,The
-2803,Some
-2804,Belgian
+2802,
+2803,Austral
+2804,This
 2805,901 1979
 2806,
 2807,
-2808,Concerns
-2809,Belgian
+2808,
+2809,This
 2810,Antarctic
 2811,Potter Stewart
-2812,On
+2812,Town
 2813,
 2814,Reynolds
 2815,Everson
@@ -2823,7 +2823,7 @@ id,answer
 2822,2 1789
 2823,Georgia Constitution
 2824,
-2825,The
+2825,Note
 2826,5
 2827,The North Carolina Constitution
 2828,The
@@ -2833,9 +2833,9 @@ id,answer
 2832,Protestants Jews
 2833,December 27
 2834,Peter Stuyvesant
-2835,The Dutch
+2835,English
 2836,
-2837,In
+2837,The
 2838,Baptist
 2839,New England
 2840,1786
@@ -2858,21 +2858,21 @@ id,answer
 2857,American
 2858,Establishment Clause
 2859,American
-2860,Jefferson's
-2861,He
+2860,American
+2861,Supreme Court
 2862,Virginian
 2863,Patrick Henry
 2864,Statute of Religious Freedom
 2865,God
 2866,Dutch Reformed
 2867,Duke of York
-2868,The
+2868,Dutch Reformed
 2869,Dutch
 2870,1698
 2871,Assembly Christians the Duke of York
 2872,Civil Religion
 2873,Province
-2874,Some
+2874,God
 2875,may may
 2876,United States
 2877,The First Amendment
@@ -2887,7 +2887,7 @@ id,answer
 2886,Connecticut
 2887,Rep
 2888,Rep
-2889,This
+2889,Establishment Clause
 2890,South Carolina
 2891,1868
 2892,The
@@ -2896,7 +2896,7 @@ id,answer
 2895,Due Process Clause Privileges Immunities Clause
 2896,United States
 2897,First Amendment
-2898,This
+2898,Establishment Clause
 2899,
 2900,1994
 2901,
@@ -2906,7 +2906,7 @@ id,answer
 2905,Jefferson Madison
 2906,330
 2907,First Amendment
-2908,Critics
+2908,Founding Fathers
 2909,First Amendment
 2910,
 2911,Supreme Court
@@ -2918,7 +2918,7 @@ id,answer
 2917,
 2918,Greece
 2919,Engel
-2920,Religious
+2920,The Founding Fathers
 2921,Potter Stewart
 2922,Justice
 2923,Justice
@@ -2935,35 +2935,35 @@ id,answer
 2934,
 2935,1961
 2936,Supreme Court
-2937,This
-2938,The
+2937,Fourteenth Amendment
+2938,Establishment Clause
 2939,
 2940,2002
 2941,2002
 2942,Elk Grove Unified School District
 2943,Congress
-2944,Religious
+2944,Constitution
 2945,December 20
 2946,United States Court of Appeals the Sixth Circuit
-2947,Relaxed
+2947,Christmas
 2948,May 3
 2949,United States Court of Appeals the Sixth Circuit
 2950,Town of Greece
 2951,May 5
 2952,Christian
 2953,Watkins
-2954,Such
+2954,United States Supreme Court
 2955,Supreme Court
 2956,Constitution
-2957,This
-2958,These
-2959,Critics
+2957,Establishment Clause
+2958,Establishment Clause
+2959,Founding Fathers
 2960,
 2961,1868
 2962,The
-2963,In
-2964,In
-2965,Some
+2963,U
+2964,The
+2965,Establishment Clause
 2966,Constitution
 2967,Pennsylvania
 2968,
@@ -2978,11 +2978,11 @@ id,answer
 2977,United States
 2978,Ohio's
 2979,
-2980,Considering
+2980,United States Supreme Court
 2981,Establishment Clause
 2982,two
 2983,Establishment Clause
-2984,On
+2984,United States Court of Appeals the Sixth Circuit
 2985,Jeffries Ryan
 2986,Protestants
 2987,1970
@@ -3000,7 +3000,7 @@ id,answer
 2999,The Founding Fathers
 3000,The Founding Fathers
 3001,The Founding Fathers
-3002,He
+3002,Baptist
 3003,United States
 3004,John F
 3005,Civil Religion
@@ -3009,130 +3009,130 @@ id,answer
 3008,United States
 3009,
 3010,United States
-3011,Jefferson's
-3012,He
-3013,However
-3014,Leeches
-3015,Most
-3016,Annelids
-3017,Since
-3018,Septa
-3019,Most
-3020,In
-3021,However
-3022,Annelids
-3023,Experiments
-3024,Most
-3025,The
-3026,While
-3027,Leeches'
-3028,The
-3029,Scientists
-3030,The
-3031,Polychaetes'
-3032,In
-3033,Since
-3034,However
+3011,Establishment Clause
+3012,Toronto-based Center New Religions
+3013,
+3014,Articulata
+3015,
+3016,
+3017,
+3018,
+3019,
+3020,
+3021,Greek
+3022,
+3023,
+3024,
+3025,
+3026,
+3027,AD
+3028,Oligochaetes
+3029,
+3030,
+3031,Ordovician
+3032,Hirudo
+3033,Ediacaran
+3034,Ediacaran
 3035,Ordovician
 3036,472 461 million
 3037,472 461 million
-3038,Their
-3039,Some
-3040,Most
-3041,Filter
-3042,Annelids'
-3043,There
+3038,Greek
+3039,
+3040,
+3041,Lophotrochozoa
+3042,Greek
+3043,Ediacaran
 3044,Greek
-3045,Polychaetes
-3046,Leeches'
+3045,Clitellata
+3046,Ediacaran
 3047,Greek
-3048,Hence
-3049,Their
-3050,Annelids
-3051,The
+3048,
+3049,
+3050,Articulata
+3051,Owenia
 3052,Greek
-3053,Each
-3054,When
-3055,Earthworms
-3056,Hence
+3053,
+3054,
+3055,
+3056,
 3057,
-3058,The
-3059,They
-3060,Each
-3061,However
-3062,Accounts
-3063,Many
+3058,
+3059,
+3060,
+3061,Owenia
+3062,AD
+3063,
 3064,
 3065,
-3066,Traditionally
-3067,Experiments
-3068,Some
-3069,Some
+3066,Lophotrochozoa
+3067,
+3068,
+3069,
 3070,Greek
-3071,Each
-3072,The
-3073,Some
-3074,Most
-3075,Polychaetes
-3076,In
-3077,Each
-3078,The
-3079,Polychaetes
+3071,Greek
+3072,
+3073,Greek
+3074,
+3075,
+3076,
+3077,
+3078,
+3079,Greek
 3080,
-3081,In
-3082,When
-3083,Most
-3084,Species
-3085,In
+3081,
+3082,
+3083,
+3084,
+3085,
 3086,Clitellata
-3087,Fertilization
+3087,Clitellata
 3088,two
-3089,Each
-3090,However
+3089,
+3090,
 3091,Greek
-3092,Polychaetes
+3092,
 3093,Eunicidae Phyllodocidae
-3094,Since
-3095,Most
-3096,Some
-3097,The
-3098,In
-3099,Although
-3100,Although
-3101,The
-3102,Most
+3094,Eunicidae Phyllodocidae
+3095,
+3096,Siboglinidae
+3097,
+3098,Greek
+3099,Ediacaran
+3100,Ediacaran
+3101,
+3102,
 3103,4
 3104,Wisconsin
 3105,two
-3106,It
-3107,Later
-3108,The
+3106,
+3107,
+3108,
 3109,
 3110,25%
 3111,14%
-3112,About
-3113,The
-3114,Traditionally
-3115,Nearly
+3112,
+3113,
+3114,Jurassic
+3115,
 3116,Palolo
-3117,In
-3118,Fertilization
+3117,Clitellata
+3118,The Formation
 3119,
 3120,
-3121,The
+3121,
 3122,
 3123,The Formation
 3124,
-3125,Earthworms
-3126,Fertilization
+3125,The Formation
+3126,
 3127,North America
 3128,North America
-3129,Terrestrial
+3129,The Formation
 3130,Palolo
-3131,However
-3132,In
-3133,Polychaetes
-3134,Anglers
+3131,Palolo
+3132,Carboniferous
+3133,Jurassic
+3134,The Formation
 3135,30
 3136,China
 3137,30
@@ -3144,32 +3144,32 @@ id,answer
 3143,472 461 million
 3144,Australia
 3145,472 461 million
-3146,The
+3146,Tertiary
 3147,Tertiary
 3148,472 461 million
-3149,Nearly
-3150,Fertilization
-3151,Most
+3149,
+3150,
+3151,
 3152,80
 3153,1997
 3154,Torsten Struck
 3155,2007
 3156,2007
 3157,Scolecida
-3158,Most
+3158,
 3159,3
-3160,Traditionally
-3161,Arthropods
-3162,Each
-3163,Most
-3164,Since
-3165,Within
-3166,Annelids
+3160,
+3161,Ecdysozoa
+3162,Palolo
+3163,
+3164,
+3165,Articulata
+3166,
 3167,Greek
 3168,
-3169,The
-3170,The Lophotrochozoa
-3171,When
+3169,
+3170,
+3171,Greek
 3172,six
 3173,6 August 1978 2141
 3174,2017
@@ -3179,30 +3179,30 @@ id,answer
 3178,VI
 3179,2017
 3180,six
-3181,Ecumenical
-3182,Pope
-3183,Pope
+3181,Catholic
+3182,Secretary
+3183,Secretary
 3184,Catholic Action
 3185,two
-3186,His
+3186,Church the Second Vatican Council
 3187,1916
 3188,Canon Law
 3189,Milan
 3190,Milan
 3191,Milan
-3192,The
+3192,People
 3193,This
 3194,Council
-3195,It
+3195,Pro-Secretary
 3196,Warsaw
-3197,At
+3197,College of Cardinals
 3198,XXIII
 3199,John Paul
 3200,
 3201,Francesco Montini
 3202,
 3203,State Department
-3204,Montini's
+3204,Pope
 3205,
 3206,Council
 3207,1947
@@ -3211,7 +3211,7 @@ id,answer
 3210,Francesco Montini
 3211,Secretary
 3212,Pius
-3213,Pope
+3213,Castel Gandolfo
 3214,15
 3215,Gaudium
 3216,Church Asylum
@@ -3220,12 +3220,12 @@ id,answer
 3219,1955
 3220,
 3221,Milan
-3222,It
+3222,Christians
 3223,1961
 3224,Vatican
 3225,Commission Extraordinary Affairs
 3226,Pilgrim Pope
-3227,His
+3227,Catholic Action
 3228,Council
 3229,Church
 3230,XII
@@ -3235,16 +3235,16 @@ id,answer
 3234,58
 3235,XII
 3236,XXIII
-3237,Peace
+3237,Roman Catholic
 3238,Angelo Roncalli
 3239,may
-3240,Peace
+3240,Roman Catholic
 3241,Vatican
 3242,1962
 3243,1923
 3244,Vatican
 3245,Vatican
-3246,With
+3246,Pope
 3247,1958
 3248,College of Cardinals
 3249,College
@@ -3253,28 +3253,28 @@ id,answer
 3252,Papal Tiara
 3253,
 3254,John Paul
-3255,He
+3255,Pope
 3256,Augustin Bea
 3257,Cardinal
 3258,Augustin Bea
 3259,Church's
 3260,Council Fathers
-3261,God
+3261,Humanae
 3262,29 September 1963
 3263,29 September 1963
 3264,II
-3265,God
+3265,Bishop
 3266,Mystici
 3267,Catholic Church
-3268,God
+3268,Mass of Paul
 3269,Rome
-3270,He
+3270,Catholic Church
 3271,Council Fathers
 3272,Council
-3273,Following
+3273,Church the Second Vatican Council
 3274,Montini
 3275,1964
-3276,Between
+3276,Roman Curia
 3277,Congregation
 3278,Council
 3279,2017
@@ -3282,25 +3282,25 @@ id,answer
 3281,Montini
 3282,1968
 3283,Pius
-3284,This
+3284,VI's
 3285,Pontificalis Domus
-3286,At
-3287,In Ecclesiae Sanctae
+3286,College of Cardinals
+3287,Ecclesiae Sanctae
 3288,Cardinals of the Catholic Church
-3289,Pope
+3289,Kings
 3290,6 August 1966
 3291,Latin Roman Catholic
 3292,Easter
 3293,France
-3294,He
+3294,VIe
 3295,April 1969
 3296,Mass of Paul
-3297,The Mass of Paul
+3297,Mass of Paul
 3298,Mass of Paul
 3299,Benedict
 3300,2017
 3301,John Paul
-3302,To
+3302,Anglican Church
 3303,Pontifical Council Interreligious Dialogue
 3304,1966 1967
 3305,four
@@ -3310,7 +3310,7 @@ id,answer
 3309,1976
 3310,Pius
 3311,Rome
-3312,Pope
+3312,Pilgrim Pope
 3313,1964
 3314,
 3315,Johnson
@@ -3335,15 +3335,15 @@ id,answer
 3334,Latin Of
 3335,2017
 3336,Pope
-3337,Pope
+3337,Evangelium
 3338,Catholic Church's
 3339,eight
 3340,Evangelium
 3341,
-3342,The
+3342,Humanae
 3343,Paul
 3344,Paul
-3345,Pope
+3345,Evangelium
 3346,Robert McNamara
 3347,1968
 3348,Bolivia
@@ -3352,11 +3352,11 @@ id,answer
 3351,
 3352,eight
 3353,Humanae
-3354,Pope
+3354,Evangelium
 3355,Western Europe North America
 3356,Rome
 3357,two
-3358,After
+3358,Council
 3359,Catholic
 3360,God
 3361,Iceland
@@ -3371,7 +3371,7 @@ id,answer
 3370,Anglican Centre
 3371,Secretariat Promoting Christian Unity
 3372,Congregation of Faith
-3373,It
+3373,Catholic Church
 3374,Anglican Church
 3375,Paul
 3376,1965
@@ -3387,16 +3387,16 @@ id,answer
 3386,Augustin Bea
 3387,Augustin Bea
 3388,2017
-3389,In
+3389,World Council of Churches
 3390,six
 3391,Joseph Ratzinger
 3392,Wojtya
 3393,1978
-3394,Upon
+3394,Apostle St
 3395,Vatican
 3396,Papal Residence Castel Gandolfo
 3397,Paolo
-3398,Although
+3398,Italian President
 3399,Western TV
 3400,2017
 3401,6 August 1978 2141
@@ -3405,29 +3405,29 @@ id,answer
 3404,Pope
 3405,Montini
 3406,Francis
-3407,A
-3408,The
-3409,In
-3410,The Congregation the Causes of Saints
-3411,The Congregation the Causes of Saints
+3407,Pope
+3408,Council
+3409,Apostle
+3410,Congregation the Causes of Saints
+3411,Congregation the Causes of Saints
 3412,Francis
 3413,Saint Paul
-3414,He
+3414,Church State
 3415,John Paul
-3416,Pope
-3417,Pope
-3418,Pope
+3416,Roman Curia
+3417,Evangelium
+3418,Pilgrim Pope
 3419,Saint Paul
-3420,It
-3421,As
+3420,Catholic Church
+3421,Council
 3422,Church
 3423,five
 3424,National Bishop Conferences
-3425,He
+3425,In
 3426,Paul VI's
 3427,five
-3428,This
-3429,On
+3428,VI's
+3429,College of Cardinals
 3430,6 August 1978 2141
 3431,
 3432,26 September
@@ -3435,11 +3435,11 @@ id,answer
 3434,Argentina
 3435,
 3436,College of Cardinals
-3437,The
-3438,Refusing Vatican
+3437,Church
+3438,Castel Gandolfo
 3439,Americas
 3440,
-3441,Some
+3441,Synod
 3442,Papal Residence Castel Gandolfo
 3443,Achaemenid Empire
 3444,Central Asia
@@ -3454,10 +3454,10 @@ id,answer
 3453,1939
 3454,2010
 3455,Tajik
-3456,The
-3457,Freedom
+3456,Sarazm
+3457,Special Representative
 3458,Rahmon
-3459,The
+3459,US865
 3460,
 3461,Dushanbe Airport
 3462,India
@@ -3465,15 +3465,15 @@ id,answer
 3464,2010
 3465,2015
 3466,November 2010
-3467,Relationships
+3467,Muslim
 3468,Islamic Renaissance Party IRP
 3469,Kokhir Rasulzoda
 3470,Kokhir Rasulzoda
 3471,2005
 3472,People's Democratic Party of Tajikistan
 3473,Constitution
-3474,Rahmon's
-3475,Rahmon's
+3474,OSCE
+3475,OSCE
 3476,Institute War Peace Reporting
 3477,China
 3478,Land
@@ -3510,13 +3510,13 @@ id,answer
 3509,1910 1913
 3510,World War
 3511,
-3512,The
+3512,Stalin's
 3513,Bolsheviks
-3514,Soviet
+3514,Islam
 3515,Tajik
 3516,Russia
 3517,
-3518,It
+3518,Russian
 3519,Bobojon Ghafurov
 3520,2010
 3521,
@@ -3524,8 +3524,8 @@ id,answer
 3523,30%
 3524,Security Co-operation
 3525,President
-3526,Several
-3527,The
+3526,Organization Security Cooperation Europe OSCE
+3527,World Bank
 3528,Kofarnihon
 3529,2010
 3530,Central Asia
@@ -3544,7 +3544,7 @@ id,answer
 3543,Achaemenid Empire
 3544,Buddhism
 3545,World Bank
-3546,Drug
+3546,Afghan
 3547,75%
 3548,Tajik Aluminum Company
 3549,Bobojon Ghafurov
@@ -3553,13 +3553,13 @@ id,answer
 3552,MW
 3553,20%
 3554,US
-3555,Since
+3555,Land
 3556,Turkmenistan Uzbekistan
 3557,Afghan
 3558,Tajikistani Drug Control Agency
 3559,World Bank
 3560,Tajikistani Drug Control Agency
-3561,The Islamic Renaissance Party IRP
+3561,Islamic Renaissance Party IRP
 3562,2009
 3563,2009
 3564,2012
@@ -3567,15 +3567,15 @@ id,answer
 3566,Dushanbe International Airport
 3567,Russia
 3568,Gorno-Badakhshan Autonomous Province
-3569,However
+3569,Islam
 3570,70%
 3571,70%
-3572,In
+3572,Sunni Muslim
 3573,Tajikistanis
 3574,Gorno-Badakhshan Autonomous Province
 3575,Land
 3576,Tajikistanis
-3577,Drug
+3577,Tajik
 3578,
 3579,30%
 3580,98%
@@ -3585,21 +3585,21 @@ id,answer
 3584,Islamic
 3585,State Committee Religious Affairs SCRA
 3586,Russian
-3587,People
-3588,The
-3589,Public
+3587,GDP
+3588,Ministry of Labor Social Welfare
+3589,GDP
 3590,104
 3591,1%
 3592,World Bank's Poverty Reduction Strategy Paper
 3593,2009
 3594,
-3595,There
+3595,Khujand State University
 3596,17%
 3597,Persia
 3598,5 million
 3599,Western Armenia
-3600,This
-3601,By
+3600,Armenian Mesrop's
+3601,Turco-Iranian
 3602,BC
 3603,
 3604,Nairi
@@ -3614,7 +3614,7 @@ id,answer
 3613,Persians
 3614,1991
 3615,Kaptavan
-3616,During
+3616,Cathedral
 3617,1991
 3618,Armenia
 3619,Arsacid
@@ -3637,7 +3637,7 @@ id,answer
 3636,Russian Empire
 3637,1920
 3638,
-3639,In
+3639,Iranian
 3640,1991
 3641,Highland
 3642,Hayk
@@ -3647,7 +3647,7 @@ id,answer
 3646,Holy Land
 3647,35
 3648,1080
-3649,The Arsacid Kingdom
+3649,Arsacid Kingdom
 3650,Iran Russia
 3651,Armenians
 3652,Armenians
@@ -3679,7 +3679,7 @@ id,answer
 3678,
 3679,
 3680,
-3681,The
+3681,Christianity
 3682,
 3683,Peace
 3684,Armenian Khachkars
@@ -3690,7 +3690,7 @@ id,answer
 3689,Yerevan's FC Ararat
 3690,Armenian
 3691,Armenian Middle Eastern
-3692,Within
+3692,Armenians
 3693,Saint
 3694,Armenian
 3695,Armenian
@@ -3698,13 +3698,13 @@ id,answer
 3697,Armenian
 3698,French-Armenian
 3699,System
-3700,Armenians
+3700,
 3701,476
 3702,Karabakh
 3703,Miletus
 3704,Armenia
 3705,Hravard Hakobyan
-3706,This
+3706,Golden Age
 3707,
 3708,
 3709,
@@ -3713,10 +3713,10 @@ id,answer
 3712,Armenian
 3713,Armenian
 3714,Armenian
-3715,Professional
-3716,Many
+3715,
+3716,
 3717,
-3718,Professional
+3718,
 3719,
 3720,
 3721,2008
@@ -3727,7 +3727,7 @@ id,answer
 3726,Moody's Standard Poor's
 3727,Moody's Standard Poor's
 3728,160 million
-3729,It
+3729,IndyMac
 3730,Charles Schumer
 3731,IndyMac Federal Bank
 3732,Senator
@@ -3747,31 +3747,31 @@ id,answer
 3746,
 3747,September October 2008
 3748,6
-3749,On Oct
-3750,The
-3751,However
+3749,Oct
+3750,President CEO
+3751,
 3752,September 2008
 3753,144.5billionone
-3754,The
+3754,U
 3755,U
 3756,U
-3757,While
+3757,
 3758,United States
-3759,The
-3760,In
+3759,National Bureau of Economic Research NBER
+3760,Financial Crisis Inquiry Commission
 3761,Brookings Institution
-3762,The
+3762,U
 3763,It
-3764,Profit
+3764,By
 3765,By
-3766,Profit
+3766,U
 3767,
 3768,
 3769,
-3770,The
+3770,
 3771,
-3772,During
-3773,Between
+3772,U
+3773,Americans
 3774,Roman
 3775,United States'
 3776,United Kingdom's
@@ -3782,7 +3782,7 @@ id,answer
 3781,Euro
 3782,
 3783,U
-3784,The Brookings Institution
+3784,Brookings Institution
 3785,Overseas Development Institute
 3786,300
 3787,Such
@@ -3790,18 +3790,18 @@ id,answer
 3789,United Kingdom
 3790,Foreign Direct Investment FDI
 3791,2008
-3792,Feminist
-3793,Feminist
-3794,With
+3792,U
+3793,GSE
+3794,National Bureau of Economic Research NBER
 3795,33
-3796,The Federal Reserve
+3796,Federal Reserve
 3797,2009
 3798,The New York Times
 3799,European
 3800,AAA-rated
 3801,Basel
 3802,Norberg
-3803,Critics
+3803,European
 3804,June 2009
 3805,December 2007
 3806,
@@ -3809,9 +3809,9 @@ id,answer
 3808,January 27
 3809,Ailsa McKay Margunn Bjrnholt
 3810,31%
-3811,The
+3811,BNP Paribas
 3812,31%
-3813,Feminist
+3813,International Monetary Fund
 3814,United States
 3815,December 2010
 3816,
@@ -3819,34 +3819,34 @@ id,answer
 3818,
 3819,Wall Street
 3820,Award
-3821,In Peabody Award
-3822,The U
+3821,Peabody Award
+3822,U
 3823,Award
-3824,Such
-3825,Investment
-3826,Investment
-3827,Examples
-3828,Lower
-3829,With
+3824,U
+3825,Wall Street
+3826,Wall Street
+3827,MBS
+3828,Wall Street
+3829,
 3830,2004
 3831,1.3million
 3832,1.3million
 3833,August 2008
-3834,Securities
-3835,Securities
-3836,According
-3837,The
-3838,From
+3834,European Central Bank
+3835,European Central Bank
+3836,U
+3837,Financial Crisis Inquiry Commission
+3838,Federal Reserve
 3839,1996 2004
 3840,1996 2004
 3841,GDP
 3842,1996 2004
 3843,
 3844,July 2004 July 2006
-3845,When
-3846,Lower
-3847,This
-3848,The
+3845,ARMs
+3846,
+3847,Countrywide
+3848,
 3849,United States Financial Crisis Inquiry Commission
 3850,220
 3851,60%
@@ -3857,7 +3857,7 @@ id,answer
 3856,900
 3857,39%
 3858,900
-3859,In
+3859,Roman
 3860,Countrywide Financial
 3861,ARM
 3862,1%1.5%
@@ -3872,46 +3872,46 @@ id,answer
 3871,OECD
 3872,U
 3873,OECD
-3874,The
-3875,Critics
+3874,United States Financial Crisis Inquiry Commission
+3875,U
 3876,
-3877,The
-3878,European
+3877,Financial Crisis Inquiry Commission
+3878,Roman
 3879,2004 2007
 3880,U
 3881,
 3882,4.1trillion
 3883,100
-3884,Key
+3884,Many
 3885,
-3886,With
+3886,U
 3887,Hyman Minsky
 3888,U
 3889,Janet Yellen
 3890,U
 3891,February 2009
-3892,He
-3893,The
+3892,They
+3893,
 3894,UBS
-3895,The United States Financial Crisis Inquiry Commission
+3895,United States Financial Crisis Inquiry Commission
 3896,MBS
 3897,MBS
 3898,2008
 3899,2006
-3900,Issuance
-3901,Private
+3900,CDOs
+3901,CDOs
 3902,2000 2007
-3903,Issuance
-3904,This
-3905,With
+3903,CDOs
+3904,U
+3905,Citi's
 3906,FICO
 3907,U
 3908,
-3909,These
-3910,These
-3911,The Financial Crisis Inquiry Commission
-3912,These
-3913,It
+3909,MBS CDOs
+3910,Brookings Institution
+3911,Financial Crisis Inquiry Commission
+3912,CDOs
+3913,Federal Reserves
 3914,MBS CDOs
 3915,MBS CDOs
 3916,2005
@@ -3923,7 +3923,7 @@ id,answer
 3922,CDS
 3923,CDS
 3924,Soros
-3925,As
+3925,Has Financial Development Made
 3926,
 3927,Soros
 3928,
@@ -3936,21 +3936,21 @@ id,answer
 3935,2004
 3936,President CEO
 3937,President CEO
-3938,This
+3938,U
 3939,2007
 3940,2007
-3941,The
+3941,U
 3942,
 3943,June 2009
 3944,The
 3945,Financial Crisis Inquiry Commission
-3946,For
+3946,CDS
 3947,Federal Reserve's TALF
 3948,CDOs
 3949,may
-3950,A
+3950,
 3951,50 147
-3952,The
+3952,U
 3953,
 3954,Michael Greenberger
 3955,
@@ -3958,14 +3958,14 @@ id,answer
 3957,
 3958,London New York
 3959,Ailsa McKay Margunn Bjrnholt
-3960,The United States Financial Crisis Inquiry Commission
-3961,They
-3962,They
+3960,United States Financial Crisis Inquiry Commission
+3961,In
+3962,New York Times
 3963,Alan Greenspan
 3964,2005
 3965,
 3966,Reserve Bank of India Raghuram Rajan
-3967,Professional
+3967,Financial Crisis Inquiry Commission
 3968,Raghuram Rajan
 3969,Great Moderation
 3970,Raghuram Rajan
@@ -3984,12 +3984,12 @@ id,answer
 3983,US
 3984,March 2009
 3985,
-3986,Relative
+3986,Icelands
 3987,
 3988,2007
 3989,February 2008
 3990,United States
-3991,Appraisals
+3991,IndyMac
 3992,IndyMac Bank's
 3993,IndyMac Bank's
 3994,IndyMac
@@ -3998,7 +3998,7 @@ id,answer
 3997,2007 2009
 3998,4
 3999,4
-4000,The Federal Reserve
+4000,Federal Reserve
 4001,
 4002,November 3
 4003,European Commission Brussels
@@ -4006,38 +4006,38 @@ id,answer
 4005,European Central Bank
 4006,Federal Reserve
 4007,Calls Liberal Democrat Treasury Spokesman Vince Cable
-4008,With
-4009,Federal Reserve's
+4008,European
+4009,Reserve's
 4010,Federal Reserve
-4011,The Financial Crisis Inquiry Commission
+4011,Financial Crisis Inquiry Commission
 4012,US2
-4013,It
+4013,Federal Reserve
 4014,Joseph Stiglitz
-4015,The
-4016,In
+4015,European Central Bank
+4016,President CEO
 4017,President
-4018,President
+4018,Volcker Rule
 4019,Paul Volcker
 4020,Obama
 4021,May 2010
 4022,May 2010
 4023,Volcker Rule
 4024,Volcker Rule
-4025,The Financial Crisis Inquiry Commission
+4025,Financial Crisis Inquiry Commission
 4026,U
 4027,2008
 4028,2007
 4029,BNP Paribas
 4030,2004
 4031,2009
-4032,Examples
-4033,Research
-4034,In
-4035,Senate's LevinCoburn Report
+4032,MBS
+4033,Financial Crisis Inquiry Commission
+4034,Roman
+4035,LevinCoburn Report
 4036,Glass-Steagall Act
 4037,
-4038,Similarly
-4039,It
+4038,MBS CDOs
+4039,Financial Crisis Inquiry Commission
 4040,CDO
 4041,MBS
 4042,
@@ -4046,24 +4046,24 @@ id,answer
 4045,United States
 4046,2007
 4047,2006
-4048,The
+4048,MBS
 4049,U
-4050,While
+4050,Federal Reserve
 4051,U
-4052,The
-4053,Krugman's
-4054,Government
+4052,Federal Reserve
+4053,National Bureau of Economic Research NBER
+4054,Great Depression
 4055,MBS
-4056,Defaults
+4056,
 4057,
 4058,Ailsa McKay Margunn Bjrnholt
-4059,The Financial Crisis Inquiry Commission
+4059,Financial Crisis Inquiry Commission
 4060,January 2011
 4061,United States Financial Crisis Inquiry Commission
 4062,Federal Reserves
 4063,
 4064,Federal Reserves
-4065,Moreover
+4065,Citi's
 4066,2003
 4067,2007
 4068,2007
@@ -4079,17 +4079,17 @@ id,answer
 4078,Financial Crisis Inquiry Commission
 4079,6
 4080,Peter J
-4081,On
+4081,House Financial Services Committee
 4082,September 10
 4083,Fannie Mae Freddie Mac
 4084,Peter J
 4085,United States Department of the Treasury
 4086,2000
-4087,Nor
+4087,Federal Reserve Bank of Dallas
 4088,3%
 4089,3%
 4090,1995
-4091,In
+4091,Federal Reserve Bank of Dallas
 4092,Federal Reserves
 4093,Federal Reserve Bank of Dallas
 4094,two
@@ -4100,7 +4100,7 @@ id,answer
 4099,Roman
 4100,
 4101,U
-4102,The
+4102,It
 4103,2017
 4104,It
 4105,New York
@@ -4112,45 +4112,45 @@ id,answer
 4111,Allen's Landing
 4112,Republic of Texas
 4113,Texas
-4114,Since
+4114,African Americans
 4115,War
-4116,Much
+4116,Port
 4117,I
 4118,U
-4119,In
-4120,The Houston Ship Channel
-4121,To
-4122,Many
-4123,Thousands
+4119,Houston Ship Channel
+4120,Houston Ship Channel
+4121,NRG Astrodome
+4122,Port
+4123,African-Americans
 4124,Roosevelt
 4125,1986
-4126,The HoustonThe WoodlandsSugar Land MSA's
-4127,After
-4128,The Houston Ship Channel
-4129,In
+4126,HoustonThe WoodlandsSugar Land MSA's
+4127,HoustonThe WoodlandsSugar Land MSA's
+4128,Houston Ship Channel
+4129,HYOO-stn
 4130,
-4131,After
+4131,President
 4132,II
 4133,Space Shuttle Challenger
 4134,Allen's Landing
 4135,Rocky Mountains
-4136,Underpinning Houston's
+4136,Houston's
 4137,
-4138,Underpinning Houston's
+4138,Houston Ship Channel
 4139,Allen's Landing
-4140,These
-4141,The
+4140,Deep South
+4141,Allen's Landing
 4142,United States
-4143,Underpinning Houston's
-4144,It
+4143,Houston's
+4144,Maid Park
 4145,1965
-4146,Based
-4147,Hinesculminating Houston's
-4148,Based
-4149,In
-4150,Hinesculminating Houston's
-4151,Hinesculminating Houston's
-4152,Hinesculminating Houston's
+4146,Skanska
+4147,Houston's
+4148,Skanska
+4149,NRG Astrodome
+4150,Houston's
+4151,Houston's
+4152,Houston's
 4153,43 million
 4154,U
 4155,92
@@ -4162,12 +4162,12 @@ id,answer
 4161,92
 4162,23
 4163,13
-4164,The
+4164,Houston Livestock Show Rodeo
 4165,Livestock Show Rodeo
 4166,June
-4167,Another
+4167,Pride Parade
 4168,Houston Greek Festival
-4169,The
+4169,Livestock Show Rodeo
 4170,20
 4171,June
 4172,Pride Parade
@@ -4183,12 +4183,12 @@ id,answer
 4182,Sam Houston Race Park
 4183,United States
 4184,
-4185,Foreign
+4185,Houston's
 4186,Annise Parker
 4187,Houston Community College System
 4188,Republic of Texas
 4189,
-4190,The
+4190,Battle
 4191,Houston
 4192,Annise Parker
 4193,Democrat
@@ -4199,7 +4199,7 @@ id,answer
 4198,
 4199,PBS
 4200,KUHA
-4201,The HoustonThe WoodlandsSugar Land
+4201,HoustonThe WoodlandsSugar Land
 4202,Houston
 4203,WoodlandsSugar Land
 4204,Sharpstown
@@ -4212,20 +4212,20 @@ id,answer
 4211,2000
 4212,Four
 4213,Buffalo Bayou
-4214,In
-4215,In
+4214,Allen's Landing
+4215,Harris County Toll Road Authority
 4216,American Civil War
 4217,American Civil War
-4218,The
+4218,Allen's Landing
 4219,Hurricane Rita
-4220,This
+4220,Hurricane Katrina
 4221,August 2005
 4222,forty
 4223,Gulf Coast
 4224,Houston
-4225,Regulations
+4225,Allen's Landing
 4226,Allen's Landing
-4227,In
+4227,Kiplinger's Personal Finance Best Cities
 4228,42
 4229,NASA's
 4230,Port
@@ -4234,9 +4234,9 @@ id,answer
 4233,Red Line
 4234,Houston Theater District
 4235,Theater District
-4236,Facilities
-4237,Minute Maid Park
-4238,Minute Maid Park
+4236,Hallhome
+4237,Maid Park
+4238,Maid Park
 4239,United States
 4240,Bayou Music Center
 4241,Texas
@@ -4263,11 +4263,11 @@ id,answer
 4262,700
 4263,Intercontinental Airport
 4264,New York City
-4265,In
-4266,The Houston Ship Channel
+4265,Category
+4266,Houston Ship Channel
 4267,Americans
 4268,United States
-4269,The Houston Community College System
+4269,Houston Community College System
 4270,Intercontinental Airport
 4271,Houston Community College System
 4272,5
@@ -4287,21 +4287,21 @@ id,answer
 4286,
 4287,1.1million21.4
 4288,one five
-4289,In
+4289,Civil War
 4290,Beaumont
 4291,Beaumont
 4292,1910
 4293,Theodore Roosevelt
 4294,United States
 4295,
-4296,Located
+4296,American South
 4297,Houston
-4298,Many
+4298,Hurricane Rita
 4299,32
 4300,90
-4301,This
-4302,However
-4303,Officially
+4301,U
+4302,Hurricane Rita
+4303,Houston's
 4304,Republicans Democrats
 4305,
 4306,Gulf Coast
@@ -4333,7 +4333,7 @@ id,answer
 4332,Houston
 4333,Lone Star College System
 4334,January 1
-4335,METRO
+4335,Red Line
 4336,Texas
 4337,January 1
 4338,2012
@@ -4343,26 +4343,26 @@ id,answer
 4342,Airports Council International
 4343,Airports Council International
 4344,150
-4345,These
+4345,U
 4346,Texas
-4347,Space Center
-4348,The
-4349,The Houston Community College System
+4347,Center
+4348,University of HoustonClear Lake the University of HoustonDowntown
+4349,Houston Community College System
 4350,1837
 4351,State Highway
 4352,World War
 4353,State Highway
 4354,Oak Boulevard Westheimer Road
 4355,D
-4356,The
+4356,Skanska
 4357,23 million
 4358,Uptown
 4359,The
-4360,African-Americans
+4360,
 4361,Globalization World Cities Study Group Network
 4362,New Orleans
 4363,
-4364,In
+4364,Fortune
 4365,2008
 4366,Texas
 4367,New York City
@@ -4375,7 +4375,7 @@ id,answer
 4374,
 4375,14
 4376,
-4377,The City's
+4377,City's
 4378,16
 4379,40
 4380,Texas
@@ -4390,8 +4390,8 @@ id,answer
 4389,Houston Community College System
 4390,United States
 4391,United States
-4392,Houston's
-4393,Space Center
+4392,Houston Community College System
+4393,Center
 4394,George Bush Intercontinental Airport IAH
 4395,George Bush Intercontinental Airport IAH
 4396,2013
@@ -4399,17 +4399,17 @@ id,answer
 4398,Airports Council International
 4399,Switzerland
 4400,1
-4401,An
+4401,African Eurasian
 4402,FrenchItalian
-4403,The Alpine
-4404,Although
+4403,
+4404,Alps
 4405,Edelweiss
 4406,Alps
 4407,Paleolithic
 4408,AustrianItalian
 4409,Celtic La Tne
 4410,Hannibal
-4411,The
+4411,Alpine
 4412,Obersalzberg
 4413,14 million
 4414,one
@@ -4417,37 +4417,37 @@ id,answer
 4416,Latin Alpes French
 4417,Virgil
 4418,Italo-Celtic
-4419,In
+4419,European
 4420,Albania
 4421,Caucasus
 4422,Caucasus
-4423,This
+4423,Greek Alpes
 4424,Danube
-4425,Hay
-4426,The
+4425,
+4426,Italo-Celtic
 4427,Alps
 4428,German
 4429,German
-4430,The
-4431,The
-4432,The Alps
-4433,Peaks
+4430,Swiss
+4431,Alps
+4432,Italian Alpi
+4433,Houillire
 4434,Rhone
 4435,Austria Slovenia
 4436,Rhone
-4437,The Romans
+4437,Romans
 4438,Stefan Schmid
 4439,Eastern Alps Western Alps
 4440,Mediterranean Sea
 4441,Matterhorn
 4442,Mediterranean Sea
-4443,Peaks
+4443,Matterhorn
 4444,Alps
 4445,French Prealps
 4446,Alps
-4447,The
-4448,During
-4449,Christianity
+4447,Bernese Oberland
+4448,Second Punic War
+4449,Romans
 4450,Semmering
 4451,Col
 4452,Italian-Austrian
@@ -4457,20 +4457,20 @@ id,answer
 4456,Mediterranean Sea
 4457,
 4458,1
-4459,Series
-4460,Farming
+4459,French Prealps
+4460,Greek Alpes
 4461,300 million
 4462,Laurasia Gondwana
 4463,
 4464,Paleozoic Era
 4465,Alps
-4466,The
+4466,Mont Blanc
 4467,
 4468,Southern Alps
-4469,Christianity
+4469,Romans
 4470,Paleogene
 4471,Jurassic Cretaceous
-4472,The English
+4472,English
 4473,Western
 4474,Cenozoic Era
 4475,Austroalpine
@@ -4483,13 +4483,13 @@ id,answer
 4482,European
 4483,European
 4484,Albania
-4485,The Alpine
+4485,Alpine
 4486,Swiss Alps
 4487,Rhone
 4488,Swiss Alps
 4489,Union Internationale
 4490,Union Internationale
-4491,The Union Internationale
+4491,Union Internationale
 4492,1786
 4493,1786
 4494,1786
@@ -4503,40 +4503,40 @@ id,answer
 4502,120 million
 4503,Hallstatt
 4504,Salzburg Austria
-4505,The
+4505,Alpine
 4506,Slovenia
-4507,Crystals
+4507,
 4508,1
 4509,Euler
-4510,Dialects
+4510,BC
 4511,Friedrich Wiser
 4512,
-4513,The Inn
+4513,Inn
 4514,Louis Agassiz
 4515,Miocene Epoch
 4516,Alps
 4517,100 328
-4518,Moraines
-4519,Eroded
-4520,Eroded
-4521,The Inn
-4522,The
+4518,Alpine
+4519,
+4520,
+4521,African
+4522,
 4523,
 4524,Unteraar Glacier
-4525,The Inn
-4526,The
-4527,The
+4525,Inn
+4526,
+4527,Alpine
 4528,French-Italian
 4529,2500
 4530,
-4531,In
+4531,Unteraar Glacier
 4532,Europe
-4533,Much
-4534,The
-4535,Water
-4536,The Alps
-4537,Although
-4538,Water
+4533,House of Savoy
+4534,African
+4535,Alps
+4536,Europe's
+4537,
+4538,
 4539,Europe
 4540,Switzerland
 4541,Alps
@@ -4544,72 +4544,72 @@ id,answer
 4543,Nile
 4544,Switzerland
 4545,Germany
-4546,The Barrire
+4546,Barrire
 4547,Lake Geneva
 4548,
 4549,Alps
 4550,Alps
 4551,
 4552,Alpine
-4553,The Alpine
-4554,The
+4553,Alpine
+4554,Western
 4555,
-4556,Such
-4557,Until
+4556,Alps
+4557,Alpine
 4558,Italy
 4559,Aosta
 4560,Rhone Glacier
-4561,The
+4561,Rhone
 4562,Alps
 4563,Mediterranean Sea
 4564,five
-4565,The Alpine
+4565,Alpine
 4566,
 4567,
 4568,
-4569,Important
+4569,Italian-Austrian
 4570,Alps
 4571,Alps
 4572,thousand
 4573,Lauterbrunnental
-4574,Human
+4574,Austrian Alps
 4575,Alpine
-4576,Alpine
+4576,Pinus
 4577,Europe
 4578,France Italy
 4579,Europe
 4580,Illyrian
 4581,40
-4582,Gentians
+4582,Edelweiss
 4583,Alps
 4584,King
 4585,Edelweiss
-4586,Thirteen
+4586,Alpine
 4587,Prunella
 4588,France Italy
 4589,
 4590,Austrian Alps
-4591,Farming
-4592,The
+4591,Alpine
+4592,Lauberhorn Rennen Lauberhorn Race
 4593,30
-4594,Above
-4595,Some
-4596,In
-4597,The
+4594,
+4595,Alpine
+4596,Alps
+4597,
 4598,Alps
-4599,Alpine
+4599,English
 4600,1792
 4601,
 4602,
 4603,Alps
-4604,Golden
-4605,Reptiles
-4606,Above
-4607,Molluscs
-4608,The Alpine
-4609,Some
-4610,High-water
-4611,The
+4604,Italian Alps
+4605,Alpine
+4606,Alps
+4607,
+4608,Alpine
+4609,Alpine
+4610,Alps
+4611,Alps
 4612,Alpine
 4613,Alpine
 4614,Alpine
@@ -4619,7 +4619,7 @@ id,answer
 4618,Mondsee
 4619,Mondsee
 4620,France Italy
-4621,Glaciers
+4621,Matterhorn
 4622,Coleridge
 4623,1991
 4624,Mediterranean Sea
@@ -4630,7 +4630,7 @@ id,answer
 4629,Alpine
 4630,218
 4631,Hannibal
-4632,The
+4632,Col
 4633,Roman
 4634,BC
 4635,121
@@ -4658,11 +4658,11 @@ id,answer
 4657,2
 4658,Drachloch Dragon's Hole
 4659,Drachloch Dragon's Hole
-4660,Radiocarbon
+4660,Drachloch Dragon's Hole
 4661,Alpine
 4662,France
 4663,Mont Aiguille
-4664,In
+4664,Mont Blanctoday
 4665,1492
 4666,2
 4667,Gessner
@@ -4672,8 +4672,8 @@ id,answer
 4671,Shelley
 4672,
 4673,120 million
-4674,During
-4675,During
+4674,The Prisoner
+4675,The Prisoner
 4676,
 4677,Obersalzberg
 4678,Alps
@@ -4687,39 +4687,39 @@ id,answer
 4686,Riva Ridge Italy
 4687,Austria
 4688,Bad Gastein
-4689,The Alpine
-4690,The
+4689,Romans
+4690,African
 4691,Alpine
 4692,Alpine
 4693,
-4694,The Alpine
-4695,Cheesemaking
-4696,The
-4697,Villagers
+4694,World War
+4695,Alpine
+4696,Alpine
+4697,
 4698,
 4699,two
 4700,Beaufort Savoy
-4701,The
+4701,Alpine
 4702,
 4703,one
-4704,In
+4704,French-Italian
 4705,Europe
 4706,Maurienne valley Savoy
-4707,The
+4707,Swiss
 4708,Swiss
 4709,Brenner Pass
 4710,Buonconsiglio Trento
-4711,Cheesemaking
+4711,Alpine
 4712,Alpine
 4713,Alpine
 4714,Maurienne valley Savoy
-4715,Roofs
+4715,Alpine
 4716,19
 4717,Forty
 4718,Alps
 4719,Oberstdorf
 4720,50
-4721,On
+4721,Lauterbrunnental
 4722,120 million
 4723,
 4724,
@@ -4741,12 +4741,12 @@ id,answer
 4740,Avoriaz France
 4741,Alpine
 4742,
-4743,Dialects
-4744,Haymaking
-4745,The Governor
-4746,Other
-4747,Other
-4748,The
+4743,Romans
+4744,
+4745,Governor
+4746,Chinese
+4747,Chinese
+4748,Chinese
 4749,Jiangnan East Circuit
 4750,Zhe River
 4751,Zhe River
@@ -4762,7 +4762,7 @@ id,answer
 4761,Three
 4762,Zhejiang
 4763,Yu
-4764,Under King Goujian
+4764,King Goujian
 4765,Han
 4766,Zhejiang
 4767,Mount Kuaiji
@@ -4778,15 +4778,15 @@ id,answer
 4777,Zhejiang
 4778,Romance
 4779,Zhejiang
-4780,Despite
-4781,Despite
-4782,The
+4780,Land
+4781,Qin Empire
+4782,Tang
 4783,589
 4784,one
 4785,1127
 4786,China
 4787,Three
-4788,The Governor
+4788,Governor
 4789,Three
 4790,220
 4791,Jiangnan Yangtze River Delta
@@ -4798,19 +4798,19 @@ id,answer
 4797,1279
 4798,1127
 4799,Jin
-4800,Greenware
-4801,Yuan Longquan
-4802,Industrial
+4800,Jin
+4801,Middle Eastern
+4802,Longjing
 4803,Middle Eastern
-4804,It
-4805,It
-4806,It
+4804,Crooked Bent River
+4805,Crooked Bent River
+4806,Crooked Bent River
 4807,Crooked Bent River
-4808,These
+4808,
 4809,First Opium War
 4810,1843
-4811,In
-4812,During
+4811,Zhejiang's
+4812,Second Sino-Japanese War
 4813,1876
 4814,World War
 4815,
@@ -4821,22 +4821,22 @@ id,answer
 4820,1949
 4821,one
 4822,one
-4823,The
+4823,Longjing
 4824,Shu
 4825,Jiangsu
-4826,The Governor
+4826,Governor
 4827,Wu
-4828,However
-4829,The
+4828,Governor
+4829,Governor
 4830,70%
 4831,Huangmaojian Peak
-4832,During
-4833,During
-4834,Under
+4832,Cultural Revolution
+4833,Cultural Revolution
+4834,Song
 4835,Yangtze Delta
 4836,Qiangtang Ou Rivers
-4837,The
-4838,The
+4837,Longjing
+4838,Protestants
 4839,three thousand
 4840,Mainland China's
 4841,Protestants
@@ -4847,28 +4847,28 @@ id,answer
 4846,eleven
 4847,Protestants
 4848,China's
-4849,Under
+4849,Later Han
 4850,
 4851,Jurchen Jin
 4852,Governor
-4853,However
+4853,Governor
 4854,one
 4855,Tan Zhenlin
 4856,one
 4857,Four 1980
 4858,Four 1980
 4859,Land
-4860,True
-4861,True
+4860,Protestants
+4861,
 4862,Wu
 4863,Zhejiang
-4864,Other
+4864,Zhejiang's
 4865,eleven
-4866,Renowned
-4867,Other
+4866,Second Sino-Japanese War
+4867,Treaty
 4868,Hangzhou Bay Bridge Haiyan County Cixi
-4869,The Governor
-4870,The Governor
+4869,Governor
+4870,Governor
 4871,Jiangnan East Circuit
 4872,US3
 4873,US506
@@ -4890,7 +4890,7 @@ id,answer
 4889,2017
 4890,1
 4891,400
-4892,The
+4892,Chinese
 4893,twenty thousand
 4894,400
 4895,400
@@ -4899,23 +4899,23 @@ id,answer
 4898,150
 4899,2014
 4900,Special Treatment Work Illegally Constructed Sites
-4901,An
-4902,An
+4901,Sanjiang Church
+4902,Sanjiang Church
 4903,Sanjiang Church
-4904,Catholicism
-4905,The
+4904,Protestantism
+4905,Taoist
 4906,1
-4907,There
+4907,Hui Chinesecitation
 4908,400
-4909,Most
-4910,Linguistically
+4909,Mandarin
+4910,Mandarin
 4911,Anhui
 4912,Huizhou
-4913,The Governor
+4913,Governor
 4914,1949
 4915,Mandarin
 4916,1978
-4917,The
+4917,US1
 4918,People's Republic of China
 4919,Yueju
 4920,Zhejiang
@@ -4924,13 +4924,13 @@ id,answer
 4923,
 4924,Chinese
 4925,Hangzhou
-4926,The
-4927,The
+4926,Land
+4927,Land
 4928,eight
-4929,Some
-4930,From
+4929,Song
+4930,Chinese
 4931,Chinese
-4932,Throughout
+4932,Tang
 4933,Hangzhou
 4934,USAF Air Demonstration
 4935,
@@ -4943,36 +4943,36 @@ id,answer
 4942,JFACC
 4943,
 4944,six
-4945,Recently
-4946,The
+4945,Military Service Branch
+4946,Department of the Air Force
 4947,Air Force's
-4948,Adversaries
-4949,Each CCDR
-4950,The Air Force
-4951,Nuclear
+4948,American
+4949,CCDR
+4950,AETF
+4951,USAF
 4952,Space Control
 4953,
 4954,Department
 4955,
-4956,Finally
-4957,Nuclear
-4958,Nuclear
-4959,The Department
+4956,Air Force
+4957,Air Force's
+4958,B-52
+4959,Department
 4960,Department
 4961,CCDR
-4962,Active
+4962,Counterair OCA
 4963,OCA
 4964,Air Force
-4965,Each CCDR
+4965,CCDR
 4966,JP
-4967,The Department
-4968,The DCA
-4969,Defensive Counterair DCA
+4967,Department
+4968,Department
+4969,Counterair DCA
 4970,JP
-4971,This
+4971,JP
 4972,
 4973,
-4974,This
+4974,JP
 4975,US
 4976,JP
 4977,
@@ -4997,25 +4997,25 @@ id,answer
 4996,JP
 4997,AFDD
 4998,AFDD
-4999,Humanitarian
-5000,These
+4999,
+5000,C-5
 5001,
 5002,
 5003,
 5004,
 5005,Air Force
 5006,Recovery PR
-5007,Although
+5007,Title
 5008,ROMO
 5009,Assistance Operations
-5010,The
-5011,The
+5010,JP
+5011,JP
 5012,
-5013,The AETF
+5013,AETF
 5014,Partnerships
-5015,Through
-5016,A
-5017,To
+5015,USAF
+5016,DCA
+5017,USAF
 5018,
 5019,one
 5020,
@@ -5023,7 +5023,7 @@ id,answer
 5022,Harry S Truman
 5023,Department of Defense
 5024,1949
-5025,Prior
+5025,Army
 5026,
 5027,Captain
 5028,2004
@@ -5048,23 +5048,23 @@ id,answer
 5047,
 5048,Department
 5049,Air Force
-5050,The
+5050,Air National Guard Air Force Reserve
 5051,
 5052,Robert Gates
 5053,
 5054,
 5055,
 5056,
-5057,Each CCDR
+5057,CCDR
 5058,JFACC
 5059,
-5060,The United States Air Force USAF
-5061,The
+5060,United States Air Force USAF
+5061,Air Space Expeditionary Task Force AETF
 5062,Component Numbered Air Force C-NAF
 5063,
-5064,When
+5064,Second Air Force
 5065,AETF
-5066,Active
+5066,JP
 5067,CCDR
 5068,Explosive Ordnance Disposal EOD
 5069,
@@ -5080,7 +5080,7 @@ id,answer
 5079,Airman Basic E-1
 5080,CCDR
 5081,Defense Officer Personnel Management Act
-5082,The
+5082,
 5083,Harry S Truman
 5084,Senate
 5085,San Antonio
@@ -5104,8 +5104,8 @@ id,answer
 5103,1947
 5104,1993
 5105,
-5106,Enlisted
-5107,In
+5106,E-1
+5107,Shields
 5108,Department
 5109,one
 5110,United States Air Force Academy
@@ -5121,39 +5121,39 @@ id,answer
 5120,Air Force Fitness Test AFFT
 5121,US Air Force Fitness Test AFFT
 5122,75%
-5123,Many
-5124,The
+5123,F-16 Fighting Falcon
+5124,USAF
 5125,Line
 5126,USAF
-5127,The
-5128,Perhaps
-5129,The
+5127,USAF
+5128,US Air Force
+5129,
 5130,Secretary
 5131,one
 5132,one
 5133,
 5134,B-2A
-5135,The
+5135,B-2A
 5136,B-1B
-5137,The
+5137,USAF
 5138,Department of the Air Force
 5139,Air Force
 5140,C-12
-5141,The
+5141,QF-4
 5142,EMS
-5143,The
-5144,The
-5145,Special Operations Command
-5146,The F-16
-5147,The USAF
-5148,The
+5143,EMS
+5144,F-16
+5145,Operations Command
+5146,F-16
+5147,B-2A
+5148,Department of the Air Force
 5149,USAF Air Demonstration
 5150,USAF Air Demonstration
 5151,FSAT
 5152,KC-135 KC-10
 5153,USAF
 5154,
-5155,The
+5155,USAF
 5156,United States Air Force
 5157,United States Air Force
 5158,Robert Gates
@@ -5161,12 +5161,12 @@ id,answer
 5160,Secretary
 5161,Department
 5162,Department of the Air Force
-5163,The
+5163,Department of the Air Force
 5164,American
 5165,American
 5166,USAF US Army
 5167,
-5168,Air Force's
+5168,Force's
 5169,Army
 5170,Army
 5171,Aim High
@@ -5182,7 +5182,7 @@ id,answer
 5181,1855
 5182,1869
 5183,379
-5184,While
+5184,School
 5185,Graduate School
 5186,Evanston
 5187,2008
@@ -5196,17 +5196,17 @@ id,answer
 5195,nine
 5196,Methodist Episcopal Church
 5197,Old College
-5198,The
+5198,Old College
 5199,
 5200,Frances Willard
 5201,Frances Willard
 5202,Big
-5203,The Kellogg School
+5203,Kellogg School
 5204,Northwestern University School of Law
 5205,Association of American Universities
-5206,The
+5206,National Academy of Sciences
 5207,Kellogg School of Management
-5208,Under
+5208,Scott's
 5209,Northwestern the University of Chicago
 5210,Naval Reserve Officers Training Corps NROTC
 5211,NCAA Men's Division
@@ -5218,8 +5218,8 @@ id,answer
 5217,George Ryan
 5218,Innocence Project
 5219,Illinois
-5220,The Kellogg School
-5221,Today
+5220,Kellogg School
+5221,Alma Mater
 5222,Northwestern's
 5223,Whatsoever
 5224,Northwestern's
@@ -5233,12 +5233,12 @@ id,answer
 5232,Chicago Transit Authority's
 5233,Davis
 5234,Davis
-5235,The
+5235,Wildcats
 5236,1917
-5237,Under
+5237,Scott's
 5238,Rogers
 5239,Mrs
-5240,Admissions
+5240,World Report
 5241,Evanston Qatar
 5242,Medill School of Journalism School of Communication
 5243,
@@ -5252,8 +5252,8 @@ id,answer
 5251,LEED-certified
 5252,20%
 5253,1
-5254,Purple
-5255,The Evanston Davis Street Metra
+5254,Northwestern's
+5255,Evanston Davis Street Metra
 5256,Arnold R
 5257,3
 5258,William A
@@ -5270,16 +5270,16 @@ id,answer
 5269,four
 5270,September
 5271,201213
-5272,The University
+5272,University
 5273,44
-5274,Northwestern's
+5274,Weinberg College of Arts Sciences
 5275,472 million
 5276,Chicago
 5277,Chicago
 5278,Chicago
 5279,United States
 5280,United States
-5281,News World Report
+5281,Report The Sustainable Endowments Institute
 5282,35
 5283,50%
 5284,ACT
@@ -5291,10 +5291,10 @@ id,answer
 5290,four
 5291,4.9million
 5292,Northwestern
-5293,The Northwestern
+5293,Northwestern
 5294,Melville J
 5295,1917
-5296,The Kellogg School
+5296,Kellogg School
 5297,Center Interdisciplinary Exploration Research Astrophysics
 5298,Richard Silverman
 5299,247
@@ -5303,16 +5303,16 @@ id,answer
 5302,
 5303,
 5304,
-5305,Annual
+5305,Project Pumpkin
 5306,9
 5307,
 5308,9
 5309,University's
-5310,They
-5311,In
-5312,The Clock Tower
+5310,Northwestern University Marching Band NUMB
+5311,AP
+5312,Northwestern University Marching Band NUMB
 5313,2012
-5314,The Clock Tower
+5314,Rebecca Crown Center
 5315,one
 5316,
 5317,Student Theatre Coalition
@@ -5328,7 +5328,7 @@ id,answer
 5327,21
 5328,Residential College of Cultural Community Studies CCS
 5329,Foster-Walker
-5330,The Chicago Transit Authority's
+5330,Chicago Transit Authority's
 5331,
 5332,1885
 5333,Wallace Abbey
@@ -5338,11 +5338,11 @@ id,answer
 5337,four
 5338,
 5339,
-5340,The Northwestern Journal of Technology Intellectual Property
+5340,Northwestern Journal of Technology Intellectual Property
 5341,
 5342,Northwestern University
 5343,
-5344,The
+5344,Ave's
 5345,Northwestern
 5346,Freshman Guide
 5347,Northwestern
@@ -5371,8 +5371,8 @@ id,answer
 5370,Gator Bowl
 5371,All-American Northwestern
 5372,Big
-5373,The Law Review
-5374,An
+5373,Law Review
+5374,NCAA
 5375,Northwestern
 5376,NCAA
 5377,3
@@ -5405,7 +5405,7 @@ id,answer
 5404,Protestant Reformation
 5405,John Calvin
 5406,Puritan
-5407,In
+5407,
 5408,Evangelical Protestant
 5409,Pentecostals
 5410,Bible
@@ -5421,21 +5421,21 @@ id,answer
 5420,God
 5421,2010
 5422,Evangelicalism
-5423,The German
+5423,Evangelicalism
 5424,Church
 5425,Archbishop
 5426,
 5427,Reformation
 5428,four
 5429,Holy Spirit
-5430,This
+5430,Bible
 5431,Holy Spirit
 5432,Enlightenment
 5433,Calvin
 5434,Catholics'
 5435,Enlightenment
 5436,Bible
-5437,The
+5437,Christ
 5438,Christ
 5439,Reformed
 5440,Christ
@@ -5474,14 +5474,14 @@ id,answer
 5473,
 5474,Prince
 5475,The
-5476,The Magisterial
+5476,Magisterial
 5477,Henry
 5478,1534
 5479,Reformed
 5480,1540
 5481,Henry
 5482,Counter-Reformation
-5483,The Church
+5483,Anglican Communion
 5484,Church
 5485,Church
 5486,Church
@@ -5498,10 +5498,10 @@ id,answer
 5497,Great Awakening
 5498,Puritan
 5499,1790
-5500,It
+5500,Methodism
 5501,1790
-5502,It
-5503,It
+5502,Methodism
+5503,Methodism
 5504,1790
 5505,Methodism
 5506,Social Gospel Movement
@@ -5526,18 +5526,18 @@ id,answer
 5525,Lutherans
 5526,Puritan
 5527,Holy Communion
-5528,A
+5528,Radical Reformation
 5529,Roman Catholic Church's
 5530,Jesus Christ
 5531,Lutheranism
-5532,Also
+5532,Protestants
 5533,Roman Catholic Church's
 5534,Church of South India
-5535,Today
-5536,Although
-5537,Although
+5535,Lutheranism
+5536,Christian
+5537,
 5538,Christian
-5539,Together
+5539,Pentecostal Charismatic Christianity
 5540,Protestant
 5541,
 5542,Mother Church
@@ -5554,7 +5554,7 @@ id,answer
 5553,Conference
 5554,Pentecostals
 5555,
-5556,In
+5556,New Testament
 5557,
 5558,Reformers
 5559,Anglicans
@@ -5570,7 +5570,7 @@ id,answer
 5569,
 5570,Protestant
 5571,Protestant
-5572,In
+5572,New Testament
 5573,Baptist
 5574,Amsterdam
 5575,Roger Williams
@@ -5580,7 +5580,7 @@ id,answer
 5579,Reformation
 5580,
 5581,Reformed
-5582,Today
+5582,Reformed
 5583,Calvin
 5584,Lutheranism
 5585,Protestantism
@@ -5589,7 +5589,7 @@ id,answer
 5588,International Lutheran Council
 5589,John
 5590,John
-5591,Among
+5591,Evangelical Protestant
 5592,one
 5593,Puritan
 5594,John Wesley's
@@ -5600,7 +5600,7 @@ id,answer
 5599,Pentecostals
 5600,Pentecostals
 5601,Pentecostals
-5602,In
+5602,New Testament
 5603,Apostolic Age
 5604,279 million
 5605,279 million
@@ -5608,7 +5608,7 @@ id,answer
 5607,
 5608,
 5609,Anabaptist
-5610,A
+5610,Anabaptist
 5611,
 5612,
 5613,Dublin
@@ -5617,20 +5617,20 @@ id,answer
 5616,one
 5617,The Brethren
 5618,Christianity
-5619,They
+5619,Christianity
 5620,Christianity
 5621,Friends
 5622,Friends
-5623,There
+5623,Christian
 5624,Puritan
 5625,Roman Catholic Church
 5626,Puritan
-5627,The English
+5627,English
 5628,Evangelical Protestant
 5629,New England
 5630,Puritan
 5631,Evangelical Protestant
-5632,The
+5632,Puritan
 5633,1964
 5634,Anglicans
 5635,Protestants
@@ -5638,38 +5638,38 @@ id,answer
 5637,Richard
 5638,Minnesota
 5639,California
-5640,Jensen's Touched
+5640,Touched
 5641,
 5642,Terry Virgo
 5643,Reformed
 5644,USA
 5645,Presbyterian
 5646,Reformed
-5647,Changes
-5648,Protestantism
+5647,Protestantism
+5648,Church
 5649,Church
 5650,Church
 5651,1619
 5652,Reformed
 5653,1609
-5654,The
+5654,Church
 5655,
-5656,These
+5656,Puritanism
 5657,Reformation
-5658,The
+5658,American Protestants
 5659,1950
 5660,Protestant
-5661,Protestants
-5662,The English Reformation
+5661,Roman Catholic Church's
+5662,English Reformation
 5663,60
 5664,
 5665,1701
 5666,United States
-5667,Because
-5668,The English Reformation
-5669,For
-5670,This
-5671,The Protestant
+5667,Ordinances
+5668,English Reformation
+5669,Pentecostals
+5670,Protestant
+5671,Industrial Revolution
 5672,Tausch
 5673,World Values Survey
 5674,Tausch
@@ -5685,28 +5685,28 @@ id,answer
 5684,God
 5685,Merton
 5686,Protestant
-5687,Protestants
+5687,Roman Catholic Church's
 5688,
 5689,1523
 5690,Calvin
 5691,two
-5692,Consistent Calvin's
-5693,During
+5692,Calvin's
+5693,Reformation
 5694,Thomas Cranmer
 5695,Christocentric
-5696,A Protestant
+5696,Protestant
 5697,Calvin
 5698,Plymouth Colony Pilgrim Fathers
-5699,Other
+5699,Plymouth Colony Pilgrim Fathers
 5700,Assemblies of God the Church of God Christ
 5701,Plymouth Colony Pilgrim Fathers
-5702,They
+5702,Protestants
 5703,England
 5704,England
 5705,John Smyth Thomas Helwys
 5706,
 5707,England
-5708,During
+5708,Reformation
 5709,
 5710,Protestantism
 5711,Protestant Christian
@@ -5720,7 +5720,7 @@ id,answer
 5719,Puritan
 5720,United States
 5721,Germany
-5722,World
+5722,English Civil War
 5723,
 5724,Protestant
 5725,Washington Irving
@@ -5738,25 +5738,25 @@ id,answer
 5737,Puritan
 5738,Protestant
 5739,Catholicity
-5740,On
+5740,Protestant
 5741,World Council of Churches
-5742,The
+5742,Edinburgh Missionary Conference
 5743,Puritan
 5744,Christian
 5745,Church of South India
-5746,Protestantism
-5747,The
+5746,Christian
+5747,Roman Catholic Church Protestant
 5748,Martin Luther
 5749,Jesus Christ
-5750,Therefore
+5750,Protestants
 5751,Lutheran World Federation Catholic Church
 5752,
 5753,
 5754,Lutheran World Federation Catholic Church
 5755,Lutheran World Federation Catholic Church
 5756,279 million
-5757,Various
-5758,It
+5757,Protestants
+5758,Protestants
 5759,Africa
 5760,China
 5761,England
@@ -5784,7 +5784,7 @@ id,answer
 5783,
 5784,Persians
 5785,1991
-5786,The
+5786,Armenians Baku
 5787,Yerevan
 5788,
 5789,
@@ -5792,7 +5792,7 @@ id,answer
 5791,95 66
 5792,Ottoman Empire
 5793,
-5794,In
+5794,Turkish
 5795,Nairi
 5796,I
 5797,884
@@ -5818,9 +5818,9 @@ id,answer
 5817,Hamid
 5818,Ministry of Defence
 5819,Ottoman Empire Safavid Empire
-5820,During
-5821,The Dashnaks
-5822,Dashnaktsutyun
+5820,Dashnaktsutyun
+5821,Armenian
+5822,Ottoman
 5823,28 May
 5824,April 1909
 5825,April 1909
@@ -5833,8 +5833,8 @@ id,answer
 5832,Turkey
 5833,Soviet
 5834,one
-5835,This
-5836,This
+5835,Armenians
+5836,Armenians
 5837,
 5838,one
 5839,
@@ -5870,7 +5870,7 @@ id,answer
 5869,1923
 5870,Tsitsernakaberd
 5871,1993
-5872,The
+5872,Azerbaijan's
 5873,1994
 5874,
 5875,New Armenian Army NAA
@@ -5881,9 +5881,9 @@ id,answer
 5880,Azerbaijan
 5881,17 March 1991
 5882,1993
-5883,Gorbachev's
+5883,Armenia's
 5884,Ter-Petrosyan
-5885,Gorbachev's
+5885,Armenia's
 5886,85%
 5887,1994
 5888,Organisation Security Co-operation Europe OSCE
@@ -5904,7 +5904,7 @@ id,answer
 5903,10 October 2009
 5904,
 5905,Woodrow Wilson
-5906,The
+5906,
 5907,Russia
 5908,Armenian Soviet Socialist Republic
 5909,Armenian
@@ -5919,35 +5919,35 @@ id,answer
 5918,Serzh Sargsyan
 5919,Seyran Ohanyan
 5920,Collective Security Treaty Organisation CSTO
-5921,It
+5921,NATO's Partnership Peace PiP
 5922,
 5923,46
 5924,
 5925,twelve
-5926,As
+5926,President
 5927,Greek
 5928,Intel Corporation
 5929,Armenia's
 5930,Azerbaijani Turkish
 5931,Armenia's
-5932,Agriculture
-5933,Like
+5932,Armenia's
+5933,Soviet
 5934,30%
 5935,20%
 5936,1988
 5937,1988
 5938,Soviet Union's
-5939,The
-5940,The
+5939,Armenian
+5940,Russian-brokered
 5941,1995
-5942,Nevertheless
-5943,This
-5944,As
-5945,As
-5946,As
-5947,In
-5948,When
-5949,Other
+5942,Soviet Union's
+5943,Armenian Genocide
+5944,Olympics
+5945,Olympics
+5946,Olympics
+5947,National Polytechnic University of Armenia
+5948,Ottoman Empire
+5949,American University of Armenia the QSI International School of Yerevan
 5950,Armenians Azerbaijanis
 5951,June 1994
 5952,June 1994
@@ -5982,14 +5982,14 @@ id,answer
 5981,Armenian
 5982,Armenian
 5983,Armenian
-5984,Witnesses
-5985,The
+5984,MVD
+5985,Armenia's
 5986,Wednesdays
 5987,Wednesdays
 5988,16
 5989,Yerevan Vernissage
 5990,National Art Gallery Yerevan
-5991,Football
+5991,Armenian
 5992,Union of European Football Associations UEFA International Ice Hockey Federation IIHF
 5993,Union of European Football Associations UEFA International Ice Hockey Federation IIHF
 5994,Pan-Armenian Games
@@ -6004,26 +6004,26 @@ id,answer
 6003,Mkhitar Heratsi
 6004,2005
 6005,Olympics
-6006,Armenia's
+6006,Wednesdays
 6007,American University of Armenia the QSI International School of Yerevan
-6008,The
-6009,The International Association of Genocide Scholars
+6008,
+6009,International Association of Genocide Scholars
 6010,Mediterranean
-6011,In
-6012,The
+6011,Armenian Middle Eastern
+6012,Midwestern
 6013,
 6014,1916
 6015,Midwestern
-6016,Hundreds
+6016,Plains
 6017,10 million
-6018,In
+6018,Canadian
 6019,10 million
 6020,Francisco Vzquez de Coronado
 6021,Hernando de Soto
-6022,Today
+6022,De Soto Trail
 6023,Great Plains
 6024,Quivira Cbola
-6025,The
+6025,Midwestern
 6026,Plains
 6027,High Plains
 6028,Great Plains
@@ -6031,27 +6031,27 @@ id,answer
 6030,Plains
 6031,European
 6032,Great Plains
-6033,Much
+6033,Plains
 6034,Frederick Jackson Turner
 6035,Great Plains
 6036,Buffalo Commons
 6037,
 6038,1862
-6039,Before
+6039,Midwestern
 6040,High Plains
 6041,High Plains
 6042,High Plains
-6043,Today
+6043,De Soto Trail
 6044,Francisco Vzquez de Coronado
 6045,
-6046,Today
+6046,High Plains
 6047,Plains
 6048,
 6049,
 6050,Cenozoic
-6051,In
-6052,However
-6053,The
+6051,Plains
+6052,Midwestern
+6053,Cenozoic
 6054,1862
 6055,Homestead Acts
 6056,European
@@ -6060,62 +6060,62 @@ id,answer
 6059,Nicholas
 6060,Third Lateran Council
 6061,Latin
-6062,Some
+6062,English
 6063,St Paul's Cathedral
-6064,This
+6064,Diocese
 6065,Diocese of Rome
 6066,Dominum
 6067,may
 6068,769
 6069,Nicholas
-6070,The
+6070,Third Lateran Council
 6071,1244
 6072,
-6073,The
+6073,Catholic Church
 6074,1567
 6075,1567
 6076,Pope Zacharias
 6077,747
-6078,In
+6078,Diocese
 6079,1059
 6080,1563
 6081,Pius
 6082,1563
 6083,Pius
 6084,
-6085,Originally
-6086,In
-6087,Since
+6085,Diocese
+6086,
+6087,Catholic Church
 6088,Henry
 6089,70
 6090,Catholic Church
 6091,John
 6092,1971
-6093,At
+6093,Pope
 6094,Pope
 6095,Popes
 6096,Rome
 6097,Pope
-6098,The Dean
+6098,College of Cardinals
 6099,1630
 6100,Prince
 6101,Pope Urban
 6102,
-6103,In
+6103,Pope Urban
 6104,Milwaukee Catholic News Service
 6105,Milwaukee Catholic News Service
 6106,Cardinal
 6107,Cardinals
 6108,Cardinals
 6109,First
-6110,In Latin
+6110,Latin
 6111,I
 6112,1899
 6113,Patriarch
-6114,While
+6114,Patriarch
 6115,
-6116,The
-6117,In
+6116,Dean
+6117,Latin
 6118,John
 6119,Pope
 6120,Dean
@@ -6123,9 +6123,9 @@ id,answer
 6122,one
 6123,1899
 6124,Pius
-6125,The
+6125,Cardinal Vicar
 6126,1962
-6127,Each
+6127,Cardinal Vicar
 6128,Pope
 6129,1059
 6130,Cardinal Vicar
@@ -6138,13 +6138,13 @@ id,answer
 6137,2017
 6138,I
 6139,Eastern-style
-6140,When
-6141,Excluding
-6142,The
+6140,Latin-rite
+6141,Latin
+6142,Catholic Church
 6143,may
-6144,In Latin
+6144,Latin
 6145,Pope
-6146,Until
+6146,Pope
 6147,1917
 6148,Roman Rota
 6149,
@@ -6155,69 +6155,69 @@ id,answer
 6154,Dominum
 6155,Ostia
 6156,John Paul
-6157,Cardinals
+6157,Pope Innocent
 6158,50
 6159,three
 6160,1994
 6161,1939
-6162,The
+6162,
 6163,Catholic Church
 6164,protopriest Paulo Evaristo Arns
 6165,protopriest Paulo Evaristo Arns
 6166,Pope
-6167,Patriarch
+6167,Eastern Catholic Churches
 6168,Paul
 6169,Paul
 6170,Catholic Church
 6171,Diocese
-6172,In
+6172,Cardinal Vicar
 6173,1970
 6174,1587
 6175,Pope
 6176,three
 6177,Atlantic Coastal Plain
-6178,The
+6178,English Thirteen Colonies
 6179,Great Smoky Mountains
-6180,The
+6180,Albemarle Sound
 6181,Pilot Mountain
-6182,The
-6183,The
+6182,English Thirteen Colonies
+6183,
 6184,Piedmont
-6185,Temperatures
-6186,Small
+6185,
+6186,Pilot Mountain
 6187,Appalachians
 6188,Black Mountains
 6189,Black Mountains
-6190,Daytime
-6191,The
-6192,The
-6193,The
-6194,The
-6195,In
-6196,In
+6190,North Carolina Railroad
+6191,
+6192,
+6193,
+6194,
+6195,
+6196,
 6197,90
-6198,Winter
-6199,The
-6200,In
+6198,
+6199,
+6200,United States Coast Guard
 6201,40
-6202,Temperatures
+6202,
 6203,Virginia
 6204,English Thirteen Colonies
-6205,Small
-6206,The
-6207,The
-6208,Relatively
+6205,Pilot Mountain
+6206,
+6207,
+6208,
 6209,Charlotte
-6210,On
+6210,Hurricane Fran
 6211,South Carolina
 6212,Piedmont
 6213,Hurricane Fran
 6214,1954
 6215,20
-6216,In
+6216,
 6217,Appalachian Mountain
-6218,Tornadoes
-6219,Severe
+6218,Civil War
+6219,Charlotte Hounds
 6220,AD
 6221,Mississippian
 6222,1000
@@ -6237,20 +6237,20 @@ id,answer
 6236,Edenton
 6237,William Tryon
 6238,Tryon Palace
-6239,The
+6239,Forbes Magazine
 6240,Carolina
 6241,Carolina
 6242,2017
 6243,Charleston Camden
 6244,Washington District
 6245,1800
-6246,The
+6246,Scottish Highlands
 6247,Tidewater
 6248,
 6249,3
 6250,1865
 6251,Confederacy
-6252,Most
+6252,North Carolina's
 6253,North Carolina
 6254,Democrats
 6255,Populists
@@ -6264,7 +6264,7 @@ id,answer
 6263,Americans
 6264,1964
 6265,Confederacy
-6266,The
+6266,Civil War
 6267,one
 6268,Piedmont
 6269,English Thirteen Colonies
@@ -6274,12 +6274,12 @@ id,answer
 6273,Charlotte
 6274,Charlotte
 6275,one
-6276,Before A
+6276,Mississippian
 6277,
 6278,Pardo
 6279,Asheville
 6280,Morganton
-6281,Spanish
+6281,Mississippian
 6282,Wilmington
 6283,Mississippian
 6284,1540
@@ -6288,10 +6288,10 @@ id,answer
 6287,1584
 6288,American
 6289,two
-6290,The
+6290,Albemarle Sound
 6291,1663
 6292,North American
-6293,He
+6293,North American
 6294,1663
 6295,
 6296,North Carolina
@@ -6303,7 +6303,7 @@ id,answer
 6302,North Carolina
 6303,North Carolina
 6304,
-6305,After
+6305,Spanish
 6306,English
 6307,Welsh
 6308,1650
@@ -6333,15 +6333,15 @@ id,answer
 6332,1810
 6333,Wilmington Raleigh Railroad
 6334,Virginia
-6335,Railroads
-6336,Railroads
+6335,Cheerwine
+6336,United Statesthe University of North Carolina
 6337,Civil War
 6338,1810
 6339,South Carolina
-6340,The
+6340,Tidewater
 6341,30
 6342,North Carolina
-6343,While
+6343,Southern
 6344,South Carolina
 6345,May 7
 6346,May 7
@@ -6386,7 +6386,7 @@ id,answer
 6385,Pat McCrory
 6386,Uwharrie National Forest
 6387,David Rouzer
-6388,The
+6388,Wake County Public School System
 6389,Earl Granville
 6390,2009
 6391,115
@@ -6422,7 +6422,7 @@ id,answer
 6421,Carolina Hurricanes NHL
 6422,Carolina Panthers
 6423,Capital
-6424,In
+6424,Wilmington Raleigh Railroad
 6425,English Thirteen Colonies
 6426,North Carolina
 6427,Virginia
@@ -6438,32 +6438,32 @@ id,answer
 6437,Appalachian National Scenic Trail
 6438,1.2billion
 6439,1.2billion
-6440,Railroads
+6440,Civil War
 6441,Carolina
 6442,Capital
 6443,Charlotte
-6444,Other
-6445,Other
+6444,Tanger Outlets
+6445,Tanger Outlets
 6446,Hanes Mall Winston-Salem Crabtree Valley Mall
 6447,Hanes Mall Winston-Salem Crabtree Valley Mall
 6448,English Thirteen Colonies
-6449,A
+6449,North Carolinians
 6450,Lexington Barbecue Festival
-6451,A
+6451,North Carolinians
 6452,100
-6453,The
+6453,Krispy Kreme
 6454,North Carolina
 6455,1898
 6456,New Bern
 6457,Salisbury
 6458,Noni Bacca Winery
-6459,In
+6459,United Statesthe University of North Carolina
 6460,Civil War
 6461,North Carolina
 6462,Yadkin Valley
 6463,R
-6464,A
-6465,J
+6464,Golden Corral
+6465,Reynolds Tobacco Company RJR
 6466,425 million
 6467,Civil War
 6468,Jacksonville
@@ -6475,17 +6475,17 @@ id,answer
 6474,John
 6475,Portugal
 6476,1759
-6477,Following
+6477,Prime Minister
 6478,2017
-6479,In
+6479,Portuguese Ambassador
 6480,Pombals
 6481,I
-6482,However
+6482,Pombals
 6483,Napoleon
 6484,1815
 6485,Lisbon
 6486,United Kingdom of Portugal
-6487,This
+6487,Brazilians Portuguese
 6488,Portugal
 6489,1820
 6490,Portugal
@@ -6500,12 +6500,12 @@ id,answer
 6499,1 February 1908
 6500,Prince Royal Dom Lus Filipe
 6501,5 October 1910
-6502,In
+6502,Estado Novo
 6503,Estado Novo Antnio de Oliveira Salazar
 6504,1933
 6505,one
 6506,Europe
-6507,It
+6507,United Nations
 6508,Social Progress the world
 6509,European
 6510,one
@@ -6531,20 +6531,20 @@ id,answer
 6530,Maria Anne Josefa
 6531,Maria Anne Josefa
 6532,Portugal
-6533,Traditional
-6534,The
+6533,Manueline
+6534,University of Lisbon
 6535,European
-6536,In
-6537,The
+6536,Queen Mother's
+6537,Romano-Celtic
 6538,Iberian Peninsula
-6539,The PortugalSpain
+6539,PortugalSpain
 6540,European Union
-6541,Continental
-6542,The
+6541,Portuguese
+6542,Romano-Celtic
 6543,Iberian Peninsula
 6544,Europe
-6545,The PortugalSpain
-6546,The
+6545,PortugalSpain
+6546,United Nations
 6547,
 6548,Portuguese
 6549,1139
@@ -6553,19 +6553,19 @@ id,answer
 6552,Lisbon
 6553,2017
 6554,1910
-6555,It
+6555,European
 6556,five
 6557,Romano-Celtic
-6558,By
+6558,Pre-Celts Celts
 6559,Roman
 6560,2045
 6561,Portuguese
 6562,2017
-6563,In
+6563,BC
 6564,1290
 6565,
 6566,Portuguese
-6567,Beginning
+6567,Umayyad Caliphate's
 6568,711
 6569,711
 6570,
@@ -6589,38 +6589,38 @@ id,answer
 6588,England
 6589,UNESCO World Heritage Sites
 6590,NATO
-6591,The
+6591,Muslim
 6592,Age
 6593,Joo
 6594,African
 6595,African
 6596,Atlantic Ocean
-6597,In
+6597,Queen Mother's
 6598,Prime Minister
 6599,Sebastio de Melo
 6600,Manuel
 6601,Pelayos
-6602,In
-6603,The
-6604,But Sebastio
+6602,Queen Mother's
+6603,Queen Mother's
+6604,Sebastio
 6605,
 6606,Portuguese
 6607,April 1974
 6608,Portuguese Colonial War
-6609,This
+6609,Prime Minister
 6610,Junta de Salvao Nacional
 6611,Junta de Salvao Nacional
 6612,Mrio Soares
 6613,2017
-6614,The
+6614,BPN
 6615,1976
 6616,King
 6617,Csa
 6618,Csa
 6619,Mediterranean
 6620,Alto
-6621,Continental
-6622,The
+6621,Portuguese
+6622,Portuguese
 6623,Csa Csb
 6624,Laurisilva
 6625,1086
@@ -6628,20 +6628,20 @@ id,answer
 6627,Lisbon
 6628,one
 6629,
-6630,In Gers
-6631,In
+6630,Gers
+6631,Conference
 6632,100
 6633,Algarve
-6634,Marine
-6635,Marine
+6634,European
+6635,Sciences Academy of Lisbon
 6636,may
 6637,Anbal Cavaco Silva
 6638,230
 6639,Republic
 6640,1982 1989
 6641,Republic
-6642,Operationally
-6643,In
+6642,Courts
+6643,Age
 6644,two
 6645,Angola Mozambique
 6646,one
@@ -6656,7 +6656,7 @@ id,answer
 6655,Guarda Nacional Republicana
 6656,2001
 6657,Western
-6658,However
+6658,European
 6659,European
 6660,308
 6661,308
@@ -6676,8 +6676,8 @@ id,answer
 6675,1975
 6676,Portuguese Armed Forces Angola
 6677,Pedro Passos Coelho
-6678,For
-6679,After
+6678,NUTS
+6679,State's
 6680,20%
 6681,1974
 6682,Dirio de Notcias
@@ -6694,15 +6694,15 @@ id,answer
 6693,According World Travel Awards
 6694,1974
 6695,Portuguese Colonial War
-6696,Since
+6696,Carnation Revolution
 6697,Portuguese
 6698,European
 6699,European Commission
 6700,2011
-6701,Most
+6701,Portuguese
 6702,May 2014
 6703,
-6704,Thus
+6704,
 6705,Grupo RAR's Vitacress
 6706,European
 6707,European
@@ -6712,9 +6712,9 @@ id,answer
 6711,Europe's
 6712,European
 6713,Portugal's
-6714,He
+6714,Muslim
 6715,Portuguese Parque Nacional
-6716,At
+6716,Volkswagen Autoeuropa Peugeot Citroen
 6717,Covilh
 6718,Palmela
 6719,Covilh
@@ -6731,7 +6731,7 @@ id,answer
 6730,Council of Ministers
 6731,6 April 2011
 6732,Portuguese
-6733,Portugal's
+6733,Banco de Portugal
 6734,70.8
 6735,70.8
 6736,Banco de Portugal
@@ -6739,7 +6739,7 @@ id,answer
 6738,2011
 6739,Sebastio de Melo
 6740,may
-6741,The Council
+6741,Council
 6742,European Commission
 6743,English
 6744,Portuguese
@@ -6747,7 +6747,7 @@ id,answer
 6746,Government the Constitutional Court
 6747,
 6748,2008
-6749,After
+6749,The
 6750,December 2009
 6751,Algarve
 6752,Portugal Lisbon
@@ -6755,23 +6755,23 @@ id,answer
 6754,However
 6755,Pombaline City Centre
 6756,Portugal's
-6757,Since
-6758,The
+6757,Carnation Revolution
+6758,REFER
 6759,1944
 6760,Azores Madeira
 6761,
-6762,The
-6763,Football
+6762,ANA
+6763,TAP
 6764,TAP
 6765,Spain
 6766,Comboios
 6767,Comboios
-6768,Rail
-6769,Even
+6768,REFER
+6769,REFER
 6770,Sul Tejo
-6771,The
+6771,Sul Tejo
 6772,Companhia de Carris de Ferro de Lisboa Carris
-6773,In
+6773,Companhia de Carris de Ferro de Lisboa Carris
 6774,RD
 6775,Portugal
 6776,Ministry of Science
@@ -6783,17 +6783,17 @@ id,answer
 6782,Europe
 6783,Lisbon Oceanarium
 6784,Lisbon Oceanarium
-6785,Companies
-6786,With
-6787,Portugals
+6785,Portuguese
+6786,Covilh
+6787,Redes Energticas Nacionais REN
 6788,Portugal
 6789,Moura
 6790,66%
 6791,Redes Energticas Nacionais REN
 6792,Redes Energticas Nacionais REN
 6793,
-6794,Drug
-6795,The
+6794,Portugal's
+6795,NUTS
 6796,Census
 6797,81.0%
 6798,81.0%
@@ -6802,13 +6802,13 @@ id,answer
 6801,Galician-Portuguese
 6802,Portugal
 6803,Paleolithic
-6804,Since
-6805,The PortugalSpain
+6804,Carnation Revolution
+6805,PortugalSpain
 6806,European
 6807,Brazilians Portuguese
 6808,10
 6809,2011
-6810,Galicia
+6810,Community of Portuguese Language Countries
 6811,may
 6812,6.8%
 6813,one
@@ -6818,16 +6818,16 @@ id,answer
 6817,25 July 1139
 6818,God's
 6819,God's
-6820,The
-6821,Portuguese Romance
+6820,Romano-Celtic
+6821,Romance
 6822,Galicia Northern Portugal
 6823,Galician-Portuguese
-6824,Portuguese Romance
+6824,Romance
 6825,Latin
 6826,1999
 6827,Brazil
 6828,Brazil
-6829,Only
+6829,Portugal Kasmel
 6830,100
 6831,35%
 6832,Brazil
@@ -6837,17 +6837,17 @@ id,answer
 6836,Portuguese Empire
 6837,Portuguese Empire
 6838,2006
-6839,However
-6840,Over
+6839,Portuguese
+6840,OECD
 6841,SNS
 6842,
-6843,In
+6843,Ministry of Health
 6844,Eur-A
 6845,CVD
 6846,CVD
 6847,12%
 6848,
-6849,People
+6849,Ministry of Health
 6850,one
 6851,Calouste Gulbenkian Foundation
 6852,1956
@@ -6856,40 +6856,40 @@ id,answer
 6855,one
 6856,Portuguese
 6857,Portuguese
-6858,Modern Portuguese
+6858,Manueline
 6859,Eduardo Souto de Moura
-6860,Particularly
-6861,In
+6860,North
+6861,Taifa
 6862,Arthur Duarte
 6863,Joaquim de Almeida
-6864,In
+6864,Taifa
 6865,Arthur Duarte
 6866,Joaquim de Almeida
 6867,Jos Vianna da Motta
 6868,Os Lusadas The Lusiads
 6869,Os Lusadas The Lusiads
-6870,A
+6870,Soft Portuguese
 6871,Almeida Garrett
-6872,Traditional
-6873,The Portuguese
+6872,Manueline
+6873,Portuguese
 6874,
 6875,The Portuguese
-6876,A
-6877,There
+6876,
+6877,Portugal's
 6878,Galicia Northern Portugal
 6879,Catholic
 6880,Catholic
 6881,1290
 6882,Romans
-6883,Some
+6883,Vinho Verde
 6884,Romans
 6885,Festival Sudoeste Zambujeira Mar
 6886,Boom Festival
 6887,European Festival Award
 6888,European Festival Award
 6889,2005
-6890,Operationally
-6891,Operationally
+6890,FIFA World Player
+6891,FIFA World Player
 6892,Nuno Malo Miguel d'Oliveira
 6893,Nuno Malo Miguel d'Oliveira
 6894,Portuguese
@@ -6904,7 +6904,7 @@ id,answer
 6903,SL Benfica
 6904,SL Benfica
 6905,eight
-6906,Other
+6906,Portuguese
 6907,Football Federation FPF
 6908,TU
 6909,French cole Polytechnique
@@ -6927,16 +6927,16 @@ id,answer
 6926,2009
 6927,seven
 6928,Education Act
-6929,Politeknik
-6930,The
-6931,Since
+6929,Diploma
+6930,IT IT's
+6931,Engineering
 6932,four
 6933,four
 6934,Canada
-6935,Some
+6935,Canada's
 6936,Quebec
-6937,In
-6938,Schools
+6937,Universities
+6938,University Polytechnic
 6939,Canada's
 6940,1895
 6941,Capital University
@@ -6947,7 +6947,7 @@ id,answer
 6946,Quito Astronomical Observatory the National Observatory
 6947,1873
 6948,one
-6949,It
+6949,Polytechnics
 6950,50
 6951,Ireland
 6952,180
@@ -6957,14 +6957,14 @@ id,answer
 6956,University Polytechnic
 6957,French
 6958,What
-6959,They
+6959,IUT
 6960,Fachhochschule
-6961,Such
+6961,Dublin Institute of Technology university
 6962,1794
 6963,What
 6964,four
-6965,It
-6966,In
+6965,Can
+6966,Universities
 6967,TU
 6968,TU
 6969,TU Dresden TU Mnchen
@@ -6973,7 +6973,7 @@ id,answer
 6972,
 6973,Thailand
 6974,Hochschule
-6975,There
+6975,University of Technology Rajamangala University of Technology
 6976,The
 6977,The
 6978,United Kingdom
@@ -7006,18 +7006,18 @@ id,answer
 7005,New Zealand
 7006,What
 7007,1989
-7008,Schools
+7008,University Polytechnic
 7009,Education Act
 7010,Central Institute of Technology
 7011,What
 7012,New Zealand's
-7013,In
+7013,Affiliate Schools
 7014,Polytechnic Institutes
 7015,three
 7016,of Engineering Technology University of Engineering Sciences
 7017,Thailand's
 7018,What
-7019,Before
+7019,What
 7020,Bologna Process
 7021,Engineering Technology University of Engineering Sciences
 7022,5
@@ -7026,12 +7026,12 @@ id,answer
 7025,1735
 7026,Bansk Akadmia Bansk tiavnica
 7027,1764
-7028,The
+7028,Bansk Akadmia Bansk tiavnica
 7029,How
 7030,2004
 7031,2004
 7032,Thailand's
-7033,After
+7033,Portuguese
 7034,Pathumwan Institute of Technology
 7035,University of Technology Rajamangala University of Technology
 7036,University of Technology Rajamangala University of Technology
@@ -7043,7 +7043,7 @@ id,answer
 7042,
 7043,There
 7044,1970
-7045,Schools
+7045,University Polytechnic
 7046,IT IT's
 7047,Polytechnic
 7048,two
@@ -7051,64 +7051,64 @@ id,answer
 7050,College of Advanced Technology
 7051,University Polytechnic
 7052,Further Higher Education Act
-7053,The
+7053,Institute of Technology
 7054,University Polytechnic
 7055,Elite American
 7056,2017
 7057,Rensselaer Polytechnic Institute RPI
-7058,Institutes
+7058,French
 7059,two
 7060,Caracas
 7061,Federico Rivero Palacio
-7062,The
-7063,All
-7064,Birds
-7065,Sound
-7066,Sound
-7067,The
+7062,Archaeopteryx
+7063,Aves
+7064,Aves
+7065,Aves
+7066,Aves
+7067,Avialae
 7068,100 million
 7069,Archaeopteryx
-7070,Most
-7071,Many
-7072,The
-7073,Some
-7074,Some
+7070,
+7071,Late Jurassic Archaeopteryx
+7072,
+7073,
+7074,
 7075,
-7076,Birds
-7077,Nesting
-7078,The
-7079,Birds
+7076,
+7077,
+7078,North American
+7079,
 7080,1
-7081,All
+7081,Neornithes
 7082,
 7083,Archosauria
 7084,
 7085,Aves
 7086,Liaoning Province
-7087,The
-7088,The
-7089,Some
+7087,
+7088,
+7089,Cretaceous
 7090,Jurassic Archaeopteryx
-7091,This
-7092,Many
+7091,Avialae
+7092,Aves
 7093,Jurassic
 7094,Oxfordian
-7095,While
+7095,
 7096,Aurornis
 7097,Cretaceous Period
 7098,Pygostylia
 7099,95 million
-7100,In
-7101,Wings
-7102,Calls
+7100,Cretaceous Period
+7101,Euornithes
+7102,Pygostylia
 7103,Mesozoic
 7104,60
-7105,While
-7106,Flight
-7107,Flight
-7108,These
+7105,Pygostylia
+7106,
+7107,
+7108,
 7109,Aves
-7110,After
+7110,English
 7111,Aves
 7112,9
 7113,Galloanserae
@@ -7119,169 +7119,169 @@ id,answer
 7118,Jacques Gauthier
 7119,Galloanseri Neognathes
 7120,Antarctica
-7121,These
+7121,
 7122,300
-7123,Birds
-7124,Many
-7125,The
+7123,
+7124,Neognathes
+7125,
 7126,
-7127,The
-7128,The
+7127,
+7128,Aves
 7129,
-7130,Birds
+7130,
 7131,
 7132,may
-7133,The
-7134,Birds
-7135,Courtship
-7136,They
+7133,Asio
+7134,
+7135,Fisherian
+7136,
 7137,75%
 7138,
-7139,The Aves
-7140,Some
-7141,Among
-7142,The
+7139,Aves
+7140,
+7141,Avialae
+7142,
 7143,
-7144,The
+7144,
 7145,
-7146,Birds'
-7147,Blood
-7148,In
-7149,Once
-7150,After
+7146,
+7147,
+7148,
+7149,Aves
+7150,
 7151,UV
-7152,Many
-7153,Bird
-7154,Many
-7155,The
-7156,Birds
-7157,It
+7152,UV
+7153,
+7154,Euornithes
+7155,
+7156,Cretaceous Period
+7157,Asio
 7158,
-7159,This
+7159,
 7160,Tachyeres
-7161,After
+7161,Jacana
 7162,Tachyeres
-7163,Many
-7164,Wing
+7163,Aves
+7164,
 7165,
-7166,Moulting
+7166,Humphrey-Parkes
 7167,Humphrey-Parkes
-7168,Moulting
+7168,
 7169,may two
-7170,Feathers
+7170,
 7171,9%
-7172,Some
-7173,Species
-7174,In
-7175,The
+7172,
+7173,
+7174,Aves
+7175,Euornithes
 7176,two
 7177,two
 7178,60
-7179,Birds'
-7180,Some
-7181,Avivores
-7182,Birds
-7183,Some
-7184,Birds
-7185,Some
-7186,The
-7187,The
-7188,Some
-7189,The
-7190,About
-7191,A
+7179,Coleridge's The Rime
+7180,Coleridge's The Rime
+7181,
+7182,
+7183,
+7184,
+7185,
+7186,
+7187,
+7188,
+7189,
+7190,
+7191,
 7192,may
 7193,
-7194,Birds
-7195,Wing
-7196,Wing
-7197,These
+7194,
+7195,
+7196,Archaeopteryx
+7197,
 7198,44%
 7199,44%
-7200,Birds
-7201,Cooperative
+7200,
+7201,
 7202,
 7203,Earth's
 7204,
-7205,Some
-7206,Costs
-7207,Breeding
-7208,The
-7209,However
-7210,While
-7211,Some
-7212,This
-7213,This
-7214,Even
-7215,It
-7216,It
-7217,Many
-7218,Some
+7205,European
+7206,
+7207,
+7208,
+7209,
+7210,
+7211,
+7212,
+7213,
+7214,
+7215,
+7216,
+7217,Loriculus
+7218,
 7219,North South America
 7220,Loriculus
 7221,
-7222,This
+7222,
 7223,one
-7224,Such
-7225,Males
-7226,Among
-7227,The
-7228,Breeding
-7229,Courtship
+7224,
+7225,
+7226,
+7227,
+7228,
+7229,
 7230,
-7231,Some
-7232,Hole
-7233,Some
-7234,The
+7231,
+7232,
+7233,
+7234,
 7235,
-7236,Hole
+7236,
 7237,
-7238,Bird
-7239,Many
+7238,
+7239,
 7240,one
 7241,
 7242,10
 7243,10
 7244,one
-7245,At
-7246,These
+7245,
+7246,
 7247,Australian
 7248,Australian
-7249,Most
+7249,Aves
 7250,Synthliboramphus
-7251,In
+7251,Synthliboramphus
 7252,one
 7253,may
 7254,hundred
-7255,Birds
+7255,
 7256,Fisherian
-7257,This
+7257,
 7258,may
 7259,30%
 7260,PromiscuityOther
 7261,43%
 7262,
-7263,In
-7264,Flight
-7265,Many
-7266,There
-7267,Many
-7268,Birds
+7263,
+7264,PromiscuityOther
+7265,Euornithes
+7266,Cult
+7267,
+7268,
 7269,
 7270,
 7271,may
-7272,Human
-7273,About
-7274,Many
-7275,Some
+7272,Melanesian
+7273,Coleridge's The Rime
+7274,
+7275,
 7276,76 million
 7277,
-7278,Chickens
-7279,Birds
+7278,
+7279,
 7280,AD
-7281,Birds
+7281,Roc
 7282,Etruscan Roman
-7283,Species
+7283,
 7284,may
 7285,Roc
 7286,North American
@@ -7293,7 +7293,7 @@ id,answer
 7292,South San Diego
 7293,United States Navy
 7294,War
-7295,Arriving
+7295,Catholic Saint Didacus
 7296,San Diego Opera Civic Center Plaza
 7297,Alta California
 7298,Kumeyaay
@@ -7310,13 +7310,13 @@ id,answer
 7309,Alta California
 7310,1769
 7311,Juan Mara Osuna
-7312,In
-7313,Downtown
-7314,The
+7312,First Mexican Republic
+7313,Americans
+7314,Presidio the Mission National Historic Landmarks
 7315,Juan Mara Osuna
 7316,Robert F
 7317,Battle
-7318,For
+7318,Mexican
 7319,Gray
 7320,three
 7321,Treaty
@@ -7332,7 +7332,7 @@ id,answer
 7331,San Diego Bay
 7332,San Diego Bay
 7333,Loma
-7334,Downtown
+7334,University of California
 7335,San Diego Bay
 7336,World's Fairs
 7337,Balboa Park
@@ -7346,26 +7346,26 @@ id,answer
 7345,Ryan Airlines
 7346,II
 7347,U
-7348,Downtown
-7349,During
+7348,U
+7349,U
 7350,
 7351,American
 7352,
-7353,San Diego's
+7353,Diego's
 7354,Japan
 7355,American
 7356,San Diego east west
 7357,South San Diego
-7358,In
+7358,
 7359,San Diego River
 7360,San Diego Bay
 7361,San Diego Bay
 7362,South San Diego
-7363,Downtown
-7364,Over
-7365,Currently
+7363,Battle
+7364,Army
+7365,Europeans
 7366,Farmers' Almanac
-7367,To
+7367,College Area
 7368,Federal Aviation Administration
 7369,San Diego's
 7370,10
@@ -7374,20 +7374,20 @@ id,answer
 7373,Farmers' Almanac
 7374,Farmers' Almanac
 7375,San Diego
-7376,Thus
-7377,In
-7378,Thus
-7379,The
+7376,Filner
+7377,Diego's
+7378,
+7379,Filner
 7380,San Diego
-7381,Downtown
+7381,Farmers' Almanac
 7382,May September
-7383,The
+7383,Torrey
 7384,Los Angeles
-7385,Rainfall
+7385,Europeans
 7386,San Diego's
 7387,San Diego Bay
-7388,Downtown
-7389,Rainfall
+7388,Diego's Spanish Mexican
+7389,Torrey
 7390,one
 7391,one
 7392,Qualcomm
@@ -7395,7 +7395,7 @@ id,answer
 7394,492
 7395,October 2003
 7396,October 2003
-7397,In
+7397,
 7398,four
 7399,280
 7400,Los Angeles
@@ -7403,59 +7403,59 @@ id,answer
 7402,Census
 7403,3
 7404,Los Angeles
-7405,The
+7405,Torrey
 7406,
 7407,2009 1
 7408,Census
-7409,The
+7409,Census
 7410,2000
 7411,Hispanics
-7412,As
+7412,Census
 7413,27.5
-7414,As
-7415,It
+7414,Hispanics
+7415,San Diego Regional Airport Authority
 7416,18 34
 7417,24.0%
 7418,2035
 7419,18 34
 7420,10.6%
-7421,Testament San Diego's
+7421,San Diego's
 7422,United States
-7423,Crime
+7423,San Diego Association of Governments
 7424,10.6%
 7425,November
-7426,Nonetheless
+7426,Money
 7427,Spanish Mexican
 7428,
 7429,San Diego
 7430,Mexico
-7431,Downtown
+7431,Mexican
 7432,United States-Mexico
 7433,Otay Mesa
 7434,24
-7435,Downtown
+7435,United States Navy
 7436,Websense Inc
 7437,Websense Inc
 7438,San Diego
-7439,The
+7439,San Diego
 7440,University of California
 7441,United States
 7442,CROs
 7443,Sorrento Valley
 7444,Illumina Neurocrine Biosciences
-7445,There
+7445,Amtrak
 7446,Star of India
 7447,Balboa Park
 7448,Star of India
 7449,San Diego Museum of Art
 7450,Jahja Ling
 7451,La Jolla Playhouse UCSD
-7452,Currently
+7452,Business Insider
 7453,Repertory Theatre
 7454,TV
 7455,Farmers Insurance Open
 7456,three
-7457,The
+7457,Over-the-line
 7458,Over-the-line
 7459,Buick Invitational
 7460,one
@@ -7464,27 +7464,27 @@ id,answer
 7463,San Diego
 7464,one
 7465,
-7466,The
-7467,Elections
+7466,MexicanAmerican War
+7467,Democrats Republicans
 7468,
 7469,
 7470,
-7471,In
+7471,Deputy Mayor
 7472,2009
-7473,At
+7473,United States Navy
 7474,Ralph Inzunza
-7475,Both
+7475,
 7476,six
-7477,On
+7477,Mayor
 7478,
-7479,Bean
-7480,Crime
-7481,Downtown
+7479,
+7480,U
+7481,Americans
 7482,U
 7483,2002 2006
-7484,From
+7484,U
 7485,KFMB
-7486,Testament San Diego's
+7486,U
 7487,Federal Communications Commission FCC
 7488,1952
 7489,San Diego Regional Airport Authority
@@ -7493,7 +7493,7 @@ id,answer
 7492,Entravision Communications
 7493,San Diego
 7494,Catholic Saint Didacus
-7495,Stations
+7495,KOGO AM
 7496,Clear Channel Communications CBS Radio
 7497,Clear Channel Communications CBS Radio
 7498,KOGO AM
@@ -7506,19 +7506,19 @@ id,answer
 7505,Miramar
 7506,Miramar
 7507,Bay
-7508,Downtown
+7508,Entry
 7509,San Diego Bay
-7510,The
+7510,
 7511,Mission Valley
 7512,Web
 7513,two
 7514,511
 7515,San Diego Los Angeles
-7516,In
+7516,SDM
 7517,17 million
 7518,Cross-border Terminal Otay Mesa
 7519,San Diego Regional Airport Authority
-7520,The
+7520,SDM
 7521,Tijuana
 7522,The
 7523,Terminal
@@ -7528,11 +7528,11 @@ id,answer
 7527,Gurkha Monument
 7528,
 7529,Ministry of Defence MoD
-7530,The
+7530,MoD Whitehall
 7531,Persian Gulf
-7532,The
+7532,MoD Whitehall
 7533,Cold War
-7534,These
+7534,Defence Infrastructure Organisation
 7535,Vice Chief
 7536,united ministry of defence
 7537,1940
@@ -7575,7 +7575,7 @@ id,answer
 7574,2015
 7575,four
 7576,
-7577,With
+7577,MoD
 7578,Cold War
 7579,Cold War
 7580,Afghanistan Iraq
@@ -7609,7 +7609,7 @@ id,answer
 7608,Ministry of Defence
 7609,1984
 7610,Ministry of Defence
-7611,From
+7611,Departments
 7612,Guardian
 7613,Guardian
 7614,
@@ -7628,91 +7628,91 @@ id,answer
 7627,October 2009
 7628,MoD
 7629,October 2009
-7630,By
+7630,Chinooks
 7631,UK's
 7632,Chinooks
 7633,1946 1964 five
 7634,Cold War
 7635,Ministry of Defence
 7636,Ministry of Defence
-7637,It
-7638,Features
-7639,In
-7640,In
-7641,Antibiotics
-7642,The
-7643,It
-7644,The
-7645,Proper
-7646,Prevention
+7637,
+7638,
+7639,
+7640,ORS
+7641,
+7642,
+7643,
+7644,IBS
+7645,ORS
+7646,ORS
 7647,ORS
-7648,In
+7648,Shigella
 7649,1.75billion
 7650,three
-7651,Features
-7652,Frequent
-7653,Children
-7654,Frequent
-7655,Secretory
-7656,About
-7657,If
-7658,Osmotic
-7659,In
+7651,
+7652,Shigella
+7653,
+7654,
+7655,
+7656,
+7657,
+7658,
+7659,
 7660,1.75billion
-7661,Inflammatory
-7662,It
-7663,It
-7664,In
-7665,Frequent
-7666,Frequent
+7661,
+7662,
+7663,
+7664,Rotavirus
+7665,
+7666,A
 7667,
 7668,SeHCAT
-7669,About
-7670,Most
-7671,The
-7672,Poverty
-7673,Frequent
-7674,It
-7675,Research
-7676,Supplementation
-7677,While
+7669,SeHCAT
+7670,SeHCAT
+7671,A
+7672,A
+7673,
+7674,
+7675,A
+7676,
+7677,
 7678,
-7679,As
+7679,ORS
 7680,Co-phenotrope
-7681,Given
-7682,Prevention
+7681,A
+7682,CDC Handwashing
 7683,three
-7684,Other
-7685,The
-7686,While
-7687,In
+7684,ORS
+7685,A
+7686,A
+7687,
 7688,
 7689,Rotavirus
 7690,6%
-7691,In
+7691,Cholera
 7692,2017
-7693,Similarly
-7694,The
+7693,A
+7694,Rotavirus
 7695,A
-7696,Features
-7697,In
+7696,Since
+7697,ORS
 7698,BRAT
 7699,
 7700,ORS
-7701,Poverty
+7701,ORS
 7702,ORS
 7703,
-7704,Drinks
-7705,Antibiotics
+7704,
+7705,Project
 7706,5
 7707,
-7708,To
+7708,WHO
 7709,
-7710,Children
+7710,
 7711,Escherichia
-7712,And
+7712,CDC
 7713,Jan
-7714,From
+7714,Canal
 7715,France
 7716,814
 7717,12
@@ -7783,12 +7783,12 @@ id,answer
 7782,7 January 2015
 7783,11 January
 7784,Paris Fire Brigade
-7785,On
+7785,French Muslim
 7786,Boulogne-Billancourt France
 7787,814
 7788,France
-7789,The Sorbonne Library
-7790,It
+7789,Sorbonne Library
+7790,Sorbonne Library
 7791,Bois de Boulogne Bois de Vincennes
 7792,France
 7793,1860
@@ -7796,23 +7796,23 @@ id,answer
 7795,1929
 7796,Western European
 7797,Western European
-7798,Summer
-7799,The
-7800,In
-7801,Snow
-7802,Each
+7798,
+7799,Tour
+7800,
+7801,Conseil de Paris Council of Paris
+7802,
 7803,163
-7804,The
-7805,The Constitutional Council
+7804,Conseil de Paris Council of Paris
+7805,Constitutional Council
 7806,2001
 7807,Left Bank
 7808,Paris
 7809,38
-7810,From
+7810,Paris'
 7811,38
 7812,January 1
-7813,Once
-7814,The
+7813,Sephardic Jews
+7814,INSEE
 7815,City
 7816,three
 7817,210
@@ -7861,11 +7861,11 @@ id,answer
 7860,le-de-France
 7861,January 1
 7862,1961 two
-7863,This
+7863,City
 7864,1961 two
 7865,Paris
-7866,The
-7867,A
+7866,French
+7867,Frankish
 7868,France
 7869,London
 7870,le Saint-Louis
@@ -7874,10 +7874,10 @@ id,answer
 7873,Jan
 7874,2.9million1921
 7875,2004
-7876,According INSEE
+7876,INSEE
 7877,European Union London
 7878,Paris
-7879,According
+7879,Hauts-de-Seine
 7880,135
 7881,135
 7882,135
@@ -7895,16 +7895,16 @@ id,answer
 7894,France's GDP
 7895,2015
 7896,18.8
-7897,While
+7897,GDP
 7898,Buddha
 7899,Louvre
-7900,The
+7900,Paris'
 7901,Strasbourg
-7902,The
+7902,French
 7903,24
 7904,16
-7905,While
-7906,Paris'
+7905,Region
+7906,
 7907,800
 7908,Renault PSA-Citroen
 7909,75
@@ -7912,9 +7912,9 @@ id,answer
 7911,Essonne
 7912,56
 7913,Paris
-7914,The
-7915,The
-7916,It
+7914,le-de-France
+7915,Paris'
+7916,Region
 7917,le-de-France
 7918,Val-d'Oise
 7919,2012
@@ -7931,7 +7931,7 @@ id,answer
 7930,1817
 7931,1817
 7932,France's
-7933,The
+7933,Parisian
 7934,Mignard
 7935,1648
 7936,1648
@@ -7954,8 +7954,8 @@ id,answer
 7953,Notre Dame Cathedral
 7954,Louvre
 7955,January 2015
-7956,In
-7957,The
+7956,French Ministry of Culture
+7957,Basilica
 7958,1913
 7959,Paris
 7960,1680
@@ -7963,10 +7963,10 @@ id,answer
 7962,Pont
 7963,Picasso Museum the Rodin Museum
 7964,1889
-7965,Bal-musette
+7965,French
 7966,1946
 7967,Paris
-7968,The
+7968,Epistolae Letters
 7969,Gasparinus de Bergamo Gasparino
 7970,1470
 7971,Middle Ages Latin
@@ -7993,15 +7993,15 @@ id,answer
 7992,Parisian
 7993,Auvergnat
 7994,
-7995,Paris'
+7995,the association football club Paris Saint-Germain F
 7996,Paris
 7997,Europe
 7998,28 December 1895
-7999,Many
+7999,Paris'
 8000,2
 8001,Philippe Binant
 8002,Philippe Binant
-8003,European Asian
+8003,Asian
 8004,2 February 2000
 8005,Palais-Royal
 8006,1786
@@ -8013,22 +8013,22 @@ id,answer
 8012,29
 8013,1817
 8014,Procope
-8015,In
+8015,Parisian
 8016,
-8017,Foreign-born
+8017,Centres
 8018,Paris
 8019,Paris Fashion Week
-8020,The
+8020,Fortune Global
 8021,
-8022,Since
+8022,cole Normale Suprieure
 8023,Strasbourg
 8024,France
 8025,Bibliothque Mazarine
 8026,Arsenal Library
 8027,three
-8028,The Bibliothque
+8028,Bibliothque
 8029,Trs Grande Bibliothque
-8030,Other
+8030,Interuniversity Pharmaceutical Library
 8031,Sorbonne Library
 8032,Sorbonne Library
 8033,French Wars
@@ -8046,7 +8046,7 @@ id,answer
 8045,Pagode de Vincennes Buddhist
 8046,France
 8047,1985
-8048,It
+8048,GDP
 8049,Boulogne-Billancourt France
 8050,Paris
 8051,popular sport clubs the association football club Paris Saint-Germain F
@@ -8093,107 +8093,107 @@ id,answer
 8092,5.8million
 8093,France
 8094,Le Monde Le Figaro
-8095,Another
+8095,France Diplomatie
 8096,one
-8097,Theatre
+8097,Parisian
 8098,French
 8099,France
 8100,Paris'
 8101,La Poste
-8102,Clothes
-8103,The
-8104,Clothing
-8105,In
+8102,UV
+8103,J
+8104,
+8105,Globalization
 8106,UV
-8107,Different
-8108,For
-8109,The
-8110,Their
+8107,
+8108,UV
+8109,
+8110,Homo
 8111,650 thousand
-8112,Conversely
-8113,Clothes
-8114,Clothes
-8115,Though
-8116,Articles
-8117,The
-8118,Not
-8119,In Western
-8120,Today
-8121,The
-8122,Conversely
-8123,The
-8124,These
-8125,Humans
-8126,Wearing
-8127,The
-8128,Most
-8129,Clothing
-8130,Fast
-8131,Not
+8112,Indian
+8113,Homo
+8114,Homo
+8115,
+8116,
+8117,Western
+8118,
+8119,Western
+8120,PETA
+8121,J
+8122,
+8123,
+8124,Western
+8125,
+8126,
+8127,PETA
+8128,
+8129,J
+8130,
+8131,Travancore Kingdom
 8132,J
 8133,1930
 8134,
 8135,Globalization
 8136,Newburgh's
-8137,In Western
-8138,Male
-8139,Trousers
-8140,Wearing
-8141,Many
+8137,Western
+8138,Western
+8139,MFA
+8140,
+8141,Indian
 8142,
 8143,
 8144,Travancore Kingdom
 8145,China
-8146,The
-8147,The
-8148,Clothing
+8146,
+8147,Indian
+8148,BC
 8149,
 8150,Republic of Georgia
 8151,42
 8152,
 8153,Max Planck Institute Evolutionary Anthropology
-8154,Mass-manufactured
+8154,Max Planck Institute Evolutionary Anthropology
 8155,Homo
-8156,The
-8157,The
-8158,History
+8156,
+8157,Western
+8158,Indian
 8159,Indian
-8160,The MFA
-8161,Materials
-8162,The
+8160,MFA
+8161,
+8162,Western
 8163,Western
-8164,These
+8164,
 8165,
 8166,
-8167,Conversely
-8168,Common
-8169,Spandex
-8170,Many
-8171,Clothes
-8172,Different
-8173,Although
-8174,Most
-8175,Clothing
-8176,Shelter
+8167,
+8168,T-shirts
+8169,
+8170,Indian
+8171,
+8172,Western
+8173,J
+8174,
+8175,Western
+8176,
 8177,Globalization
-8178,For
-8179,For
+8178,J
+8179,J
 8180,36
-8181,Mass-produced
+8181,Globalization
 8182,Multi Fibre Agreement MFA
-8183,Other
+8183,BP
 8184,Globalization
 8185,International Labor Organization
 8186,
-8187,Body
-8188,The
+8187,BP
+8188,Western
 8189,PETA
 8190,
-8191,The
+8191,J
 8192,J
-8193,Examples
-8194,Materials
-8195,Materials
+8193,J
+8194,
+8195,
 8196,
 8197,U
 8198,U
@@ -8201,28 +8201,28 @@ id,answer
 8200,1999
 8201,6
 8202,36
-8203,In
-8204,The
+8203,Tyrian
+8204,
 8205,
-8206,The
+8206,International Labor Organization
 8207,Albert
 8208,Europe
-8209,Victoria's
+8209,King
 8210,1855
 8211,may
 8212,1840
 8213,1866
 8214,Diamond Jubilees
 8215,Prince
-8216,Her
+8216,Duke of Kent
 8217,Prince
 8218,1840
 8219,may
 8220,1855
-8221,As
+8221,State Opening
 8222,1840
 8223,Prince
-8224,Russell's
+8224,Whig
 8225,1870
 8226,1840
 8227,Albert
@@ -8233,8 +8233,8 @@ id,answer
 8232,John Conroy
 8233,Kensington System
 8234,Hamilton Pate
-8235,Her
-8236,During Victoria's
+8235,Albert's
+8236,Victoria's
 8237,Charles
 8238,French
 8239,French
@@ -8244,52 +8244,52 @@ id,answer
 8243,Conroy Lehzen
 8244,Conroy Lehzen
 8245,Victoria
-8246,Her
+8246,Irish
 8247,Duchess
-8248,Official
+8248,Victoria's
 8249,King
 8250,Dash
-8251,Reforms
-8252,His
+8251,House of Commons
+8252,Lord
 8253,Victoria
 8254,Lady Flora
 8255,Leopold
-8256,On
-8257,At
-8258,Her
-8259,For
-8260,The
-8261,Many
-8262,Reforms
+8256,Kaiser Prince
+8257,Lady Flora Hastings
+8258,
+8259,Leopold's
+8260,Princess
+8261,Queen's
+8262,House of Commons
 8263,1853
-8264,The
+8264,Princess
 8265,1853
-8266,Her
-8267,Official
+8266,Victoria's
+8267,House of Commons
 8268,2017
-8269,Her
+8269,Victoria's
 8270,Leopold
 8271,4.15
 8272,Indian Muslims
-8273,Reforms
-8274,For
+8273,House of Commons
+8274,Leopold's
 8275,Princess
-8276,By
-8277,The
-8278,Reforms
-8279,There
+8276,State Opening
+8277,Princess
+8278,House of Commons
+8279,Victoria's
 8280,1861
-8281,In
-8282,While
+8281,Victoria's
+8282,Duchess
 8283,Prince
-8284,She
+8284,Wales's
 8285,1861
 8286,1820
 8287,Conroy Lehzen
 8288,Conroy Lehzen
-8289,There
+8289,Victoria's
 8290,March 1861
-8291,The
+8291,Victoria's
 8292,1820
 8293,State Opening
 8294,William
@@ -8297,7 +8297,7 @@ id,answer
 8296,John Conroy
 8297,Wales's
 8298,Gordon Khartoum
-8299,In
+8299,King
 8300,Victoria
 8301,1844
 8302,Buckingham Palace
@@ -8312,7 +8312,7 @@ id,answer
 8311,Victoria
 8312,Victoria's
 8313,Victoria's
-8314,The
+8314,Princess
 8315,Frederick William
 8316,Victoria's
 8317,Power
@@ -8327,23 +8327,23 @@ id,answer
 8326,1892
 8327,1894
 8328,Henry Labouchere
-8329,In
+8329,Victoria's
 8330,Radical MP
 8331,Rosebery
 8332,Salisbury
 8333,Victoria's
 8334,Disraeli
 8335,Henry Labouchere
-8336,Derby
+8336,Victoria's
 8337,Gladstone
-8338,Derby
+8338,Victoria's
 8339,Kaiser Prince
-8340,Items
+8340,Brown
 8341,Albert's
 8342,John Brown's
 8343,Albert's
 8344,St George's Chapel
-8345,In
+8345,The Famine Queen
 8346,1861
 8347,28 June 1838
 8348,Pomeranian
@@ -8354,21 +8354,21 @@ id,answer
 8353,
 8354,Saturday
 8355,Albert's
-8356,In
+8356,Victoria's
 8357,John Brown's
 8358,Leopold
 8359,Alexandrina Victoria
 8360,Victoria Albert
-8361,On
+8361,
 8362,September 1855
 8363,Victoria Albert
 8364,III
 8365,Leopold
 8366,Albert
-8367,The
+8367,Princess
 8368,Albert Victoria
 8369,September 1855
-8370,He
+8370,Victoria's
 8371,Victoria's
 8372,May 1836
 8373,Tory
@@ -8379,7 +8379,7 @@ id,answer
 8378,William Ewart Gladstone
 8379,Robert Peel
 8380,Robert Peel
-8381,Many
+8381,Queen's
 8382,Victoria
 8383,Radicals Tories
 8384,Radicals Tories
@@ -8397,11 +8397,11 @@ id,answer
 8396,1848
 8397,17
 8398,1849
-8399,She
+8399,British
 8400,British English
 8401,Louis Philippe
 8402,Edward Oxford
-8403,When
+8403,French
 8404,United Kingdom
 8405,Irish
 8406,British
@@ -8412,11 +8412,11 @@ id,answer
 8411,Irish
 8412,France
 8413,Frederick William
-8414,Her
-8415,If
+8414,Westminster Abbey
+8415,Power
 8416,1921
 8417,House of Commons
-8418,In
+8418,State Opening
 8419,Britain
 8420,Orsini
 8421,Napoleon
@@ -8431,7 +8431,7 @@ id,answer
 8430,Palmerston
 8431,Russell
 8432,Benjamin Disraeli
-8433,In
+8433,Queen
 8434,William Ewart Gladstone
 8435,Lord
 8436,1865
@@ -8448,26 +8448,26 @@ id,answer
 8447,Victoria
 8448,1868
 8449,Benjamin Disraeli
-8450,Peel
+8450,Queen
 8451,1887
 8452,1887
 8453,Abdul Karim
 8454,Sir
 8455,1887
 8456,Frederick Ponsonby
-8457,Equerry
+8457,Sir
 8458,Sir
 8459,Frederick Ponsonby
 8460,1887
-8461,He
+8461,Muslim Patriotic League
 8462,Abdul Karim
 8463,Frederick Ponsonby
 8464,1887
 8465,1887
 8466,Diamond Jubilees
 8467,Hindustani
-8468,Her
-8469,Her
+8468,Muslim Patriotic League
+8469,Muslim Patriotic League
 8470,Alexandrina Victoria
 8471,1889
 8472,1900
@@ -8478,27 +8478,27 @@ id,answer
 8477,Europe
 8478,1820
 8479,Europe
-8480,In
+8480,State Opening
 8481,Victoria's
 8482,Boer War
 8483,Christmas
 8484,The Famine Queen
-8485,At
+8485,Whig
 8486,1972
 8487,1972
 8488,The Famine Queen
 8489,Leopold
 8490,Lytton Strachey's Queen
 8491,1964 1972
-8492,Everyone
+8492,Victoria's
 8493,1921
 8494,Abdul Karim
 8495,1921
-8496,It
+8496,
 8497,Duchess
 8498,Duchess
 8499,1832
-8500,In
+8500,Duchess
 8501,Kent Conroy
 8502,England Wales
 8503,England Germany
@@ -8506,9 +8506,9 @@ id,answer
 8505,Duchess
 8506,Kent Conroy
 8507,Conroy
-8508,Reforms
+8508,House of Commons
 8509,King's
-8510,When
+8510,French
 8511,1844
 8512,William
 8513,Lord
@@ -8523,14 +8523,14 @@ id,answer
 8522,Queen
 8523,Whig
 8524,28 June 1838
-8525,Peel
+8525,Queen
 8526,Ireland
 8527,1845
 8528,Maynooth Grant Roman Catholic
-8529,In
+8529,The Famine Queen
 8530,four
 8531,The Famine Queen
-8532,In
+8532,The Famine Queen
 8533,four
 8534,The Famine Queen
 8535,The Famine Queen
@@ -8538,7 +8538,7 @@ id,answer
 8537,The Famine Queen
 8538,1845
 8539,1845
-8540,When
+8540,Italian
 8541,The Famine Queen
 8542,November 1871
 8543,
@@ -8548,12 +8548,12 @@ id,answer
 8547,Scotland
 8548,
 8549,Melbourne
-8550,Her
-8551,By
-8552,During Victoria's
+8550,Mrs
+8551,House
+8552,Prince
 8553,Leopold
 8554,Ireland
-8555,He
+8555,Mrs
 8556,1857
 8557,British East India Company
 8558,British East India Company
@@ -8566,7 +8566,7 @@ id,answer
 8565,Indian Rebellion
 8566,Indian Rebellion
 8567,British East India Company
-8568,She
+8568,Prince
 8569,St George's Chapel
 8570,
 8571,Cannes
@@ -8575,9 +8575,9 @@ id,answer
 8574,Ireland
 8575,Edwin Henry Landseer
 8576,Cannes
-8577,After
+8577,Lord
 8578,England
-8579,In
+8579,Princess
 8580,Henry Ponsonby
 8581,Sir
 8582,Henry Ponsonby
@@ -8603,11 +8603,11 @@ id,answer
 8602,King
 8603,III
 8604,Albert's
-8605,At
+8605,Prince Regent
 8606,Ernest
 8607,George
 8608,18
-8609,She
+8609,Victoria's
 8610,Whig
 8611,three
 8612,1820
@@ -8627,21 +8627,21 @@ id,answer
 8626,18 24 May 1837
 8627,20 June 1837
 8628,20 June 1837
-8629,In
-8630,Her
+8629,Victoria's
+8630,Brown
 8631,18 24 May 1837
 8632,IV 1830
 8633,III
-8634,As
+8634,Princess
 8635,Leopold
-8636,Victoria's
+8636,Osborne House
 8637,William
-8638,Through Victoria's
+8638,House
 8639,20 June 1837
 8640,Ireland
 8641,20 June 1837
-8642,After
-8643,In
+8642,Duke of Kent
+8643,Victoria's
 8644,Victoria
 8645,Kensington System
 8646,Victoria's
@@ -8650,21 +8650,21 @@ id,answer
 8649,Ireland
 8650,United Kingdom
 8651,Victoria's
-8652,King
-8653,In
-8654,Though
+8652,Duchess's
+8653,Victoria's
+8654,Liberal
 8655,House of Commons
-8656,In
+8656,The Famine Queen
 8657,3 July
 8658,Ireland
-8659,As
+8659,Victoria's
 8660,John William Bean
-8661,A
+8661,Sir
 8662,John William Bean
 8663,William Hamilton
 8664,3 July
 8665,John Francis
-8666,On
+8666,Francis's
 8667,Francis's
 8668,Francis's
 8669,1849
@@ -8673,13 +8673,13 @@ id,answer
 8672,Foreign Secretary
 8673,Russell Palmerston
 8674,1859
-8675,She
+8675,Foreign Secretary
 8676,British
 8677,President
 8678,Gladstone
 8679,Whig
 8680,Derby
-8681,To
+8681,Whig
 8682,President
 8683,Emperor
 8684,
@@ -8691,13 +8691,13 @@ id,answer
 8690,Albert
 8691,September 1855
 8692,Leiningen
-8693,Almost
+8693,Princess
 8694,King
 8695,12
 8696,Eleven
 8697,Orsini's
 8698,Victoria
-8699,During Victoria's
+8699,Victoria's
 8700,Leopold
 8701,Charlotte
 8702,Prince Edward
@@ -8733,7 +8733,7 @@ id,answer
 8732,John Conroy
 8733,2017
 8734,Lady Flora Hastings
-8735,She
+8735,Duchess
 8736,Hastings
 8737,Tories
 8738,John Conroy
@@ -8744,22 +8744,22 @@ id,answer
 8743,1870
 8744,Trafalgar Square
 8745,
-8746,In
+8746,Victoria's
 8747,Joseph Lister
 8748,Queen's
 8749,Trafalgar Square
-8750,Russell's
-8751,She
-8752,In
+8750,Whig
+8751,Wales's
+8752,Queen's
 8753,Queen's
 8754,1870
-8755,In
-8756,She
+8755,Queen's
+8756,Wales's
 8757,
-8758,She
+8758,Wales's
 8759,1840
 8760,Edward Oxford
-8761,During Victoria's
+8761,Victoria's
 8762,Edward Oxford
 8763,29 May 1842
 8764,Edward Oxford
@@ -8769,8 +8769,8 @@ id,answer
 8768,1840
 8769,1840
 8770,Prince
-8771,During Victoria's
-8772,As
+8771,Victoria's
+8772,Victoria's
 8773,William
 8774,Russo-Turkish War
 8775,Anglo-Zulu War
@@ -8799,9 +8799,9 @@ id,answer
 8798,Victoria Albert
 8799,Versailles
 8800,April 1855
-8801,Reforms
+8801,House of Commons
 8802,Scotland
-8803,There
+8803,Victoria's
 8804,1883
 8805,Mrs
 8806,Scotland
@@ -8809,13 +8809,13 @@ id,answer
 8808,Edwin Henry Landseer
 8809,Sir
 8810,Crimean War Britain's
-8811,The
+8811,Mrs
 8812,More Leaves Journal
 8813,Edwin Henry Landseer
 8814,Europe
 8815,United Kingdom
-8816,On
-8817,In
+8816,Windsor
+8817,Victoria's
 8818,1921
 8819,United Kingdom
 8820,March 1861
@@ -8823,14 +8823,14 @@ id,answer
 8822,Beatrice
 8823,Turri
 8824,Coburg
-8825,She
+8825,Princess
 8826,Victoria's
 8827,March 1861
 8828,Napoleon
 8829,Royal Titles Act
 8830,Royal Titles Act
 8831,1874
-8832,Biographies
+8832,Lytton Strachey's Queen
 8833,1874
 8834,Public Worship Regulation Act
 8835,Church
@@ -8845,11 +8845,11 @@ id,answer
 8844,Tory
 8845,House of Commons
 8846,House
-8847,The
+8847,Queen
 8848,House of Lords
 8849,House
-8850,Reforms
-8851,Biographies
+8850,House of Commons
+8851,Lytton Strachey's Queen
 8852,King
 8853,House of Lords
 8854,
@@ -8859,7 +8859,7 @@ id,answer
 8858,Lord
 8859,Gordon Khartoum
 8860,Salisbury
-8861,His
+8861,Gladstone's
 8862,General
 8863,Salisbury
 8864,Ireland
@@ -8867,7 +8867,7 @@ id,answer
 8866,Lord
 8867,1885
 8868,Lord
-8869,She
+8869,Radical MP
 8870,Gordon Khartoum
 8871,Salisbury
 8872,one
@@ -8887,10 +8887,10 @@ id,answer
 8886,Beatrice's
 8887,The Spirit
 8888,three
-8889,Separation
+8889,The Spirit
 8890,The Spirit
 8891,The Spirit
-8892,Separation
+8892,The Spirit
 8893,The Spirit
 8894,
 8895,
@@ -8899,10 +8899,10 @@ id,answer
 8898,
 8899,Montesquieu
 8900,Ministers
-8901,Therefore
+8901,British
 8902,United Kingdom
 8903,Court of Appeals
-8904,Strict
+8904,The
 8905,Supreme Court
 8906,
 8907,Chadha
@@ -8932,15 +8932,15 @@ id,answer
 8931,two
 8932,1983
 8933,Congress
-8934,Courts
+8934,Supreme Court
 8935,Roosevelt
 8936,Roosevelt
-8937,Courts
-8938,A
+8937,Roosevelts
+8938,Supreme Court
 8939,
 8940,
 8941,Supreme Court
-8942,Courts
+8942,Supreme Court
 8943,John Marshall
 8944,
 8945,
@@ -8968,7 +8968,7 @@ id,answer
 8967,Congress
 8968,Supreme Court
 8969,Delano Roosevelt
-8970,The President
+8970,Court of Appeals
 8971,may
 8972,
 8973,

@@ -352,7 +352,7 @@ def is_number(s): #A basic function to check if a word/token is a number or not
 for answerSent in NER_tagged:
     for i in range (0,len(answerSent)-1):
         # tagging all other entities i.e. starts with capital and not tagged by NER
-        if (answerSent[i][1] == 'O' and i > 0 and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()):
+        if (answerSent[i][1] == 'O' and i > 0 and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()  and i > 0  and answerSent[i-1][0][0] != '.'):
             answerSent[i] = (answerSent[i][0], u'OTHER')
         # print(token)
         # Dis-regarding ORGINIZATION tag

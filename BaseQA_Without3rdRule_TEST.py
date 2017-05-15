@@ -357,6 +357,8 @@ for answerSent in NER_tagged:
             # print("****", answerSent[i][1])
         if is_number(answerSent[i][0]):
             answerSent[i] = (answerSent[i][0], u'NUMBER')
+        if (i>0 and answerSent[i][0] != "," and  answerSent[i][0][0] == "," and is_number(answerSent[i][0][1:]) and answerSent[i-1][1] == 'NUMBER'):
+            answerSent[i - 1] = (answerSent[i-1][0]+answerSent[i][0], u'NUMBER')
 
 
 # These lists help to classify the question type, we just check if these words are in question
@@ -372,22 +374,23 @@ organizationList = {
 }
 locationList = {
     'where',
-    'city',
-    'country',
-    'location',
-    'continent',
-    'state',
-    'area',
-    'river',
-    'pond',
-    'fall',
-    'desert',
-    'venue'
+    'location'
+    # 'city',
+    # 'country',
+    # 'location',
+    # 'continent',
+    # 'state',
+    # 'area',
+    # 'river',
+    # 'pond',
+    # 'fall',
+    # 'desert',
+    # 'venue'
 
 }
 personList = {
     'who',
-    'whom'
+    'whom',
     'person',
     'scientist',
     'artist',
@@ -466,7 +469,31 @@ for article in data:
                         break
             if('l' in vars() or 'l' in globals()):
                 t = l+1
-            answerList.append(guessedAnswerText) #collect all the candidate answers seen
+            if(guessedAnswerText != ""):
+                answerList.append(guessedAnswerText) #collect all the candidate answers seen
+
+
+        #we didnt find any matching entity type so we will give OTHER entity as answer
+        if (len(answerList) < 1):
+            x+=1
+            questionType = "OTHER"
+            t=0
+            for t in range(0, len(taggedBestAnswerSent) - 1):
+                guessedAnswerText = ""
+                if taggedBestAnswerSent[t][1] == questionType:
+                    for l in range(t, len(taggedBestAnswerSent) - 1):
+                        if taggedBestAnswerSent[l][1] == questionType:
+                            guessedAnswerText = guessedAnswerText + " " + taggedBestAnswerSent[l][0]
+                        else:
+                            break
+                if ('l' in vars() or 'l' in globals()):
+                    t = l + 1
+                answerList.append(guessedAnswerText)  # collect all the candidate answers seen
+            # print(question['question'])
+            # print(taggedBestAnswerSent)
+            # print(answerList)
+            # print("-----" + question['answer'])
+
 
         guessedAnswerText = ""
         filteredAnswers = []

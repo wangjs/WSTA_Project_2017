@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e9634fe-1faf-4893-bc34-78fee5c0ab69" name="Default" comment="partial BASE QA&#10;Added:&#10;Added the test generation script, current accuracy :0.12237&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part">
+    <list default="true" id="2e9634fe-1faf-4893-bc34-78fee5c0ab69" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaseQA.py" afterPath="$PROJECT_DIR$/BaseQA.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" afterPath="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
@@ -15,7 +15,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/QA_Project$t1.coverage" NAME="t1 Coverage Results" MODIFIED="1494839084220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QA_Project$Train.coverage" NAME="Train Coverage Results" MODIFIED="1494865366332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QA_Project$t1.coverage" NAME="TestSet Coverage Results" MODIFIED="1494865502626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -23,10 +24,11 @@
       <file leaf-file-name="BaseQA_Without3rdRule_TEST.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="350" column="153" lean-forward="false" selection-start-line="350" selection-start-column="153" selection-end-line="350" selection-end-column="153" />
+            <state relative-caret-position="340">
+              <caret line="360" column="80" lean-forward="false" selection-start-line="360" selection-start-column="80" selection-end-line="360" selection-end-column="80" />
               <folding>
                 <element signature="e#252#289#0" expanded="true" />
+                <marker date="1494865466000" expanded="true" signature="12377:12397" ph="'...'" />
               </folding>
             </state>
           </provider>
@@ -35,8 +37,8 @@
       <file leaf-file-name="BaseQA.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BaseQA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="375" column="1" lean-forward="true" selection-start-line="375" selection-start-column="1" selection-end-line="375" selection-end-column="1" />
+            <state relative-caret-position="465">
+              <caret line="394" column="1" lean-forward="true" selection-start-line="394" selection-start-column="1" selection-end-line="394" selection-end-column="1" />
               <folding>
                 <element signature="e#252#289#0" expanded="true" />
               </folding>
@@ -55,12 +57,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bin</find>
-      <find>**</find>
-      <find>punct</find>
-      <find>pak</find>
-      <find>tokeni</find>
-      <find>june</find>
       <find>split</find>
       <find>NER_tagged</find>
       <find>i</find>
@@ -82,9 +78,15 @@
       <find>Murray</find>
       <find>replac</find>
       <find>stop</find>
-      <find>percent</find>
       <find>impo</find>
       <find>dateNumbers</find>
+      <find>John</find>
+      <find>Who developed the du</find>
+      <find>UEFA</find>
+      <find>-1</find>
+      <find>percent</find>
+      <find>,00</find>
+      <find>,000</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,8 +111,8 @@
         <option value="$PROJECT_DIR$/StanfordNER/BaseQA_Without3rdRule_TEST.py" />
         <option value="$PROJECT_DIR$/t1.py" />
         <option value="$PROJECT_DIR$/StanfordNER/BaseQA.py" />
-        <option value="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
         <option value="$PROJECT_DIR$/BaseQA.py" />
+        <option value="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
       </list>
     </option>
   </component>
@@ -175,6 +177,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/BaseQA.py" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -196,8 +201,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.t1">
-    <configuration default="false" name="t1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.TestSet">
+    <configuration default="false" name="TestSet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -210,7 +215,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="QA_Project" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BaseQA.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -364,12 +369,32 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python.t1" />
+    <configuration default="false" name="Train" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QA_Project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BaseQA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.Train" />
+      <item index="1" class="java.lang.String" itemvalue="Python.TestSet" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.t1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.TestSet" />
       </list>
     </recent_temporary>
   </component>
@@ -461,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494826063770</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="partial BASE QA&#10;Added:&#10;Added a rule for non initial sentence capitol as &quot;OTHER&quot;&#10;Added the test generation script, current accuracy :0.124746125067&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part">
+      <created>1494839248492</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1494839248492</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -469,18 +501,18 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2003988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39581257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23511904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39581257" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23511904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -515,7 +547,8 @@
     <MESSAGE value="partial BASE QA&#10;Added:&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
     <MESSAGE value="partial BASE QA&#10;Added:&#10;Added BaseQA.py, commented cleaned code&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
     <MESSAGE value="partial BASE QA&#10;Added:&#10;Added the test generation script, current accuracy :0.12237&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
-    <option name="LAST_COMMIT_MESSAGE" value="partial BASE QA&#10;Added:&#10;Added the test generation script, current accuracy :0.12237&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
+    <MESSAGE value="partial BASE QA&#10;Added:&#10;Added a rule for non initial sentence capitol as &quot;OTHER&quot;&#10;Added the test generation script, current accuracy :0.124746125067&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
+    <option name="LAST_COMMIT_MESSAGE" value="partial BASE QA&#10;Added:&#10;Added a rule for non initial sentence capitol as &quot;OTHER&quot;&#10;Added the test generation script, current accuracy :0.124746125067&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -645,14 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outPutTestSet.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1639" column="9" lean-forward="false" selection-start-line="1639" selection-start-column="5" selection-end-line="1639" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/t1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8385">
@@ -671,20 +696,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/outPutTestSet.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1639" column="9" lean-forward="false" selection-start-line="1639" selection-start-column="5" selection-end-line="1639" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="350" column="153" lean-forward="false" selection-start-line="350" selection-start-column="153" selection-end-line="350" selection-end-column="153" />
+        <state relative-caret-position="340">
+          <caret line="360" column="80" lean-forward="false" selection-start-line="360" selection-start-column="80" selection-end-line="360" selection-end-column="80" />
           <folding>
             <element signature="e#252#289#0" expanded="true" />
+            <marker date="1494865466000" expanded="true" signature="12377:12397" ph="'...'" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BaseQA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="375" column="1" lean-forward="true" selection-start-line="375" selection-start-column="1" selection-end-line="375" selection-end-column="1" />
+        <state relative-caret-position="465">
+          <caret line="394" column="1" lean-forward="true" selection-start-line="394" selection-start-column="1" selection-end-line="394" selection-end-column="1" />
           <folding>
             <element signature="e#252#289#0" expanded="true" />
           </folding>

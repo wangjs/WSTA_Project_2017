@@ -23,6 +23,7 @@ from nltk import StanfordPOSTagger
 from nltk.tag.stanford import StanfordNERTagger
 
 
+runOn = "Train"
 
 
 #The three methods below are used for the tf-idf similarity measures
@@ -69,7 +70,10 @@ stemmer = nltk.stem.PorterStemmer()
 
 #This is the cache file that will store the precomputed best sentences and tags
 #so that we dont have to tag each time we run this script
-fname = 'bestSentencesTaggedTrain.bin'
+if(runOn=="DEV"):
+    fname = 'bestSentencesTaggedDev.bin'
+else:
+    fname = 'bestSentencesTaggedTrain.bin'
 
 
 #This variable will store all tagged most relevant sentences
@@ -79,8 +83,13 @@ NER_tagged = None
 
 
 #Load the dataset, note that as train set is large I only load first 50 articles
-with open('QA_train.json') as data_file:
-    data = json.load(data_file)[:50]
+
+if(runOn == "DEV"):
+    with open('QA_dev.json') as data_file:
+        data = json.load(data_file)
+else:
+    with open('QA_train.json') as data_file:
+        data = json.load(data_file)[:50]
 
 
 
@@ -347,8 +356,15 @@ def is_number(s): #A basic function to check if a word/token is a number or not
         else:
             return False
 
-
+        # Who
+        # developed
+        # the
+        # ductile
+        # form
+        # of
+        # tungsten?
 #Trying to add NUMBER entity and removing ORGANIZATION
+initial = 0
 for answerSent in NER_tagged:
     for i in range (0,len(answerSent)-1):
         # tagging all other entities i.e. starts with capital and not tagged by NER
@@ -361,6 +377,9 @@ for answerSent in NER_tagged:
             # print("****", answerSent[i][1])
         if is_number(answerSent[i][0]):
             answerSent[i] = (answerSent[i][0], u'NUMBER')
+        if (i>0 and answerSent[i][0] != "," and  answerSent[i][0][0] == "," and is_number(answerSent[i][0][1:]) and answerSent[i-1][1] == 'NUMBER'):
+            answerSent[i - 1] = (answerSent[i-1][0]+answerSent[i][0], u'NUMBER')
+
 
 
 # These lists help to classify the question type, we just check if these words are in question
@@ -376,22 +395,23 @@ organizationList = {
 }
 locationList = {
     'where',
-    'city',
-    'country',
-    'location',
-    'continent',
-    'state',
-    'area',
-    'river',
-    'pond',
-    'fall',
-    'desert',
-    'venue'
+    'location'
+    # 'city',
+    # 'country',
+    # 'location',
+    # 'continent',
+    # 'state',
+    # 'area',
+    # 'river',
+    # 'pond',
+    # 'fall',
+    # 'desert',
+    # 'venue'
 
 }
 personList = {
     'who',
-    'whom'
+    'whom',
     'person',
     'scientist',
     'artist',
@@ -451,6 +471,7 @@ possCorrect = 0
 wrongNumber = 0
 totalans = 0
 multiAnswer = 0
+x=0
 i = -1 #index of our NER_TAGGED list (i.e. questions)
 for article in data:
     for question in article['qa']:  #For all questions in the article, but notice that we add all questions to the same list in the end, indexed by i
@@ -459,7 +480,6 @@ for article in data:
         answerSentText = u" ".join(allBestSentencesText[i])   # as we have sentence in the form of token lists so we join it into single string
         questionType = classifyQuestion(question['question']) #guess the question type, based on words in the question text
         answerList = []
-        x=0
         t=0
         #trying to find questionType entity in answer
 
@@ -474,10 +494,38 @@ for article in data:
                         break
             if('l' in vars() or 'l' in globals()):
                 t = l+1
-            answerList.append(guessedAnswerText) #collect all the candidate answers seen
+            if guessedAnswerText != "":
+                answerList.append(guessedAnswerText) #collect all the candidate answers seen
+
+
+
+        #we didnt find any matching entity type so we will give OTHER entity as answer
+        if (len(answerList) < 1):
+            x+=1
+            questionType = "OTHER"
+            t=0
+            for t in range(0, len(taggedBestAnswerSent) - 1):
+                guessedAnswerText = ""
+                if taggedBestAnswerSent[t][1] == questionType:
+                    for l in range(t, len(taggedBestAnswerSent) - 1):
+                        if taggedBestAnswerSent[l][1] == questionType:
+                            guessedAnswerText = guessedAnswerText + " " + taggedBestAnswerSent[l][0]
+                        else:
+                            break
+                if ('l' in vars() or 'l' in globals()):
+                    t = l + 1
+                answerList.append(guessedAnswerText)  # collect all the candidate answers seen
+            # print(question['question'])
+            # print(taggedBestAnswerSent)
+            # print(answerList)
+            # print("-----" + question['answer'])
+
 
         guessedAnswerText = ""
         filteredAnswers = []
+
+
+
 
         #Filter as per second rule, that if candidate answer is fully included in the question we disregard it
         for ans in answerList:
@@ -586,13 +634,16 @@ for article in data:
                     continue
 
 
+
+
+
         #here we finalize the answer for this question and check it for stats
         if guessedAnswerText == question['answer']:
             correct +=1
 
-        elif questionType == 'PERSON':
+        elif questionType == 'NUMBER':
             wrongNumber += 1
-            print(question['question'])
+            print(i,": ",question['question'])
             print(taggedBestAnswerSent)
             print(filteredAnswers)
             print(guessedAnswerText)
@@ -606,3 +657,4 @@ print("avg multi ans len", totalans/float(multiAnswer))
 print("Accuracy ",correct/float(i))
 
 print("All Answer Computation Time:", ctime())
+print(initial)

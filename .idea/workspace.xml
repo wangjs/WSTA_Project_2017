@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e9634fe-1faf-4893-bc34-78fee5c0ab69" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/outPutTestSet.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaseQA.py" afterPath="$PROJECT_DIR$/BaseQA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" afterPath="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,8 +15,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/QA_Project$t1.coverage" NAME="TestSet Coverage Results" MODIFIED="1494865502626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QA_Project$Train.coverage" NAME="Train Coverage Results" MODIFIED="1495025211971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QA_Project$TestSet.coverage" NAME="TestSet Coverage Results" MODIFIED="1495021520357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QA_Project$Train.coverage" NAME="Train Coverage Results" MODIFIED="1495025525039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QA_Project$TestSet.coverage" NAME="TestSet Coverage Results" MODIFIED="1495026050860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -23,21 +24,11 @@
       <file leaf-file-name="BaseQA.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BaseQA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="554" column="38" lean-forward="true" selection-start-line="554" selection-start-column="38" selection-end-line="554" selection-end-column="38" />
+            <state relative-caret-position="121">
+              <caret line="103" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="727" selection-end-column="12" />
               <folding>
                 <element signature="e#252#289#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="outPutTestSet.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outPutTestSet.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -107,8 +98,8 @@
         <option value="$PROJECT_DIR$/StanfordNER/BaseQA_Without3rdRule_TEST.py" />
         <option value="$PROJECT_DIR$/t1.py" />
         <option value="$PROJECT_DIR$/StanfordNER/BaseQA.py" />
-        <option value="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
         <option value="$PROJECT_DIR$/BaseQA.py" />
+        <option value="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
       </list>
     </option>
   </component>
@@ -498,7 +489,21 @@
       <option name="project" value="LOCAL" />
       <updated>1495017703066</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="complete BASE QA&#10;Added:&#10;&#10;Divided the sentence reterival part into 2 parts&#10;first 2 sentences&#10;and&#10;rest 3 -4 sentences&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;dont know">
+      <created>1495025453725</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1495025453725</updated>
+    </task>
+    <task id="LOCAL-00016" summary="complete BASE QA&#10;Added:&#10;&#10;Divided the sentence reterival part into 2 parts&#10;first 2 sentences&#10;and&#10;rest 3 4 5 6 sentences&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;dont know">
+      <created>1495025737645</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1495025737645</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -510,7 +515,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40378863" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23511904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23511904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -577,14 +582,16 @@
     <MESSAGE value="partial BASE QA&#10;Added:&#10;Added a rule for non initial sentence capitol as &quot;OTHER&quot;&#10;Added the test generation script, current accuracy :0.124746125067&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
     <MESSAGE value="partial BASE QA&#10;Added:&#10;&#10;enhanced numbers i.e. ,000 ,xxx&#10;&#10;current accuracy :0.13xxx&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
     <MESSAGE value="partial BASE QA&#10;Added:&#10;&#10;&#10;Added 3rd Rule,&#10;fixed a bug,&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;&#10;add second sentence (3-5)" />
-    <option name="LAST_COMMIT_MESSAGE" value="partial BASE QA&#10;Added:&#10;&#10;&#10;Added 3rd Rule,&#10;fixed a bug,&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;&#10;add second sentence (3-5)" />
+    <MESSAGE value="complete BASE QA&#10;Added:&#10;&#10;Divided the sentence reterival part into 2 parts&#10;first 2 sentences&#10;and&#10;rest 3 -4 sentences&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;dont know" />
+    <MESSAGE value="complete BASE QA&#10;Added:&#10;&#10;Divided the sentence reterival part into 2 parts&#10;first 2 sentences&#10;and&#10;rest 3 4 5 6 sentences&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;dont know" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete BASE QA&#10;Added:&#10;&#10;Divided the sentence reterival part into 2 parts&#10;first 2 sentences&#10;and&#10;rest 3 4 5 6 sentences&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;dont know" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/BaseQA.py</url>
-          <line>258</line>
+          <line>262</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -599,7 +606,6 @@
           <caret line="360" column="80" lean-forward="false" selection-start-line="360" selection-start-column="80" selection-end-line="360" selection-end-column="80" />
           <folding>
             <element signature="e#252#289#0" expanded="true" />
-            <marker date="1495016704000" expanded="true" signature="12554:12574" ph="'...'" />
           </folding>
         </state>
       </provider>
@@ -628,7 +634,6 @@
           <caret line="360" column="80" lean-forward="false" selection-start-line="360" selection-start-column="80" selection-end-line="360" selection-end-column="80" />
           <folding>
             <element signature="e#252#289#0" expanded="true" />
-            <marker date="1495016704000" expanded="true" signature="12554:12574" ph="'...'" />
           </folding>
         </state>
       </provider>
@@ -772,13 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GenerateAnswersTestSet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="344" column="45" lean-forward="false" selection-start-line="344" selection-start-column="45" selection-end-line="344" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QA_dev.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -795,17 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="91" column="58" lean-forward="false" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
-          <folding>
-            <element signature="e#252#289#0" expanded="true" />
-            <marker date="1495016704000" expanded="true" signature="12554:12574" ph="'...'" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/outPutTestSet.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -814,10 +801,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GenerateAnswersTestSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="361" column="0" lean-forward="false" selection-start-line="361" selection-start-column="0" selection-end-line="362" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="660" column="53" lean-forward="true" selection-start-line="660" selection-start-column="53" selection-end-line="660" selection-end-column="53" />
+          <folding>
+            <element signature="e#252#289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BaseQA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="554" column="38" lean-forward="true" selection-start-line="554" selection-start-column="38" selection-end-line="554" selection-end-column="38" />
+        <state relative-caret-position="121">
+          <caret line="103" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="727" selection-end-column="12" />
           <folding>
             <element signature="e#252#289#0" expanded="true" />
           </folding>

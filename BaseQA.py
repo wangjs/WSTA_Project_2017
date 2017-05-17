@@ -119,6 +119,8 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
     totalQuestions = 0
     bestSentence = {}
     allBestSentences = []
+    allSecondBestSentencesText = []
+    allSecondBestSentences = []
     allBestSentencesText = []
     allQuestionText = []
 
@@ -183,12 +185,6 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                 bestSentenceText = article['sentences'][result[0][0]]  ############
                 if len(result) > 1:
                     bestSentenceText = bestSentenceText + " " + article['sentences'][result[1][0]] #######
-                # if len(result) > 2:
-                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[2][0]] #######
-                # if len(result) > 3:
-                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
-                # if len(result) > 4:
-                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[4][0]] #######
                 bestSentenceText = ''.join(ch for ch in bestSentenceText if ch not in PunctuationExclude)
                 bestSentenceText = bestSentenceText.replace(",", " ,")
                 bestSentenceText = bestSentenceText.replace(".", " .").split()
@@ -210,6 +206,45 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                 allBestSentences.append([]) #to preserve question sequence
                 allBestSentencesText.append(" ")
 
+
+
+
+            if len(result) > 2:
+                bestSentenceText = article['sentences'][result[2][0]]  ############
+                if len(result) > 3:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
+                bestSentenceText = ''.join(ch for ch in bestSentenceText if ch not in PunctuationExclude)
+                bestSentenceText = bestSentenceText.replace(",", " ,")
+                bestSentenceText = bestSentenceText.replace(".", " .").split()
+                bestSentenceTokensNoStopWords = []
+                for i in range(0,len(bestSentenceText)-1):
+                    if i >0:
+                        if bestSentenceText[i] not in stopwords or bestSentenceText[i][0].isupper():
+                            bestSentenceTokensNoStopWords.append(bestSentenceText[i])
+                    else:
+                        bestSentenceTokensNoStopWords.append(bestSentenceText[i])
+
+                allSecondBestSentences.append(bestSentenceTokensNoStopWords)
+                allSecondBestSentencesText.append(bestSentenceText)
+                best = result[0][0]
+                bestSentence[articleNo,questionNo] = best
+                if qa['answer'] in bestSentenceText:   ##cheking the quality of our reterival, i.e. if answer is present in the fetched sentence
+                    correctSentence += 1
+            else:
+                allSecondBestSentences.append([]) #to preserve question sequence
+                allSecondBestSentencesText.append(" ")
+
+
+            # if len(result) > 2:
+            #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[2][0]] #######
+            # if len(result) > 3:
+            #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
+            # if len(result) > 4:
+            #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[4][0]] #######
+
+
+
+
             allQuestionText.append(qa['question']) #saving questions too for later usage
 
     #printing out reterival accuracy, #not much used, but can guide about the theorotical accuracy limit on the final QA system
@@ -217,10 +252,12 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
 
     #Now computing NER and other tags (like POS if needed)
     print("Computing NER start at:", ctime())
-    print("_____", allBestSentences[4108])
+
     NER_tagged = stanford_NER_tagger.tag_sents(allBestSentences)
-    print(u"______",NER_tagged[4108])
-    print("NER Time:", ctime())
+    print("NER Time 1:", ctime())
+    NER_tagged2 = stanford_NER_tagger.tag_sents(allSecondBestSentences)
+
+    print("NER Time 2:", ctime())
     print("NER Tagging Done, Now doing POS tagging")
     POS_taggedAnswers=[]
     # POS_taggedAnswers = stanford_POS_tagger.tag_sents(allBestSentencesText) ####Maybe needed for the 3rd answer ranking rule
@@ -234,7 +271,15 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
 
     #saving the computed NER tags and sentences
     f = open(fname, 'wb')  # 'wb' instead 'w' for binary file
-    pickle.dump({'NER_tagged':NER_tagged, 'POS_taggedAnswers': POS_taggedAnswers, 'POS_taggedQuestions':POS_taggedQuestions,'allBestSentencesText':allBestSentencesText}, f, -1)  # -1 specifies highest binary protocol
+    pickle.dump({'NER_tagged':NER_tagged,
+                 'POS_taggedAnswers': POS_taggedAnswers,
+                 'POS_taggedQuestions':POS_taggedQuestions,
+                 'allBestSentencesText':allBestSentencesText,
+                 'NER_tagged2' : NER_tagged2,
+                 'allSecondBestSentencesText' : allSecondBestSentencesText
+
+
+                 }, f, -1)  # -1 specifies highest binary protocol
     f.close()
     print("NER Saved")
 
@@ -247,6 +292,8 @@ else: #NER tagged found
     POS_taggedAnswers = allVars['POS_taggedAnswers']
     POS_taggedQuestions = allVars['POS_taggedQuestions']
     allBestSentencesText = allVars['allBestSentencesText']
+    NER_tagged2 = allVars['NER_tagged2']
+    allSecondBestSentencesText =  allVars['allSecondBestSentencesText']
     f.close()
     print("All saved variables loaded")
 
@@ -475,204 +522,194 @@ possCorrect = 0
 wrongNumber = 0
 totalans = 0
 multiAnswer = 0
+blank=0
 x=0
-i = -1 #index of our NER_TAGGED list (i.e. questions)
-for article in data:
-    for question in article['qa']:  #For all questions in the article, but notice that we add all questions to the same list in the end, indexed by i
-        i+=1
-        taggedBestAnswerSent = NER_tagged[i]
-        if(i==4108):
-            print("****",NER_tagged[i])
-        answerSentText = u" ".join(allBestSentencesText[i])   # as we have sentence in the form of token lists so we join it into single string
-        questionType = classifyQuestion(question['question']) #guess the question type, based on words in the question text
-        answerList = []
-        t=0
-        #trying to find questionType entity in answer
-
-        #We find all the entities of question type in the answer text, i.e. the first rule of answer filtering
-        for t in range(0,len(taggedBestAnswerSent)-1):
-            guessedAnswerText = ""
-            if taggedBestAnswerSent[t][1] == questionType :
-                for l in range(t,len(taggedBestAnswerSent)-1):
-                    if taggedBestAnswerSent[l][1] == questionType :
-                        guessedAnswerText = guessedAnswerText + " " + taggedBestAnswerSent[l][0]
-                    else:
-                        break
-            if('l' in vars() or 'l' in globals()):
-                t = l+1
-            if guessedAnswerText != "":
-                answerList.append(guessedAnswerText) #collect all the candidate answers seen
 
 
+def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtype,apply3rdRule):
+    answerList = []
+    t = 0
+    # trying to find questionType entity in answer
 
-        #we didnt find any matching entity type so we will give OTHER entity as answer
+    # We find all the entities of question type in the answer text, i.e. the first rule of answer filtering
+    for t in range(0, len(taggedBestAnswerSent) - 1):
+        guessedAnswerText = ""
+        if taggedBestAnswerSent[t][1] == questionType:
+            for l in range(t, len(taggedBestAnswerSent) - 1):
+                if taggedBestAnswerSent[l][1] == questionType:
+                    guessedAnswerText = guessedAnswerText + " " + taggedBestAnswerSent[l][0]
+                else:
+                    break
+        if ('l' in vars() or 'l' in globals()):
+            t = l + 1
+        if guessedAnswerText != "":
+            answerList.append(guessedAnswerText)  # collect all the candidate answers seen
+
+    if(guessOTHERtype):
+        allQTypesList = ["NUMBER","PERSON","LOCATION","OTHER"]
+    # we didnt find any matching entity type so we will give OTHER entity as answer
         if (len(answerList) < 1):
-            x+=1
             questionType = "OTHER"
-            t=0
+            t = 0
             for t in range(0, len(taggedBestAnswerSent) - 1):
                 guessedAnswerText = ""
-                if taggedBestAnswerSent[t][1] == questionType:
+                if taggedBestAnswerSent[t][1] in allQTypesList :
                     for l in range(t, len(taggedBestAnswerSent) - 1):
-                        if taggedBestAnswerSent[l][1] == questionType:
+                        if taggedBestAnswerSent[l][1] in allQTypesList:
                             guessedAnswerText = guessedAnswerText + " " + taggedBestAnswerSent[l][0]
                         else:
                             break
                 if ('l' in vars() or 'l' in globals()):
                     t = l + 1
                 answerList.append(guessedAnswerText)  # collect all the candidate answers seen
-            # print(question['question'])
-            # print(taggedBestAnswerSent)
-            # print(answerList)
-            # print("-----" + question['answer'])
+                # print(question['question'])
+                # print(taggedBestAnswerSent)
+                # print(answerList)
+                # print("-----" + question['answer'])
 
+    guessedAnswerText = ""
+    filteredAnswers = []
 
-        guessedAnswerText = ""
-        filteredAnswers = []
+    # Filter as per second rule, that if candidate answer is fully included in the question we disregard it
+    for ans in answerList:
+        if ans not in question['question']:
+            filteredAnswers.append(ans)
 
-
-
-
-        #Filter as per second rule, that if candidate answer is fully included in the question we disregard it
-        for ans in answerList:
-            if ans not in question['question']:
-                filteredAnswers.append(ans)
-
-        #Trying to apply 3rd rule, but currently not stable all is commented and we select the first candidate ansewer
-        if (len(filteredAnswers) > 0):
-            totalans += len(filteredAnswers)
-            multiAnswer += 1
-            guessedAnswerText = filteredAnswers[0]
+    # Trying to apply 3rd rule, but currently not stable all is commented and we select the first candidate ansewer
+    if (len(filteredAnswers) > 0):
+        guessedAnswerText = filteredAnswers[0]
+    else:
+        if (len(answerList) > 0):
+            guessedAnswerText = answerList[0]
         else:
-            if (len(answerList) > 0):
-                guessedAnswerText = answerList[0]
-            else:
-                guessedAnswerText = ""
+            guessedAnswerText = ""
 
+    if guessedAnswerText != "":
+        guessedAnswerText = guessedAnswerText[1:]  # remove the first space
+        # print(guessedAnswerText)
 
+    # Switch for 3rd rule answer ranking
+    if (apply3rdRule):
+        stemmedAnswerSent = []
+        for token in answerSentText.split():
+            stemmedAnswerSent.append(stemmer.stem(token.lower()))
+        # Do some lemmatization or stemming or base words
+        questionTextWithoutStop = []
+        for qWord in question['question'].split():
+            if stemmer.stem(qWord.lower()) not in stopwordsAll and stemmer.stem(qWord.lower()) in stemmedAnswerSent:
+                questionTextWithoutStop.append(qWord.lower())
 
+        for k in range(1, len(stemmedAnswerSent) - 1):
+            if stemmedAnswerSent[k][0] == ',' and len(stemmedAnswerSent[k]) > 1:
+                stemmedAnswerSent[k - 1] = stemmedAnswerSent[k - 1] + stemmedAnswerSent[k]
 
+        stemmedAnswerSent = " ".join(stemmedAnswerSent)
 
-        if guessedAnswerText != "":
-            guessedAnswerText = guessedAnswerText[1:]  # remove the first space
-            # print(guessedAnswerText)
+        filteredAnswers2 = []
+        for bigAns in filteredAnswers:
+            found = False
+            for extacted in filteredAnswers2:
+                if bigAns in extacted:
+                    found = True
+            if not found:
+                filteredAnswers2.append(bigAns)
 
-        #Switch for 3rd rule answer ranking
-        if(True):
-            stemmedAnswerSent = []
-            for token in answerSentText.split():
-                stemmedAnswerSent.append(stemmer.stem(token.lower()))
-            # Do some lemmatization or stemming or base words
-            questionTextWithoutStop = []
-            for qWord in question['question'].split():
-                if stemmer.stem(qWord.lower()) not in stopwordsAll and stemmer.stem(qWord.lower()) in stemmedAnswerSent:
-                    questionTextWithoutStop.append(qWord.lower())
+        openDistances = {}
+        for possAns in filteredAnswers2:
+            for openClassWord in questionTextWithoutStop:
+                subAnsList = []
+                for subAns in possAns[1:].split():
+                    subAnsList.append(stemmer.stem(subAns))
+                if len(subAns) > 0:
+                    subAnsList = subAnsList[0]
 
-            for k in range (1,len(stemmedAnswerSent)-1):
-                if stemmedAnswerSent[k][0] == ',' and len(stemmedAnswerSent[k])>1:
-                    stemmedAnswerSent[k-1] = stemmedAnswerSent[k-1] + stemmedAnswerSent[k]
-
-            stemmedAnswerSent = " ".join(stemmedAnswerSent)
-
-            filteredAnswers2=[]
-            for bigAns in filteredAnswers:
-                found = False
-                for extacted in filteredAnswers2:
-                    if bigAns in extacted:
-                        found =True
-                if not found:
-                    filteredAnswers2.append(bigAns)
-
-
-            openDistances = {}
-            for possAns in filteredAnswers2:
-                for openClassWord in questionTextWithoutStop:
-                    subAnsList = []
-                    for subAns in possAns[1:].split():
-                        subAnsList.append(stemmer.stem(subAns))
-                    if len(subAns)>0:
-                        subAnsList = subAnsList[0]
-
-                    try:
-                        currIndex1 = stemmedAnswerSent.index(stemmer.stem(subAns.lower()))
-                        currIndex2 = stemmedAnswerSent.index(stemmer.stem(openClassWord.lower()))
-                        currDist = abs(currIndex1- currIndex2)
-                        openDistances[possAns[1:],openClassWord]= currDist
-                    except ValueError:
-                        print(stemmedAnswerSent)
-                        print("------", stemmer.stem(subAns))
-                        print("......",stemmer.stem(openClassWord))
-                        import sys
-                        # sys.exit()
-
-            answerDist = {}
-            for (ans,ques) in openDistances:
-                if ans in answerDist:
-                    answerDist[ans] = answerDist[ans] + openDistances[ans,ques]
-                else:
-                    answerDist[ans] = openDistances[ans,ques]
-            minDist = 9999999999999999999
-            minAns = ""
-            for ans in answerDist:
-                if answerDist[ans] < minDist:
-                    minAns = ans
-                    minDist = answerDist[ans]
-
-
-
-            guessedAnswerText  = minAns
-
-
-
-        #Cleaning the answers a little bit, got these via errror analysis
-        PunctuationExclude = set(string.punctuation)
-        PunctuationExclude.remove(',')
-        PunctuationExclude.remove('-')
-        PunctuationExclude.remove('.')
-        PunctuationExclude.remove('\'')
-        PunctuationExclude.remove('%')
-        guessedAnswerText = ''.join(ch for ch in guessedAnswerText if ch not in PunctuationExclude)  ######
-
-
-        if(questionType == 'NUMBER' and '.' in guessedAnswerText):
-            guessedAnswerText = guessedAnswerText.replace(" ", "")
-        if (questionType == 'NUMBER' and '%' in guessedAnswerText):
-            guessedAnswerText = guessedAnswerText.replace(" ", "")
-        if (questionType == 'NUMBER' and ('what year' in question["question"].lower() or 'which year' in question["question"].lower() )):
-            for ans in filteredAnswers:
                 try:
-                    if(str(parse(ans, fuzzy=True).year) in ans):
-                        guessedAnswerText =  str(parse(ans, fuzzy=True).year)
-                        break
-                    else:
-                        guessedAnswerText = guessedAnswerText
-                        continue
+                    currIndex1 = stemmedAnswerSent.index(stemmer.stem(subAns.lower()))
+                    currIndex2 = stemmedAnswerSent.index(stemmer.stem(openClassWord.lower()))
+                    currDist = abs(currIndex1 - currIndex2)
+                    openDistances[possAns[1:], openClassWord] = currDist
                 except ValueError:
+                    break
+
+        answerDist = {}
+        for (ans, ques) in openDistances:
+            if ans in answerDist:
+                answerDist[ans] = answerDist[ans] + openDistances[ans, ques]
+            else:
+                answerDist[ans] = openDistances[ans, ques]
+        minDist = 9999999999999999999
+        minAns = ""
+        for ans in answerDist:
+            if answerDist[ans] < minDist:
+                minAns = ans
+                minDist = answerDist[ans]
+
+        guessedAnswerText = minAns
+
+    # Cleaning the answers a little bit, got these via errror analysis
+    PunctuationExclude = set(string.punctuation)
+    PunctuationExclude.remove(',')
+    PunctuationExclude.remove('-')
+    PunctuationExclude.remove('.')
+    PunctuationExclude.remove('\'')
+    PunctuationExclude.remove('%')
+    guessedAnswerText = ''.join(ch for ch in guessedAnswerText if ch not in PunctuationExclude)  ######
+
+    if (questionType == 'NUMBER' and '.' in guessedAnswerText):
+        guessedAnswerText = guessedAnswerText.replace(" ", "")
+    if (questionType == 'NUMBER' and '%' in guessedAnswerText):
+        guessedAnswerText = guessedAnswerText.replace(" ", "")
+    if (questionType == 'NUMBER' and (
+            'what year' in question["question"].lower() or 'which year' in question["question"].lower())):
+        for ans in filteredAnswers:
+            try:
+                if (str(parse(ans, fuzzy=True).year) in ans):
+                    guessedAnswerText = str(parse(ans, fuzzy=True).year)
+                    break
+                else:
                     guessedAnswerText = guessedAnswerText
                     continue
+            except ValueError:
+                guessedAnswerText = guessedAnswerText
+                continue
+    return guessedAnswerText
 
-        # This loop is just for train statistics that if the answer was reterived but not the first candidate answer, so we can improve our selection in future builds
-        # for ansC in filteredAnswers2:
-        #     if ansC[1:] == question['answer'] and guessedAnswerText != ansC[1:]:
-        #         print(i, ": ", u" ".join(questionTextWithoutStop))
-        #         print(taggedBestAnswerSent)
-        #         print(filteredAnswers2)
-        #         print(guessedAnswerText)
-        #         print("-----" + question['answer'])
-        #         possCorrect += 1
-        #         break
+
+
+i = -1 #index of our NER_TAGGED list (i.e. questions)
+for article in data:
+    for question in article['qa']:  #For all questions in the article, but notice that we add all questions to the same list in the end, indexed by i
+        i+=1
+        taggedBestAnswerSent = NER_tagged[i]
+        taggedSecondBestAnswer = NER_tagged2[i]
+
+        answerSentText = u" ".join(allBestSentencesText[i])   # as we have sentence in the form of token lists so we join it into single string
+        secondAnswerSentText = u" ".join(allSecondBestSentencesText[i])   # as we have sentence in the form of token lists so we join it into single string
+        questionType = classifyQuestion(question['question']) #guess the question type, based on words in the question text
+
+        guessedAnswerText = extractAnswer(questionType,taggedBestAnswerSent,answerSentText,False,True)
+
+
+        #our top most 2 candidate sentences did not give any answers so now we search in 3rd 4th and 5th sentence combined
+        if(guessedAnswerText =="" or guessedAnswerText == " " or guessedAnswerText.lower() in stopwordsAll):
+            guessedAnswerText = extractAnswer(questionType,taggedSecondBestAnswer,secondAnswerSentText,False,True)
+
+        if (guessedAnswerText == "" or guessedAnswerText == " " or guessedAnswerText.lower() in stopwordsAll):
+            guessedAnswerText = extractAnswer(questionType, taggedBestAnswerSent, answerSentText, True, False)
+
+        if (guessedAnswerText == "" or guessedAnswerText == " " or guessedAnswerText.lower() in stopwordsAll):
+            guessedAnswerText = extractAnswer(questionType, taggedSecondBestAnswer, secondAnswerSentText, True, False)
 
 
 #here we finalize the answer for this question and check it for stats
         if guessedAnswerText == question['answer']:
             correct +=1
 
-        elif questionType == 'PERSON':
+        elif questionType == 'LOCATION':
             wrongNumber += 1
             print(i, ": ", question['question'])
             print(taggedBestAnswerSent)
             print(answerSentText)
-            print(filteredAnswers)
             print(guessedAnswerText)
             print("-----" + question['answer'])
 
@@ -680,8 +717,8 @@ print("wrong in selected cat",wrongNumber)
 print("total",i)
 print("correct",correct)
 print("correct in multi ans",possCorrect)
-print("avg multi ans len", totalans/float(multiAnswer))
+# print("avg multi ans len", totalans/float(multiAnswer))
 print("Accuracy ",correct/float(i))
 
 print("All Answer Computation Time:", ctime())
-print(initial)
+print(blank)

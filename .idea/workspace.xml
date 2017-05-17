@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e9634fe-1faf-4893-bc34-78fee5c0ab69" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/outPutTestSet.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaseQA.py" afterPath="$PROJECT_DIR$/BaseQA.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" afterPath="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +14,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/QA_Project$t1.coverage" NAME="TestSet Coverage Results" MODIFIED="1494865502626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QA_Project$Train.coverage" NAME="Train Coverage Results" MODIFIED="1495016248298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QA_Project$TestSet.coverage" NAME="TestSet Coverage Results" MODIFIED="1495016739174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QA_Project$Train.coverage" NAME="Train Coverage Results" MODIFIED="1495025211971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QA_Project$TestSet.coverage" NAME="TestSet Coverage Results" MODIFIED="1495021520357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -25,11 +23,21 @@
       <file leaf-file-name="BaseQA.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BaseQA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="559" column="43" lean-forward="false" selection-start-line="559" selection-start-column="43" selection-end-line="559" selection-end-column="43" />
+            <state relative-caret-position="580">
+              <caret line="554" column="38" lean-forward="true" selection-start-line="554" selection-start-column="38" selection-end-line="554" selection-end-column="38" />
               <folding>
                 <element signature="e#252#289#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outPutTestSet.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outPutTestSet.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,7 +53,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>impo</find>
       <find>dateNumbers</find>
       <find>John</find>
       <find>Who developed the du</find>
@@ -72,8 +79,9 @@
       <find>4108</find>
       <find>taggedBestAnswerSent</find>
       <find>exit</find>
-      <find>[]</find>
       <find>[1:]</find>
+      <find>The</find>
+      <find>[]</find>
       <find>stopwordsAll</find>
     </findStrings>
   </component>
@@ -189,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TestSet">
+  <component name="RunManager" selected="Python.Train">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -483,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494865722406</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="partial BASE QA&#10;Added:&#10;&#10;&#10;Added 3rd Rule,&#10;fixed a bug,&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;&#10;add second sentence (3-5)">
+      <created>1495017703066</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1495017703066</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -561,11 +576,19 @@
     <MESSAGE value="partial BASE QA&#10;Added:&#10;Added the test generation script, current accuracy :0.12237&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
     <MESSAGE value="partial BASE QA&#10;Added:&#10;Added a rule for non initial sentence capitol as &quot;OTHER&quot;&#10;Added the test generation script, current accuracy :0.124746125067&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
     <MESSAGE value="partial BASE QA&#10;Added:&#10;&#10;enhanced numbers i.e. ,000 ,xxx&#10;&#10;current accuracy :0.13xxx&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
-    <option name="LAST_COMMIT_MESSAGE" value="partial BASE QA&#10;Added:&#10;&#10;enhanced numbers i.e. ,000 ,xxx&#10;&#10;current accuracy :0.13xxx&#10;&#10;&#10;&#10;Cleaned the preprocessing&#10;Enhanced the NUMBER category of questions&#10;(better parsing of percentages etc)&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;Answer Ranking ---3rd part" />
+    <MESSAGE value="partial BASE QA&#10;Added:&#10;&#10;&#10;Added 3rd Rule,&#10;fixed a bug,&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;&#10;add second sentence (3-5)" />
+    <option name="LAST_COMMIT_MESSAGE" value="partial BASE QA&#10;Added:&#10;&#10;&#10;Added 3rd Rule,&#10;fixed a bug,&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;&#10;add second sentence (3-5)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BaseQA.py</url>
+          <line>258</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -772,14 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outPutTestSet.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33538">
-          <caret line="1639" column="9" lean-forward="false" selection-start-line="1639" selection-start-column="5" selection-end-line="1639" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="757">
@@ -791,10 +806,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/outPutTestSet.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BaseQA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="559" column="43" lean-forward="false" selection-start-line="559" selection-start-column="43" selection-end-line="559" selection-end-column="43" />
+        <state relative-caret-position="580">
+          <caret line="554" column="38" lean-forward="true" selection-start-line="554" selection-start-column="38" selection-end-line="554" selection-end-column="38" />
           <folding>
             <element signature="e#252#289#0" expanded="true" />
           </folding>

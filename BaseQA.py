@@ -213,6 +213,10 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                 bestSentenceText = article['sentences'][result[2][0]]  ############
                 if len(result) > 3:
                     bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
+                if len(result) > 4:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[4][0]] #######
+                if len(result) > 5:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[5][0]]  #######
                 bestSentenceText = ''.join(ch for ch in bestSentenceText if ch not in PunctuationExclude)
                 bestSentenceText = bestSentenceText.replace(",", " ,")
                 bestSentenceText = bestSentenceText.replace(".", " .").split()

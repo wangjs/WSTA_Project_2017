@@ -89,7 +89,7 @@ stopwords = set(nltk.corpus.stopwords.words('english'))
 stopwords.remove('the') ## After the error analysis of the results I realised that many answers have these words i.e. The President
 stopwords.remove('of') ## So will not exclude these
 
-
+stopwordsAll = set(nltk.corpus.stopwords.words('english'))
 
 
 
@@ -173,12 +173,12 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                 bestSentenceText = article['sentences'][result[0][0]]  ############
                 if len(result) > 1:
                     bestSentenceText = bestSentenceText + " " + article['sentences'][result[1][0]] #######
-                if len(result) > 2:
-                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[2][0]] #######
-                if len(result) > 3:
-                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
-                if len(result) > 4:
-                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[4][0]] #######
+                # if len(result) > 2:
+                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[2][0]] #######
+                # if len(result) > 3:
+                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
+                # if len(result) > 4:
+                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[4][0]] #######
                 bestSentenceText = ''.join(ch for ch in bestSentenceText if ch not in PunctuationExclude)
                 bestSentenceText = bestSentenceText.replace(",", " ,")
                 bestSentenceText = bestSentenceText.replace(".", " .").split()
@@ -187,7 +187,8 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                     if i >0:
                         if bestSentenceText[i] not in stopwords or bestSentenceText[i][0].isupper():
                             bestSentenceTokensNoStopWords.append(bestSentenceText[i])
-
+                    else:
+                        bestSentenceTokensNoStopWords.append(bestSentenceText[i])
                 allBestSentences.append(bestSentenceTokensNoStopWords)
                 allBestSentencesText.append(bestSentenceText)
                 best = result[0][0]
@@ -505,64 +506,7 @@ for article in data:
 
         #Trying to apply 3rd rule, but currently not stable all is commented and we select the first candidate ansewer
         if (len(filteredAnswers) > 0):
-
             guessedAnswerText = filteredAnswers[0]
-
-            # openClassInQuestion = []
-            # openClassInAnswer = []
-            #
-            #
-            # posTaggedQuestion = POS_taggedQuestions[i]
-            # posTaggedAnswer = POS_taggedAnswers[i]
-            #
-            # ## remove all closed class words:
-            # for tag in posTaggedQuestion:
-            #     if tag[1] in openClassTags:
-            #         openClassInQuestion.append(tag[0])
-            #
-            # for tag in posTaggedAnswer:
-            #     if tag[1] in openClassTags:
-            #         openClassInAnswer.append(tag[0])
-            #
-            # ## Find same in both
-            # setSame = set(openClassInAnswer) & set(openClassInQuestion)
-            #
-            # distancesFromOpenClass={}
-            #
-            # print(filteredAnswers)
-            # for possibleAnswer in filteredAnswers:
-            #     for questionWord in setSame:
-            #         # print(answerSentText)
-            #
-            #
-            #         dist = answerSentText.find(possibleAnswer[1:])
-            #         if dist < 0:
-            #             dist = 10000000000000
-            #         distancesFromOpenClass[possibleAnswer[1:],questionWord] = dist
-            #
-            #
-            # distanceAnswer = {}
-            # for A,Q in distancesFromOpenClass:
-            #     if A in distanceAnswer:
-            #         distanceAnswer[A] += distancesFromOpenClass[A,Q]
-            #     else:
-            #         distanceAnswer[A] = distancesFromOpenClass[A,Q]
-            #
-            #
-            # minDist = 1000000000000
-            # minA = ""
-            # for A in distanceAnswer:
-            #     if distanceAnswer[A] < minDist:
-            #         minDist = distanceAnswer[A]
-            #         minA = A
-            #
-            # guessedAnswerText  = minA
-
-
-
-
-
-
 
         else:
             if (len(answerList) > 0):
@@ -571,17 +515,71 @@ for article in data:
                 guessedAnswerText = ""
 
 
-        #Cleaning the answers a little bit, got these via errror analysis
-        PunctuationExclude = set(string.punctuation)
-        PunctuationExclude.remove(',')
-        PunctuationExclude.remove('-')
-        PunctuationExclude.remove('.')
-        PunctuationExclude.remove('\'')
-        PunctuationExclude.remove('%')
-        guessedAnswerText = ''.join(ch for ch in guessedAnswerText if ch not in PunctuationExclude)  ######
+
+
         if guessedAnswerText != "":
             guessedAnswerText = guessedAnswerText[1:]  # remove the first space
             # print(guessedAnswerText)
+
+        stemmedAnswerSent = []
+        for token in answerSentText.split():
+            stemmedAnswerSent.append(stemmer.stem(token.lower()))
+        # Do some lemmatization or stemming or base words
+        questionTextWithoutStop = []
+        for qWord in question['question'].split():
+            if stemmer.stem(qWord.lower()) not in stopwordsAll and stemmer.stem(qWord.lower()) in stemmedAnswerSent:
+                questionTextWithoutStop.append(qWord.lower())
+
+        for k in range(1, len(stemmedAnswerSent) - 1):
+            if stemmedAnswerSent[k][0] == ',' and len(stemmedAnswerSent[k]) > 1:
+                stemmedAnswerSent[k - 1] = stemmedAnswerSent[k - 1] + stemmedAnswerSent[k]
+
+        stemmedAnswerSent = " ".join(stemmedAnswerSent)
+
+        filteredAnswers2 = []
+        for bigAns in filteredAnswers:
+            found = False
+            for extacted in filteredAnswers2:
+                if bigAns in extacted:
+                    found = True
+            if not found:
+                filteredAnswers2.append(bigAns)
+
+        openDistances = {}
+        for possAns in filteredAnswers2:
+            for openClassWord in questionTextWithoutStop:
+                subAnsList = []
+                for subAns in possAns[1:].split():
+                    subAnsList.append(stemmer.stem(subAns))
+                if len(subAns) > 0:
+                    subAnsList = subAnsList[0]
+
+                try:
+                    currIndex1 = stemmedAnswerSent.index(stemmer.stem(subAns.lower()))
+                    currIndex2 = stemmedAnswerSent.index(stemmer.stem(openClassWord.lower()))
+                    currDist = abs(currIndex1 - currIndex2)
+                    openDistances[possAns[1:], openClassWord] = currDist
+                except ValueError:
+                    print(stemmedAnswerSent)
+                    print("------", stemmer.stem(subAns))
+                    print("......", stemmer.stem(openClassWord))
+                    import sys
+                    # sys.exit()
+
+        answerDist = {}
+        for (ans, ques) in openDistances:
+            if ans in answerDist:
+                answerDist[ans] = answerDist[ans] + openDistances[ans, ques]
+            else:
+                answerDist[ans] = openDistances[ans, ques]
+        minDist = 9999999999999999999
+        minAns = ""
+        for ans in answerDist:
+            if answerDist[ans] < minDist:
+                minAns = ans
+                minDist = answerDist[ans]
+
+        guessedAnswerText = minAns
 
 
         if(questionType == 'NUMBER' and '.' in guessedAnswerText):
@@ -591,11 +589,27 @@ for article in data:
         if (questionType == 'NUMBER' and ('what year' in question["question"].lower() or 'which year' in question["question"].lower() )):
             for ans in filteredAnswers:
                 try:
-                    guessedAnswerText =  str(parse(ans, fuzzy=True).year)
-                    break
+                    if(str(parse(ans, fuzzy=True).year) in ans):
+                        guessedAnswerText =  str(parse(ans, fuzzy=True).year)
+                        break
+                    else:
+                        guessedAnswerText = guessedAnswerText
+                        continue
                 except ValueError:
-                    guessedAnswerText =guessedAnswerText
+                    guessedAnswerText = guessedAnswerText
                     continue
+
+
+
+
+                    # Cleaning the answers a little bit, got these via errror analysis
+        PunctuationExclude = set(string.punctuation)
+        PunctuationExclude.remove(',')
+        PunctuationExclude.remove('-')
+        PunctuationExclude.remove('.')
+        PunctuationExclude.remove('\'')
+        PunctuationExclude.remove('%')
+        guessedAnswerText = ''.join(ch for ch in guessedAnswerText if ch not in PunctuationExclude)  ######
 
 
         guessedAnswerText = guessedAnswerText.replace('"', "")

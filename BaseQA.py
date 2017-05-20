@@ -459,7 +459,6 @@ locationList = {
     # 'area',
     # 'river',
     # 'pond',
-    # 'fall',
     # 'desert',
     # 'venue'
 
@@ -467,14 +466,21 @@ locationList = {
 personList = {
     'who',
     'whom',
-    'person',
-    'scientist',
-    'artist',
-    'musician'
+    'person'
+    # 'scientist',
+    # 'artist',
+    # 'musician',
+    # 'inventor',
+    # 'son',
+    # 'father',
+    # 'daughter',
+    # 'sister',
+    # 'brother'
 }
 
 numberList = {
     'how many',
+    'how much'
     'number',
     'count',
     'percent',
@@ -484,9 +490,19 @@ numberList = {
     'year',
     'month',
     'day',
-    'week'
+    'week',
+    'version',
+    'how',
+    'ammount',
+    'rate'
 
 }
+
+def isSentCase(sent):
+    for x in sent.split():
+        if not x[0].isupper():
+          return False
+    return True
 
 #This is a helper function that check if a word in question appears in lists above
 def checkWordInQuestion(question,wordList):
@@ -559,7 +575,7 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
                 guessedAnswerText = ""
                 if taggedBestAnswerSent[t][1] in allQTypesList :
                     for l in range(t, len(taggedBestAnswerSent) - 1):
-                        if taggedBestAnswerSent[l][1] in allQTypesList:
+                        if taggedBestAnswerSent[l][1] ==  taggedBestAnswerSent[t][1] :
                             guessedAnswerText = guessedAnswerText + " " + taggedBestAnswerSent[l][0]
                         else:
                             break
@@ -567,7 +583,6 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
                     t = l + 1
                 answerList.append(guessedAnswerText)  # collect all the candidate answers seen
                 # print(question['question'])
-                # print(taggedBestAnswerSent)
                 # print(answerList)
                 # print("-----" + question['answer'])
 
@@ -617,6 +632,8 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
                     found = True
             if not found:
                 filteredAnswers2.append(bigAns)
+
+        print(filteredAnswers2)
 
         openDistances = {}
         for possAns in filteredAnswers2:
@@ -676,7 +693,7 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
             except ValueError:
                 guessedAnswerText = guessedAnswerText
                 continue
-    return guessedAnswerText
+    return guessedAnswerText,filteredAnswers
 
 
 
@@ -691,31 +708,36 @@ for article in data:
         secondAnswerSentText = u" ".join(allSecondBestSentencesText[i])   # as we have sentence in the form of token lists so we join it into single string
         questionType = classifyQuestion(question['question']) #guess the question type, based on words in the question text
 
-        guessedAnswerText = extractAnswer(questionType,taggedBestAnswerSent,answerSentText,False,True)
+        # if(i==8866):
+        #     print(taggedBestAnswerSent)
+        #     print(answerSentText)
+        guessedAnswerText,filteredAnswers = extractAnswer(questionType,taggedBestAnswerSent,answerSentText,False,True)
 
 
         #our top most 2 candidate sentences did not give any answers so now we search in 3rd 4th and 5th sentence combined
         if(guessedAnswerText =="" or guessedAnswerText == " " or guessedAnswerText.lower() in stopwordsAll):
-            guessedAnswerText = extractAnswer(questionType,taggedSecondBestAnswer,secondAnswerSentText,False,True)
+            guessedAnswerText,filteredAnswers = extractAnswer(questionType,taggedSecondBestAnswer,secondAnswerSentText,False,True)
 
         if (guessedAnswerText == "" or guessedAnswerText == " " or guessedAnswerText.lower() in stopwordsAll):
-            guessedAnswerText = extractAnswer(questionType, taggedBestAnswerSent, answerSentText, True, False)
+            guessedAnswerText,filteredAnswers = extractAnswer(questionType, taggedBestAnswerSent, answerSentText, True, False)
 
         if (guessedAnswerText == "" or guessedAnswerText == " " or guessedAnswerText.lower() in stopwordsAll):
-            guessedAnswerText = extractAnswer(questionType, taggedSecondBestAnswer, secondAnswerSentText, True, False)
-
+            guessedAnswerText,filteredAnswers = extractAnswer(questionType, taggedSecondBestAnswer, secondAnswerSentText, True, False)
+        if (guessedAnswerText == "" or guessedAnswerText == " " or guessedAnswerText.lower() in stopwordsAll):
+            blank+=1
 
 #here we finalize the answer for this question and check it for stats
         if guessedAnswerText == question['answer']:
             correct +=1
 
-        elif questionType == 'LOCATION':
+        elif questionType == 'NUMBER':
             wrongNumber += 1
-            print(i, ": ", question['question'])
+            print(i, ": ", question['question'],question['answer'],"-",guessedAnswerText)
             print(taggedBestAnswerSent)
-            print(answerSentText)
-            print(guessedAnswerText)
-            print("-----" + question['answer'])
+            print(" ")
+            # print(filteredAnswers)
+            # print(guessedAnswerText)
+            # print("-----" + question['answer'])
 
 print("wrong in selected cat",wrongNumber)
 print("total",i)

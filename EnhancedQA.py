@@ -585,7 +585,7 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
             answerList.append(guessedAnswerText)  # collect all the candidate answers seen
 
     if(guessOTHERtype):
-        allQTypesList = ["NUMBER","PERSON","LOCATION","OTHER"]
+        allQTypesList = ["NUMBER","PERSON","LOCATION","ORGANIZATION","OTHER"]
     # we didnt find any matching entity type so we will give OTHER entity as answer
         if (len(answerList) < 1):
             questionType = "OTHER"

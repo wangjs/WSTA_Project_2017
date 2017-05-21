@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e9634fe-1faf-4893-bc34-78fee5c0ab69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BuildQuestionClassifier.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GenerateQuestionLabels.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/outPutTestSet.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaseQA.py" afterPath="$PROJECT_DIR$/BaseQA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EnhancedQA.py" afterPath="$PROJECT_DIR$/EnhancedQA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GenerateAnswersTestSet.py" afterPath="$PROJECT_DIR$/GenerateAnswersTestSet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,21 +15,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/QA_Project$EnhancedQA.coverage" NAME="EnhancedQA Coverage Results" MODIFIED="1495355224536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QA_Project$t1.coverage" NAME="TestSet Coverage Results" MODIFIED="1494865502626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QA_Project$Train.coverage" NAME="Train Coverage Results" MODIFIED="1495256474168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QA_Project$ClassifyQuestions.coverage" NAME="ClassifyQuestions Coverage Results" MODIFIED="1495350252395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QA_Project$TestSet.coverage" NAME="TestSet Coverage Results" MODIFIED="1495026050860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QA_Project$Train.coverage" NAME="BaseQA Coverage Results" MODIFIED="1495355076433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QA_Project$ClassifyQuestions.coverage" NAME="ClassifyQuestions Coverage Results" MODIFIED="1495350587642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QA_Project$Sentiment.coverage" NAME="Sentiment Coverage Results" MODIFIED="1495346608194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QA_Project$TestSet.coverage" NAME="TestSet Coverage Results" MODIFIED="1495355993823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QA_Project$GenerateQuestionLabels.coverage" NAME="GenerateQuestionLabels Coverage Results" MODIFIED="1495345361237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseQA.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BaseQA.py">
+      <file leaf-file-name="EnhancedQA.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EnhancedQA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="88" selection-end-column="35" />
+            <state relative-caret-position="171">
+              <caret line="587" column="67" lean-forward="false" selection-start-line="587" selection-start-column="67" selection-end-line="587" selection-end-column="67" />
               <folding>
                 <element signature="e#252#289#0" expanded="true" />
               </folding>
@@ -37,12 +38,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildQuestionClassifier.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BuildQuestionClassifier.py">
+      <file leaf-file-name="GenerateAnswersTestSet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GenerateAnswersTestSet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="172">
+              <caret line="571" column="68" lean-forward="false" selection-start-line="571" selection-start-column="56" selection-end-line="571" selection-end-column="68" />
+              <folding>
+                <element signature="e#252#289#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,8 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Gramophone</find>
-      <find>gramophone</find>
       <find>Heart</find>
       <find>stemmerstemmer</find>
       <find>moth</find>
@@ -86,8 +87,10 @@
       <find>classes</find>
       <find>print</find>
       <find>predict</find>
-      <find>SGDClassifier</find>
+      <find>ORG</find>
       <find>classi</find>
+      <find>-1</find>
+      <find>SGDClassifier</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,16 +110,17 @@
         <option value="$PROJECT_DIR$/t2.py" />
         <option value="$PROJECT_DIR$/t2_test.py" />
         <option value="$PROJECT_DIR$/outPutTestSet.csv" />
-        <option value="$PROJECT_DIR$/GenerateAnswersTestSet.py" />
         <option value="$PROJECT_DIR$/buggy3rdFilter.py" />
         <option value="$PROJECT_DIR$/StanfordNER/BaseQA_Without3rdRule_TEST.py" />
         <option value="$PROJECT_DIR$/t1.py" />
         <option value="$PROJECT_DIR$/StanfordNER/BaseQA.py" />
         <option value="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
-        <option value="$PROJECT_DIR$/BaseQA.py" />
         <option value="$PROJECT_DIR$/GenerateQuestionLabels.py" />
         <option value="$PROJECT_DIR$/sentiment.py" />
         <option value="$PROJECT_DIR$/ClassifyQuestion.py" />
+        <option value="$PROJECT_DIR$/BaseQA.py" />
+        <option value="$PROJECT_DIR$/GenerateAnswersTestSet.py" />
+        <option value="$PROJECT_DIR$/EnhancedQA.py" />
       </list>
     </option>
   </component>
@@ -205,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ClassifyQuestions">
+  <component name="RunManager" selected="Python.TestSet">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -354,44 +358,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="Train" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="QA_Project" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BaseQA.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestSet" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="QA_Project" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="GenerateQuestionLabels" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -449,12 +415,70 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Train" />
-      <item index="1" class="java.lang.String" itemvalue="Python.TestSet" />
-      <item index="2" class="java.lang.String" itemvalue="Python.GenerateQuestionLabels" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Sentiment" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ClassifyQuestions" />
+    <configuration default="false" name="EnhancedQA" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QA_Project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EnhancedQA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BaseQA" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QA_Project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BaseQA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestSet" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QA_Project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GenerateAnswersTestSet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python.GenerateQuestionLabels" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Sentiment" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ClassifyQuestions" />
+      <item index="3" class="java.lang.String" itemvalue="Python.EnhancedQA" />
+      <item index="4" class="java.lang.String" itemvalue="Python.BaseQA" />
+      <item index="5" class="java.lang.String" itemvalue="Python.TestSet" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -594,7 +618,21 @@
       <option name="project" value="LOCAL" />
       <updated>1495255119029</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Saving some changes as backup&#10;Generated dataset for question classification&#10;Built a Question Classifier&#10;&#10;&#10;Still needs work on following:&#10;integrate new question classifier into the BASE QA">
+      <created>1495350458575</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1495350458575</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Intigrated BaseQA with Enhancement&#10;+ 1.2% ~&#10;&#10;Still needs work on following:&#10;error analysis on enhancement">
+      <created>1495355462863</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1495355462863</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -607,7 +645,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40378863" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2003988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23511904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23511904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -677,7 +715,9 @@
     <MESSAGE value="complete BASE QA&#10;Added:&#10;&#10;Divided the sentence reterival part into 2 parts&#10;first 2 sentences&#10;and&#10;rest 3 4 5 6 sentences&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;dont know" />
     <MESSAGE value="complete BASE QA&#10;&#10;maybe FINAL BASE&#10;Added:&#10;test answers generation script&#10;&#10;&#10;&#10;&#10;Still needs work on following:&#10;dont know" />
     <MESSAGE value="Saving some changes as backup&#10;&#10;&#10;Still needs work on following:&#10;dont know" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving some changes as backup&#10;&#10;&#10;Still needs work on following:&#10;dont know" />
+    <MESSAGE value="Saving some changes as backup&#10;Generated dataset for question classification&#10;Built a Question Classifier&#10;&#10;&#10;Still needs work on following:&#10;integrate new question classifier into the BASE QA" />
+    <MESSAGE value="Intigrated BaseQA with Enhancement&#10;+ 1.2% ~&#10;&#10;Still needs work on following:&#10;error analysis on enhancement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intigrated BaseQA with Enhancement&#10;+ 1.2% ~&#10;&#10;Still needs work on following:&#10;error analysis on enhancement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -688,7 +728,7 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -906,20 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GenerateAnswersTestSet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="361" column="0" lean-forward="false" selection-start-line="361" selection-start-column="0" selection-end-line="362" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="660" column="53" lean-forward="true" selection-start-line="660" selection-start-column="53" selection-end-line="660" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QuestionLabelsData.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -941,7 +967,7 @@
         <state relative-caret-position="180">
           <caret line="208" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
           <folding>
-            <element signature="e#162#171#0" expanded="true" />
+            <element signature="e#162#171#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -956,16 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BaseQA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="88" selection-end-column="35" />
-          <folding>
-            <element signature="e#252#289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/sklearn/cross_validation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -974,11 +990,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BaseQA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="e#252#289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BuildQuestionClassifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        <state relative-caret-position="542">
+          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="22" />
+          <folding>
+            <element signature="e#162#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaseQA_Without3rdRule_TEST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="705" column="0" lean-forward="false" selection-start-line="705" selection-start-column="0" selection-end-line="706" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenerateAnswersTestSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="571" column="68" lean-forward="false" selection-start-line="571" selection-start-column="56" selection-end-line="571" selection-end-column="68" />
+          <folding>
+            <element signature="e#252#289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EnhancedQA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="587" column="67" lean-forward="false" selection-start-line="587" selection-start-column="67" selection-end-line="587" selection-end-column="67" />
+          <folding>
+            <element signature="e#252#289#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

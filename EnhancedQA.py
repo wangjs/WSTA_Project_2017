@@ -21,7 +21,7 @@ from time import ctime
 import re
 from nltk import StanfordPOSTagger
 from nltk.tag.stanford import StanfordNERTagger
-
+from BuildQuestionClassifier import *
 
 runOn = "DEV"
 
@@ -75,7 +75,7 @@ if(runOn=="DEV"):
 else:
     fname = 'bestSentencesTaggedTrain.bin'
 
-
+QuestionModelPATH = "QuestionClassificationModel.pickle"
 #This variable will store all tagged most relevant sentences
 NER_tagged = None
 
@@ -280,8 +280,8 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                  'POS_taggedQuestions':POS_taggedQuestions,
                  'allBestSentencesText':allBestSentencesText,
                  'NER_tagged2' : NER_tagged2,
-                 'allSecondBestSentencesText' : allSecondBestSentencesText
-
+                 'allSecondBestSentencesText' : allSecondBestSentencesText,
+                'allQuestionText' :allQuestionText
 
                  }, f, -1)  # -1 specifies highest binary protocol
     f.close()
@@ -298,6 +298,7 @@ else: #NER tagged found
     allBestSentencesText = allVars['allBestSentencesText']
     NER_tagged2 = allVars['NER_tagged2']
     allSecondBestSentencesText =  allVars['allSecondBestSentencesText']
+    allQuestionText = allVars['allQuestionText']
     f.close()
     print("All saved variables loaded")
 
@@ -432,14 +433,26 @@ for answerSent in NER_tagged:
         if (answerSent[i][1] == 'O' and i > 0 and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()  and i > 0  and answerSent[i-1][0][0] != '.'):
             answerSent[i] = (answerSent[i][0], u'OTHER')
         # print(token)
-        # Dis-regarding ORGINIZATION tag
-        if answerSent[i][1] == "ORGANIZATION":
-            answerSent[i] = (answerSent[i][0], u'OTHER')
+        # # Dis-regarding ORGINIZATION tag
+        # if answerSent[i][1] == "ORGANIZATION":
+        #     answerSent[i] = (answerSent[i][0], u'OTHER')
             # print("****", answerSent[i][1])
         if is_number(answerSent[i][0]):
             answerSent[i] = (answerSent[i][0], u'NUMBER')
         if (i>0 and answerSent[i][0] != "," and  answerSent[i][0][0] == "," and is_number(answerSent[i][0][1:]) and answerSent[i-1][1] == 'NUMBER'):
             answerSent[i - 1] = (answerSent[i-1][0]+answerSent[i][0], u'NUMBER')
+
+QuestionTypesFromModel=[]
+QuestionTypes = []
+if not os.path.exists(QuestionModelPATH):
+    print("Please supply valid Question Classification Model")
+else:
+    with open(QuestionModelPATH, 'rb') as f:
+        model = pickle.load(f)
+    print(len(allQuestionText))
+    QuestionTypesFromModel = model.predict(allQuestionText)
+    for t in range (0,len(QuestionTypesFromModel)):
+        QuestionTypes.append(model.classes[QuestionTypesFromModel[t]])
 
 
 
@@ -701,7 +714,8 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
                 continue
     return guessedAnswerText,filteredAnswers
 
-
+print(len(NER_tagged))
+print(len(QuestionTypes))
 
 i = -1 #index of our NER_TAGGED list (i.e. questions)
 for article in data:
@@ -712,8 +726,8 @@ for article in data:
 
         answerSentText = u" ".join(allBestSentencesText[i])   # as we have sentence in the form of token lists so we join it into single string
         secondAnswerSentText = u" ".join(allSecondBestSentencesText[i])   # as we have sentence in the form of token lists so we join it into single string
-        questionType = classifyQuestion(question['question']) #guess the question type, based on words in the question text
-
+        # questionType = classifyQuestion(question['question']) #guess the question type, based on words in the question text
+        questionType = QuestionTypes[i]
         # if(i==8866):
         #     print(taggedBestAnswerSent)
         #     print(answerSentText)
@@ -738,9 +752,9 @@ for article in data:
 
         elif questionType == 'OTHER':
             wrongNumber += 1
-            print(i, ": ", question['question'],question['answer'],"-",guessedAnswerText)
-            print(taggedBestAnswerSent)
-            print(" ")
+            # print(i, ": ", question['question'],question['answer'],"-",guessedAnswerText)
+            # print(taggedBestAnswerSent)
+            # print(" ")
             # print(filteredAnswers)
             # print(guessedAnswerText)
             # print("-----" + question['answer'])

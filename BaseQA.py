@@ -363,6 +363,12 @@ dateNumbers = {
     'december',
     'AD',
     'BC'
+    # 'year'
+    # 'years',
+    # 'day',
+    # 'days',
+    # 'month',
+    # 'months'
 }
 
 
@@ -633,7 +639,7 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
             if not found:
                 filteredAnswers2.append(bigAns)
 
-        print(filteredAnswers2)
+        # print(filteredAnswers2)
 
         openDistances = {}
         for possAns in filteredAnswers2:
@@ -730,7 +736,7 @@ for article in data:
         if guessedAnswerText == question['answer']:
             correct +=1
 
-        elif questionType == 'NUMBER':
+        elif questionType == 'OTHER':
             wrongNumber += 1
             print(i, ": ", question['question'],question['answer'],"-",guessedAnswerText)
             print(taggedBestAnswerSent)

@@ -663,7 +663,7 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
     return guessedAnswerText
 
 
-outFile = open('outPutTestSet.csv', 'w')
+outFile = open('outPutTestSetOLD.csv', 'w')
 print(("id" + ',' + "answer"), file=outFile)
 i = -1 #index of our NER_TAGGED list (i.e. questions)
 for article in data:

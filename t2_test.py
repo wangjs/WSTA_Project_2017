@@ -242,7 +242,7 @@ def classifyQuestion(question):
 
 
 
-outFile = open('outPutTestSet.csv', 'w')
+outFile = open('outPutTestSetOLD.csv', 'w')
 print(("id" + ',' + "answer"), file=outFile)
 
 correct = 0

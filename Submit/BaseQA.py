@@ -19,11 +19,10 @@ import pickle  #For caching of results
 from dateutil.parser import parse
 from time import ctime
 import re
-from nltk import StanfordPOSTagger
 from nltk.tag.stanford import StanfordNERTagger
 
 
-runOn = "DEV"
+runOn = "Train"
 
 
 #The three methods below are used for the tf-idf similarity measures
@@ -61,9 +60,7 @@ def query_vsm(query, index, k=10):
 print("Start Time:",ctime())
 
 #initializing taggers and modals from NLTK
-os.environ["STANFORD_MODELS"] = "/Users/umeraltaf/Desktop/QA_Project/StanfordNER"
-stanford_NER_tagger = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english.all.3class.distsim.crf.ser.gz','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-ner.jar')
-stanford_POS_tagger = StanfordPOSTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english-bidirectional-distsim.tagger','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-postagger.jar')
+stanford_NER_tagger = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz')
 stemmer = nltk.stem.PorterStemmer()
 
 
@@ -89,7 +86,7 @@ if(runOn == "DEV"):
         data = json.load(data_file)
 else:
     with open('QA_train.json') as data_file:
-        data = json.load(data_file)[51:101]
+        data = json.load(data_file)[:50]
 
 
 

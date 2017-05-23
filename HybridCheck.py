@@ -21,6 +21,7 @@ from time import ctime
 import re
 from nltk import StanfordPOSTagger
 from nltk.tag.stanford import StanfordNERTagger
+from BuildQuestionClassifier import *
 
 
 runOn = "DEV"
@@ -280,7 +281,8 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                  'POS_taggedQuestions':POS_taggedQuestions,
                  'allBestSentencesText':allBestSentencesText,
                  'NER_tagged2' : NER_tagged2,
-                 'allSecondBestSentencesText' : allSecondBestSentencesText
+                 'allSecondBestSentencesText' : allSecondBestSentencesText,
+                 'allQuestionText':allQuestionText
 
 
                  }, f, -1)  # -1 specifies highest binary protocol
@@ -298,10 +300,23 @@ else: #NER tagged found
     allBestSentencesText = allVars['allBestSentencesText']
     NER_tagged2 = allVars['NER_tagged2']
     allSecondBestSentencesText =  allVars['allSecondBestSentencesText']
+    allQuestionText = allVars['allQuestionText']
     f.close()
     print("All saved variables loaded")
 
+QuestionModelPATH = "QuestionClassificationModel.pickle"
 
+QuestionTypesFromModel=[]
+QuestionTypes = []
+if not os.path.exists(QuestionModelPATH):
+    print("Please supply valid Question Classification Model")
+else:
+    with open(QuestionModelPATH, 'rb') as f:
+        model = pickle.load(f)
+    print(len(allQuestionText))
+    QuestionTypesFromModel = model.predict(allQuestionText)
+    for t in range (0,len(QuestionTypesFromModel)):
+        QuestionTypes.append(model.classes[QuestionTypesFromModel[t]])
 
 #Some static lists to recognize NUMBER
 wordNumbers ={
@@ -686,8 +701,6 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
         guessedAnswerText = guessedAnswerText.replace(" ", "")
     if (questionType == 'NUMBER' and '%' in guessedAnswerText):
         guessedAnswerText = guessedAnswerText.replace(" ", "")
-        guessedAnswerText = guessedAnswerText[:guessedAnswerText.index('%')+1]
-
     if (questionType == 'NUMBER' and (
             'what year' in question["question"].lower() or 'which year' in question["question"].lower())):
         for ans in filteredAnswers:
@@ -715,7 +728,10 @@ for article in data:
         answerSentText = u" ".join(allBestSentencesText[i])   # as we have sentence in the form of token lists so we join it into single string
         secondAnswerSentText = u" ".join(allSecondBestSentencesText[i])   # as we have sentence in the form of token lists so we join it into single string
         questionType = classifyQuestion(question['question']) #guess the question type, based on words in the question text
-
+        if(questionType=='OTHER'):
+            questionType = QuestionTypes[i]
+        if (questionType == 'ORGINIZATION'):
+            questionType = 'OTHER'
         # if(i==8866):
         #     print(taggedBestAnswerSent)
         #     print(answerSentText)

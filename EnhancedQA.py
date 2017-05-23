@@ -24,8 +24,9 @@ import re
 from nltk import StanfordPOSTagger
 from nltk.tag.stanford import StanfordNERTagger
 from BuildQuestionClassifier import *
-
+import BuildQuestionClassifier
 runOn = "Train"
+
 
 
 #The three methods below are used for the tf-idf similarity measures
@@ -68,7 +69,8 @@ stanford_NER_tagger = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/Sta
 stanford_POS_tagger = StanfordPOSTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english-bidirectional-distsim.tagger','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-postagger.jar')
 stemmer = nltk.stem.PorterStemmer()
 
-
+POSTaggedSents=[]
+QuestionPOSTagDict = {}
 
 #This is the cache file that will store the precomputed best sentences and tags
 #so that we dont have to tag each time we run this script
@@ -253,6 +255,20 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
 
             allQuestionText.append(qa['question']) #saving questions too for later usage
 
+    tokenizedX = []
+    for i in range(len(allQuestionText)):
+        tokenizedX.append(wordpunct_tokenize(allQuestionText[i]))
+    print(len(tokenizedX))
+    print("Starting POS tagging")
+    POSTaggedSents = stanford_POS_tagger.tag_sents(tokenizedX)
+    print(len(tokenizedX))
+    print("POS tagging done")
+
+    for i in range(len(allQuestionText)):
+        QuestionPOSTagDict[allQuestionText[i]] = POSTaggedSents[i]
+
+    BuildQuestionClassifier.POSTagDict = QuestionPOSTagDict
+
     #printing out reterival accuracy, #not much used, but can guide about the theorotical accuracy limit on the final QA system
     print("The reterival accuracy on test set is", (correctSentence/float(totalQuestions)))
 
@@ -283,7 +299,8 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                  'allBestSentencesText':allBestSentencesText,
                  'NER_tagged2' : NER_tagged2,
                  'allSecondBestSentencesText' : allSecondBestSentencesText,
-                'allQuestionText' :allQuestionText
+                'allQuestionText' :allQuestionText,
+                 'POSTagDict': QuestionPOSTagDict
 
                  }, f, -1)  # -1 specifies highest binary protocol
     f.close()
@@ -301,6 +318,7 @@ else: #NER tagged found
     NER_tagged2 = allVars['NER_tagged2']
     allSecondBestSentencesText =  allVars['allSecondBestSentencesText']
     allQuestionText = allVars['allQuestionText']
+    BuildQuestionClassifier.POSTagDict = allVars['POSTagDict']
     f.close()
     print("All saved variables loaded")
 

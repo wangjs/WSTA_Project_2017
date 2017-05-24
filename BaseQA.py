@@ -21,9 +21,12 @@ from time import ctime
 import re
 from nltk import StanfordPOSTagger
 from nltk.tag.stanford import StanfordNERTagger
+import operator
 
 
 runOn = "DEV"
+
+relaxedEvaluationMetric = False
 
 
 #The three methods below are used for the tf-idf similarity measures
@@ -89,7 +92,7 @@ if(runOn == "DEV"):
         data = json.load(data_file)
 else:
     with open('QA_train.json') as data_file:
-        data = json.load(data_file)[51:101]
+        data = json.load(data_file)[:50]
 
 
 
@@ -426,20 +429,21 @@ def is_number(s): #A basic function to check if a word/token is a number or not
         # tungsten?
 #Trying to add NUMBER entity and removing ORGANIZATION
 initial = 0
-for answerSent in NER_tagged:
-    for i in range (0,len(answerSent)-1):
-        # tagging all other entities i.e. starts with capital and not tagged by NER
-        if (answerSent[i][1] == 'O' and i > 0 and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()  and i > 0  and answerSent[i-1][0][0] != '.'):
-            answerSent[i] = (answerSent[i][0], u'OTHER')
-        # print(token)
-        # Dis-regarding ORGINIZATION tag
-        if answerSent[i][1] == "ORGANIZATION":
-            answerSent[i] = (answerSent[i][0], u'OTHER')
-            # print("****", answerSent[i][1])
-        if is_number(answerSent[i][0]):
-            answerSent[i] = (answerSent[i][0], u'NUMBER')
-        if (i>0 and answerSent[i][0] != "," and  answerSent[i][0][0] == "," and is_number(answerSent[i][0][1:]) and answerSent[i-1][1] == 'NUMBER'):
-            answerSent[i - 1] = (answerSent[i-1][0]+answerSent[i][0], u'NUMBER')
+for nerList in [NER_tagged,NER_tagged2]:
+    for answerSent in nerList:
+        for i in range (0,len(answerSent)-1):
+            # tagging all other entities i.e. starts with capital and not tagged by NER
+            if (answerSent[i][1] == 'O' and i > 0 and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()  and i > 0  and answerSent[i-1][0][0] != '.'):
+                answerSent[i] = (answerSent[i][0], u'OTHER')
+            # print(token)
+            # Dis-regarding ORGINIZATION tag
+            if answerSent[i][1] == "ORGANIZATION":
+                answerSent[i] = (answerSent[i][0], u'OTHER')
+                # print("****", answerSent[i][1])
+            if is_number(answerSent[i][0]):
+                answerSent[i] = (answerSent[i][0], u'NUMBER')
+            if (i>0 and answerSent[i][0] != "," and  answerSent[i][0][0] == "," and is_number(answerSent[i][0][1:]) and answerSent[i-1][1] == 'NUMBER'):
+                answerSent[i - 1] = (answerSent[i-1][0]+answerSent[i][0], u'NUMBER')
 
 
 
@@ -539,6 +543,26 @@ def classifyQuestion(question):
         return "NUMBER"
     else:
         return "OTHER"
+
+
+
+
+
+def getEvaluationScore(correctAnswer,proposedAnswer,proposedAnswerList):
+    if correctAnswer == proposedAnswer:
+        return 1
+    if(relaxedEvaluationMetric):
+        if proposedAnswer.lower() in correctAnswer.lower() or correctAnswer.lower() in proposedAnswer.lower():
+            return 0.75
+        for possibleAnswer in proposedAnswerList:
+            if(possibleAnswer == correctAnswer):
+                return 1/proposedAnswerList.index(possibleAnswer)
+            elif(possibleAnswer.lower() in correctAnswer.lower() or  correctAnswer.lower() in possibleAnswer.lower()):
+                return 0.75*1/1+(proposedAnswerList.index(possibleAnswer))
+        return 0
+    else:
+        return 0
+
 
 
 
@@ -664,14 +688,22 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
                 answerDist[ans] = answerDist[ans] + openDistances[ans, ques]
             else:
                 answerDist[ans] = openDistances[ans, ques]
-        minDist = 9999999999999999999
-        minAns = ""
-        for ans in answerDist:
-            if answerDist[ans] < minDist:
-                minAns = ans
-                minDist = answerDist[ans]
 
-        guessedAnswerText = minAns
+
+        sorted_Distances = sorted(answerDist.items(), key=operator.itemgetter(1))
+
+        # minDist = 9999999999999999999
+        # minAns = ""
+        # for ans in answerDist:
+        #     if answerDist[ans] < minDist:
+        #         minAns = ans
+        #         minDist = answerDist[ans]
+        if(len(sorted_Distances)>0):
+            guessedAnswerText = sorted_Distances[0][0]
+            filteredAnswers = []
+            for (answer,distance) in sorted_Distances:
+                filteredAnswers.append(answer)
+
 
     # Cleaning the answers a little bit, got these via errror analysis
     PunctuationExclude = set(string.punctuation)
@@ -735,10 +767,9 @@ for article in data:
             blank+=1
 
 #here we finalize the answer for this question and check it for stats
-        if guessedAnswerText == question['answer']:
-            correct +=1
+        correct+= getEvaluationScore(question["answer"],guessedAnswerText,filteredAnswers)
 
-        elif questionType == 'OTHER':
+        if questionType == 'PERSON':
             wrongNumber += 1
             print(i, ": ", question['question'],question['answer'],"-",guessedAnswerText)
             print(taggedBestAnswerSent)

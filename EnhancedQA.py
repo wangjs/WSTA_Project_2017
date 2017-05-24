@@ -24,8 +24,9 @@ import re
 from nltk import StanfordPOSTagger
 from nltk.tag.stanford import StanfordNERTagger
 from BuildQuestionClassifier import *
-
+import BuildQuestionClassifier
 runOn = "Train"
+
 
 
 #The three methods below are used for the tf-idf similarity measures
@@ -68,7 +69,8 @@ stanford_NER_tagger = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/Sta
 stanford_POS_tagger = StanfordPOSTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english-bidirectional-distsim.tagger','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-postagger.jar')
 stemmer = nltk.stem.PorterStemmer()
 
-
+POSTaggedSents=[]
+QuestionPOSTagDict = {}
 
 #This is the cache file that will store the precomputed best sentences and tags
 #so that we dont have to tag each time we run this script
@@ -185,8 +187,8 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
             #Here we concat the top 5 sentences for each question and process the stop words etc
             if len(result) > 0:
                 bestSentenceText = article['sentences'][result[0][0]]  ############
-                if len(result) > 1:
-                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[1][0]] #######
+                # if len(result) > 1:
+                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[1][0]] #######
                 bestSentenceText = ''.join(ch for ch in bestSentenceText if ch not in PunctuationExclude)
                 bestSentenceText = bestSentenceText.replace(",", " ,")
                 bestSentenceText = bestSentenceText.replace(".", " .").split()
@@ -211,14 +213,14 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
 
 
 
-            if len(result) > 2:
-                bestSentenceText = article['sentences'][result[2][0]]  ############
-                # if len(result) > 3:
-                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
-                # if len(result) > 4:
-                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[4][0]] #######
-                # if len(result) > 5:
-                #     bestSentenceText = bestSentenceText + " " + article['sentences'][result[5][0]]  #######
+            if len(result) > 1:
+                bestSentenceText = article['sentences'][result[1][0]]  ############
+                if len(result) > 2:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[2][0]] #######
+                if len(result) > 3:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[3][0]] #######
+                if len(result) > 4:
+                    bestSentenceText = bestSentenceText + " " + article['sentences'][result[4][0]]  #######
                 bestSentenceText = ''.join(ch for ch in bestSentenceText if ch not in PunctuationExclude)
                 bestSentenceText = bestSentenceText.replace(",", " ,")
                 bestSentenceText = bestSentenceText.replace(".", " .").split()
@@ -253,6 +255,20 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
 
             allQuestionText.append(qa['question']) #saving questions too for later usage
 
+    tokenizedX = []
+    for i in range(len(allQuestionText)):
+        tokenizedX.append(wordpunct_tokenize(allQuestionText[i]))
+    print(len(tokenizedX))
+    print("Starting POS tagging")
+    POSTaggedSents = stanford_POS_tagger.tag_sents(tokenizedX)
+    print(len(tokenizedX))
+    print("POS tagging done")
+
+    for i in range(len(allQuestionText)):
+        QuestionPOSTagDict[allQuestionText[i]] = POSTaggedSents[i]
+
+    BuildQuestionClassifier.POSTagDict = QuestionPOSTagDict
+
     #printing out reterival accuracy, #not much used, but can guide about the theorotical accuracy limit on the final QA system
     print("The reterival accuracy on test set is", (correctSentence/float(totalQuestions)))
 
@@ -283,7 +299,8 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                  'allBestSentencesText':allBestSentencesText,
                  'NER_tagged2' : NER_tagged2,
                  'allSecondBestSentencesText' : allSecondBestSentencesText,
-                'allQuestionText' :allQuestionText
+                'allQuestionText' :allQuestionText,
+                 'POSTagDict': QuestionPOSTagDict
 
                  }, f, -1)  # -1 specifies highest binary protocol
     f.close()
@@ -301,6 +318,7 @@ else: #NER tagged found
     NER_tagged2 = allVars['NER_tagged2']
     allSecondBestSentencesText =  allVars['allSecondBestSentencesText']
     allQuestionText = allVars['allQuestionText']
+    BuildQuestionClassifier.POSTagDict = allVars['POSTagDict']
     f.close()
     print("All saved variables loaded")
 
@@ -429,20 +447,22 @@ def is_number(s): #A basic function to check if a word/token is a number or not
         # tungsten?
 #Trying to add NUMBER entity and removing ORGANIZATION
 initial = 0
-for answerSent in NER_tagged:
-    for i in range (0,len(answerSent)-1):
-        # tagging all other entities i.e. starts with capital and not tagged by NER
-        if (answerSent[i][1] == 'O' and i > 0 and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()  and i > 0  and answerSent[i-1][0][0] != '.'):
-            answerSent[i] = (answerSent[i][0], u'OTHER')
-        # print(token)
-        # # Dis-regarding ORGINIZATION tag
-        if answerSent[i][1] == "ORGANIZATION":
-            answerSent[i] = (answerSent[i][0], u'OTHER')
-            # print("****", answerSent[i][1])
-        if is_number(answerSent[i][0]):
-            answerSent[i] = (answerSent[i][0], u'NUMBER')
-        if (i>0 and answerSent[i][0] != "," and  answerSent[i][0][0] == "," and is_number(answerSent[i][0][1:]) and answerSent[i-1][1] == 'NUMBER'):
-            answerSent[i - 1] = (answerSent[i-1][0]+answerSent[i][0], u'NUMBER')
+for NER_SENTS in [NER_tagged,NER_tagged2]:
+    for answerSent in NER_SENTS:
+        for i in range (0,len(answerSent)-1):
+            # tagging all other entities i.e. starts with capital and not tagged by NER
+            if (answerSent[i][1] == 'O' and i > 0 and len(answerSent[i][0]) > 0 and answerSent[i][0][0].isupper()  and i > 0  and answerSent[i-1][0][0] != '.'):
+                answerSent[i] = (answerSent[i][0], u'OTHER')
+            # print(token)
+            # # Dis-regarding ORGINIZATION tag
+            if answerSent[i][1] == "ORGANIZATION":
+                answerSent[i] = (answerSent[i][0], u'OTHER')
+                # print("****", answerSent[i][1])
+            if is_number(answerSent[i][0]):
+                answerSent[i] = (answerSent[i][0], u'NUMBER')
+            if (i>0 and answerSent[i][0] != "," and  answerSent[i][0][0] == "," and is_number(answerSent[i][0][1:]) and answerSent[i-1][1] == 'NUMBER'):
+                answerSent[i - 1] = (answerSent[i-1][0]+answerSent[i][0], u'NUMBER')
+
 
 QuestionTypesFromModel=[]
 QuestionTypes = []

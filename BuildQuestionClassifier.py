@@ -13,7 +13,6 @@ from nltk.corpus import wordnet as wn
 from nltk import wordpunct_tokenize
 from nltk import WordNetLemmatizer
 from nltk import sent_tokenize
-from nltk import pos_tag
 
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder
@@ -23,7 +22,11 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.metrics import classification_report as clsr
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split as tts
+from nltk import StanfordPOSTagger
 import json
+os.environ["STANFORD_MODELS"] = "/Users/umeraltaf/Desktop/QA_Project/StanfordNER"
+
+stanford_POS_tagger = StanfordPOSTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english-bidirectional-distsim.tagger','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-postagger.jar')
 
 def timeit(func):
     """
@@ -90,9 +93,19 @@ class NLTKPreprocessor(BaseEstimator, TransformerMixin):
         version of all the words, removing stopwords and punctuation.
         """
         # Break the document into sentences
+
+
         for sent in sent_tokenize(document):
-            # Break the sentence into part of speech tagged tokens
-            for token, tag in pos_tag(wordpunct_tokenize(sent)):
+
+            # # Break the sentence into part of speech tagged tokens
+            # docList = None
+            # if document in POSTagDict:
+            #     docList = POSTagDict[document]
+            # else:
+            #     taggedDocList = stanford_POS_tagger.tag(document)
+
+            # print(POSTagDict)
+            for token, tag in POSTagDict[document]:
                 # Apply preprocessing to the token
                 token = token.lower() if self.lower else token
                 token = token.strip() if self.strip else token
@@ -243,26 +256,46 @@ def show_most_informative_features(model, text=None, n=20):
 
     return "\n".join(output)
 
-
+POSTaggedSents=[]
+POSTagDict = {}
 if __name__ == "__main__":
-    PATH = "QuestionClassificationModel.pickle"
+    PATH = "QuestionClassificationModelStanford.pickle"
 
     if not os.path.exists(PATH):
         # Time to build the model
         with open('QuestionLabelsData.json') as data_file:
-            data = json.load(data_file)
+            data = json.load(data_file)[:-300]
 
 
 
         questions = []
         labels = []
-        for question in data:
-            # print(question)
-            questions.append((question[0]))
-            labels.append(question[1])
+
+        # print(data[26025])
+        for i in range(len(data)):
+            questions.append((data[i][0]))
+            labels.append(data[i][1])
 
         X = questions
         y = labels
+        print(len(X))
+        print(len(y))
+
+
+        tokenizedX = []
+        for i in range(len(X)):
+            tokenizedX.append(wordpunct_tokenize(X[i]))
+        print(len(tokenizedX))
+        print("Starting POS tagging")
+        POSTaggedSents =stanford_POS_tagger.tag_sents(tokenizedX)
+        print(len(tokenizedX))
+        print("POS tagging done")
+
+        for i in range(len(X)):
+            POSTagDict[X[i]] = POSTaggedSents[i]
+            # print(X[i], "**", POSTaggedSents[i])
+        #building a dictionary for faster referance of the POSTags
+
 
         model = build_and_evaluate(X,y, outpath=PATH)
 
@@ -270,5 +303,5 @@ if __name__ == "__main__":
         with open(PATH, 'rb') as f:
             model = pickle.load(f)
         print(model.classes)
-        print(model.predict(["How many days are there in a year?","Where is Paris located?","Who invented radio?"]))
+        print("Model Already Found")
     # print(show_most_informative_features(model))

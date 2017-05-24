@@ -125,7 +125,7 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
     allSecondBestSentences = []
     allBestSentencesText = []
     allQuestionText = []
-
+    
     articleNo = -1
     for article in data:
         articleNo += 1
@@ -138,7 +138,6 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
             sentenceText=sentenceText.replace(".", " .")
             sentenceList = [word for word in sentenceText.lower().split() if word not in stopwords]
             allSentenceList.append(sentenceList)
-
         dictionary = corpora.Dictionary(allSentenceList)
         corpus = [dictionary.doc2bow(sentenceList) for sentenceList in allSentenceList]
         tfidf = models.TfidfModel(corpus)

@@ -120,18 +120,18 @@ dateNumbers = {
 
 
 #initializing taggers and modals from NLTK
-os.environ["STANFORD_MODELS"] = "/Users/umeraltaf/Desktop/QA_Project/StanfordNER"
-stanford_NER_tagger = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english.all.3class.distsim.crf.ser.gz','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-ner.jar')
+stanford_NER_tagger = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz')
 stemmer = nltk.stem.PorterStemmer()
 
 NER_CacheFIle = "AllTaggedCorrectAnswers.bin"
 
+#we use last 300 articles to as train set for the classifier
 with open('QA_train.json') as data_file:
     data = json.load(data_file)[-300:]
 
 
 
-#Main code part
+#NER tagging all the correct sentences
 if not os.path.exists(NER_CacheFIle):  #Check if we already computed the best candidate sentences and thier entity tags
     questionTypes =[]
     correctAnswerSents = []
@@ -180,16 +180,13 @@ else:
     answers = allVars['answers']
 
 
-    # print(len(answers))
-    # print(len(NER_TaggedAnswerText))
-    # print(len(NER_TaggedAnswerSents))
-    # print(NER_TaggedAnswerSents[0])
-    # print(NER_TaggedAnswerText[0])
+
     f.close()
     print("All saved variables loaded")
 
 
 
+#Assigning NUMBER tags manually
 for answerSent in NER_TaggedAnswerSents:
     for i in range(0, len(answerSent) - 1):
         # tagging all other entities i.e. starts with capital and not tagged by NER
@@ -200,8 +197,13 @@ for answerSent in NER_TaggedAnswerSents:
             answerSent[i] = (answerSent[i][0], u'NUMBER')
 
 
+
+
+#this was to limit the count of other tags that we might get
+# as tests showed a skew towards this tag, so that our classifier might not be very biased
 requiredOtherTags = 9000
 
+#collecting entitity type for each question.
 x=0
 labels = []
 for i in range(0,len(questions)-1):
@@ -232,6 +234,6 @@ print(entityCounts)
 print(len(labels))
 
 
-
+#Saving data set
 with open('QuestionLabelsData.json', 'w') as fp:
     json.dump(labels, fp)

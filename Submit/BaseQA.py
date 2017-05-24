@@ -21,9 +21,8 @@ from time import ctime
 import re
 from nltk.tag.stanford import StanfordNERTagger
 
-
-runOn = "Train"
-
+#Or you can give "DEV" here provided that that dataset is available in the same directory
+runOn = "Test"
 
 #The three methods below are used for the tf-idf similarity measures
 ##########  coppied from workbook
@@ -67,12 +66,21 @@ stemmer = nltk.stem.PorterStemmer()
 
 #This is the cache file that will store the precomputed best sentences and tags
 #so that we dont have to tag each time we run this script
-if(runOn=="DEV"):
-    fname = 'bestSentencesTaggedDev.bin'
+# Load the Required Dataset
+if runOn == "Test":
+    with open('QA_test.json') as data_file:
+        data = json.load(data_file)
 else:
-    fname = 'bestSentencesTaggedTrain.bin'
+    with open('QA_dev.json') as data_file:
+        data = json.load(data_file)
 
-
+##Some path declarations for the precomputed models
+# This is the cache file that will store the precomputed best sentences and tags
+# so that we dont have to tag each time we run this script
+if runOn == "DEV":
+    fname = "bestSentencesTaggedDev.bin"
+else:
+    fname = 'bestSentencesTaggedTest.bin'
 #This variable will store all tagged most relevant sentences
 NER_tagged = None
 
@@ -81,12 +89,13 @@ NER_tagged = None
 
 #Load the dataset, note that as train set is large I only load first 50 articles
 
-if(runOn == "DEV"):
-    with open('QA_dev.json') as data_file:
+# Load the Required Dataset
+if runOn == "Test":
+    with open('QA_test.json') as data_file:
         data = json.load(data_file)
 else:
-    with open('QA_train.json') as data_file:
-        data = json.load(data_file)[:50]
+    with open('QA_dev.json') as data_file:
+        data = json.load(data_file)
 
 
 
@@ -702,6 +711,12 @@ def extractAnswer(questionType,taggedBestAnswerSent,answerSentText,guessOTHERtyp
 
 
 
+
+if runOn=="Test":
+    #initializing the output .csv files
+    outFile = open('outPutTestSetOLD.csv', 'w')
+    print(("id" + ',' + "answer"), file=outFile)
+
 i = -1 #index of our NER_TAGGED list (i.e. questions)
 for article in data:
     for question in article['qa']:  #For all questions in the article, but notice that we add all questions to the same list in the end, indexed by i
@@ -732,19 +747,15 @@ for article in data:
             blank+=1
 
 #here we finalize the answer for this question and check it for stats
-        if guessedAnswerText == question['answer']:
+        if runOn == "DEV":
             correct +=1
+        else:
+            guessedAnswerText = guessedAnswerText.replace('"', "")
+            guessedAnswerText = guessedAnswerText.replace(',', "-COMMA-")
+            print((str(question['id']) + ',' + guessedAnswerText.encode('ascii', 'ignore')), file=outFile)
 
-        elif questionType == 'OTHER':
-            wrongNumber += 1
-            print(i, ": ", question['question'],question['answer'],"-",guessedAnswerText)
-            print(taggedBestAnswerSent)
-            print(" ")
-            # print(filteredAnswers)
-            # print(guessedAnswerText)
-            # print("-----" + question['answer'])
 
-print("wrong in selected cat",wrongNumber)
+
 print("total",i)
 print("correct",correct)
 print("correct in multi ans",possCorrect)

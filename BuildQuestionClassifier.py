@@ -264,7 +264,7 @@ if __name__ == "__main__":
     if not os.path.exists(PATH):
         # Time to build the model
         with open('QuestionLabelsData.json') as data_file:
-            data = json.load(data_file)[:500]
+            data = json.load(data_file)[:-300]
 
 
 
@@ -303,5 +303,5 @@ if __name__ == "__main__":
         with open(PATH, 'rb') as f:
             model = pickle.load(f)
         print(model.classes)
-        print(model.predict(["How many days are there in a year?","Where is Paris located?","Who invented radio?"]))
+        print("Model Already Found")
     # print(show_most_informative_features(model))

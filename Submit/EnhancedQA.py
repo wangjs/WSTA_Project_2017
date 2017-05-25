@@ -77,7 +77,7 @@ def query_vsm(query, index, k=10):
 
 
 #Or you can give "DEV" here provided that that dataset is available in the same directory
-runOn = "Test"
+runOn = "DEV"
 
 #This switch can be used to use a relaxed evaluation matric which awards for partial matches and match in many possible answers
 #function defined later on, also can refer report
@@ -90,14 +90,14 @@ relaxedEvaluationMetric = False
 print("Start Time:", ctime())
 
 # initializing taggers and modals from NLTK
-stanford_NER_tagger = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz')
-stanford_POS_tagger = StanfordPOSTagger('english-bidirectional-distsim.tagger')
-stemmer = nltk.stem.PorterStemmer()
-
-# os.environ["STANFORD_MODELS"] = "/Users/umeraltaf/Desktop/QA_Project/StanfordNER"
-# stanford_NER_tagger = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english.all.3class.distsim.crf.ser.gz','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-ner.jar')
-# stanford_POS_tagger = StanfordPOSTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english-bidirectional-distsim.tagger','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-postagger.jar')
+# stanford_NER_tagger = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz')
+# stanford_POS_tagger = StanfordPOSTagger('english-bidirectional-distsim.tagger')
 # stemmer = nltk.stem.PorterStemmer()
+
+os.environ["STANFORD_MODELS"] = "/Users/umeraltaf/Desktop/QA_Project/StanfordNER"
+stanford_NER_tagger = StanfordNERTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english.all.3class.distsim.crf.ser.gz','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-ner.jar')
+stanford_POS_tagger = StanfordPOSTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english-bidirectional-distsim.tagger','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-postagger.jar')
+stemmer = nltk.stem.PorterStemmer()
 
 ##Some path declarations for the precomputed models
 # This is the cache file that will store the precomputed best sentences and tags
@@ -754,4 +754,5 @@ outFile.close()
 if(runOn=="DEV"):
     print("Correct/Score: ",correct)
     print("Accuracy: ", correct/float(i))
+    print(i)
 print("Done")

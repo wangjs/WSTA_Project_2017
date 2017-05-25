@@ -45,9 +45,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cross_validation import train_test_split as tts
 from nltk import StanfordPOSTagger
 import json
-# os.environ["STANFORD_MODELS"] = "/Users/umeraltaf/Desktop/QA_Project/StanfordNER"
+os.environ["STANFORD_MODELS"] = "/Users/umeraltaf/Desktop/QA_Project/StanfordNER"
 
-stanford_POS_tagger = StanfordPOSTagger('english-bidirectional-distsim.tagger')
+# stanford_POS_tagger = StanfordPOSTagger('english-bidirectional-distsim.tagger')
+stanford_POS_tagger = StanfordPOSTagger('/Users/umeraltaf/Desktop/QA_Project/StanfordNER/english-bidirectional-distsim.tagger','/Users/umeraltaf/Desktop/QA_Project/StanfordNER/stanford-postagger.jar')
 
 def timeit(func):
     """

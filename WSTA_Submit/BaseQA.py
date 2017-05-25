@@ -206,8 +206,9 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                 allBestSentencesText.append(bestSentenceText)
                 best = result[0][0]
                 bestSentence[articleNo,questionNo] = best
-                if qa['answer'] in bestSentenceText:   ##cheking the quality of our reterival, i.e. if answer is present in the fetched sentence
-                    correctSentence += 1
+                if runOn == "DEV":
+                    if qa['answer'] in bestSentenceText:   ##cheking the quality of our reterival, i.e. if answer is present in the fetched sentence
+                        correctSentence += 1
             else:
                 allBestSentences.append([]) #to preserve question sequence
                 allBestSentencesText.append(" ")
@@ -238,8 +239,9 @@ if not os.path.exists(fname):  #Check if we already computed the best candidate 
                 allSecondBestSentencesText.append(bestSentenceText)
                 best = result[0][0]
                 bestSentence[articleNo,questionNo] = best
-                if qa['answer'] in bestSentenceText:   ##cheking the quality of our reterival, i.e. if answer is present in the fetched sentence
-                    correctSentence += 1
+                if runOn == "DEV":
+                    if qa['answer'] in bestSentenceText:   ##cheking the quality of our reterival, i.e. if answer is present in the fetched sentence
+                        correctSentence += 1
             else:
                 allSecondBestSentences.append([]) #to preserve question sequence
                 allSecondBestSentencesText.append(" ")
@@ -756,12 +758,15 @@ for article in data:
 
 
 
-print("total",i)
-print("correct",correct)
-print("correct in multi ans",possCorrect)
-# print("avg multi ans len", totalans/float(multiAnswer))
-print("Accuracy ",correct/float(i))
-if RunOn=="Test":
+
+if runOn=="Test":
     outFile.close()
+else:
+    print("total", i)
+    print("correct", correct)
+    print("correct in multi ans", possCorrect)
+    # print("avg multi ans len", totalans/float(multiAnswer))
+    print("Accuracy ", correct / float(i))
 print("All Answer Computation Time:", ctime())
-print(blank)
+print("Blank Answers:",blank)
+print("Done!")

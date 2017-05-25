@@ -103,9 +103,9 @@ stemmer = nltk.stem.PorterStemmer()
 # This is the cache file that will store the precomputed best sentences and tags
 # so that we dont have to tag each time we run this script
 if runOn=="DEV":
-    fname = "bestSentencesTaggedDev.bin"
+    fname = "bestSentencesTaggedEnhancedDev.bin"
 else:
-    fname = 'bestSentencesTaggedTest.bin'
+    fname = 'bestSentencesTaggedEnhancedTest.bin'
 QuestionModelPATH = "QuestionClassificationModelStanford.pickle"
 
 
@@ -692,7 +692,7 @@ def getEvaluationScore(correctAnswer,proposedAnswer,proposedAnswerList):
 
 correct = 0
 blank = 0
-if RunOn=="Test":
+if runOn=="Test":
     #initializing the output .csv files
     outFile = open('outPutTestSetOLD.csv', 'w')
     print(("id" + ',' + "answer"), file=outFile)
@@ -751,7 +751,7 @@ for article in data:
 
 print("All Answer Computation Time:", ctime())
 print("Blank Answers",blank)
-if RunOn=="Test":
+if runOn=="Test":
     outFile.close()
 if(runOn=="DEV"):
     print("Correct/Score: ",correct)

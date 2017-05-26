@@ -1,0 +1,34 @@
+
+Description 1:
+My first contribution is about applying the word2vec to find the similarity between a given question and every sentence of a article. Then return a sorted list which include the tuple of sentence id and it's similarity score from high to low. This list will be used in the next program the same as the previous version. It includes models from gensim:
+1. Create a corpus from dictionary of every word in the article which will assign a unique id to every word
+2. Use tfidf model and LSI model to transfer bow to a latent space
+3. Create similarly query which is called index
+4. Apply the index to a given question and get the sorted similarity list
+
+Test Result on DEV dataset:
+Previous Accuracy: 0.12585677144883006
+My Accuracy: 0.11321200661782084
+
+So it failed to increase the accuracy.
+
+Program: BaseQA_ChanningChe.py
+
+
+
+
+
+Description 2:
+Most of the questions are classified as OTHER, in which many questions start with 'what'. For this kind of questions, my enhancement will find the first NN word in question and get its first Synset of noun. After that, in every given POS tagged answer text, the program will find all the candidate answers of whose Synsets at least one Synset meets one of three conditions below:
+1. its Synset is equal to question Synset
+2. its Synset is hyponymy of question Synset
+3. its Synset is meronymy of question Synset
+In this way, more relevant candidate answers will be returned and increase the accuracy.
+
+Test Result on DEV dataset:
+Previous Accuracy: 0.12585677144883006
+My Accuracy: 0.12621129756558733
+
+So it increase the accuracy successfully.
+
+Program: BaseQA_ChanningChe_WordNet.py

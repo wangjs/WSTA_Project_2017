@@ -62,9 +62,9 @@ def query_vsm(query, index, k=10):
 print("Start Time:",ctime())
 
 #initializing taggers and modals from NLTK
-os.environ["STANFORD_MODELS"] = "/chechi/Documents/StanfordNER"
-stanford_NER_tagger = StanfordNERTagger('/Users/chechi/Documents/StanfordNER/english.all.3class.distsim.crf.ser.gz','/Users/chechi/Documents/StanfordNER/stanford-ner.jar')
-stanford_POS_tagger = StanfordPOSTagger('/Users/chechi/Documents/StanfordNER/english-bidirectional-distsim.tagger','/Users/chechi/Documents/StanfordNER/stanford-postagger.jar')
+#os.environ["STANFORD_MODELS"] = "/chechi/Documents/StanfordNER"
+stanford_NER_tagger = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz')
+stanford_POS_tagger = StanfordPOSTagger('english-bidirectional-distsim.tagger')
 stemmer = nltk.stem.PorterStemmer()
 
 

@@ -1,6 +1,17 @@
+# Introduction
+In this project, we implemented a Question Answering System. The goal of the system was given a
+Wikipedia article and a list of question based on the article, answer as many of them as possible. As per
+the project specification document as Baseline QA system was developed which yielded 12.5%
+accuracy. Then we implemented 3 enhancements, mainly: a better question type classifier, better
+sentence retrieval engine and a probabilistic QA system based on semantic cues. These enhancements
+enabled us to achieve maximum accuracy of 13.2%. In this report, we will outline the challenges we
+faced and the solutions we implemented
+
+
+
 All files reffered below are present in WSTA_Submit Directory.
 
-Final Project report is also available in WSTA_Submit Directory.
+Final Project report is also available in Submit Directory.
 
 # Team:
 Muhammad Umer Altaf (778566),
